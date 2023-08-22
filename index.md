@@ -52,7 +52,7 @@ Use the following guides to install and run the applicaiton:
 1. While installing, make sure to choose to have a Desktop Shortcut. 
 1. After installation, right-click on the desktop icon, and choose `Properties`. 
 
-    <img src="./IndexMedia/image1.png" style="width:7.4in; height:5.1in" >
+    <img src="./IndexMedia/image1.png" style="width:6in" >
 
 1. In the *iLauncher* dialog copy the contents in the **Target** field, and paste to the **Start In** field.Before completing, remove the last part of the text you pasted **iLauncer.exe**.
 
@@ -60,6 +60,8 @@ Use the following guides to install and run the applicaiton:
 
 Now, you are ready to lauch the application.
 > :bulb: **Tip**: Upon startup, the application will require to check and update automatically. If update is not succesful, it may not start.
+
+<img src="./indexmedia/image 34.png" style="width:4in">
 
 Before continuing, take a moment to check the new release of iCAD bridge applicaiton is loaded in your AutoCAD environment. In an open AutoCAD environment, type in `Upload` and then hit on the `Contents` button. You should see it listed, or use the `Load...` button to fetch and load it.
 
@@ -71,7 +73,7 @@ Follow below steps to confirm your installaiton is uptodate, and update if outda
 
 At any time when using the application, users can check for updates from `Help > Updates...` menu command, and then choosing `Check Online`.
 
-<img src="./indexmedia/image2.png">
+<img src="./indexmedia/image2.png" style="width:3In">
 
 If an update is required, we recommend the below steps.
 
