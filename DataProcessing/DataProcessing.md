@@ -100,12 +100,12 @@ Then follow below typical workflow:
 
 1.  Prepare the Object in AutoCAD. Draw an arbitrary object using the AutoCAD polyline command. Use the *Attach Tag* addon tool to give it a recognizable name.
  
-    <img src="./media/image 01.png">
+    <img src="./media/Image 01.png">
 
 
 2.  Start the workspace manager from iCAD interface, and Add the object to the current collection set using the *Add Objects* button. 
     
-    <img src="./media/image 02.png">
+    <img src="./media/Image 02.png">
     
     You will see the object listed on the left box with the tag string provided and it’s AutoCAD Object ID.
 
@@ -115,19 +115,21 @@ Then follow below typical workflow:
     using `CTRL`+`C` short cut.
 
 4.  Back on Workspace Manager, click on the object and select Paste Data tool button. This will start *Select Source* dialog. Choose `Clipboard`. 
-    <img src="./media/image 06.png" style="width:7in">
+
+    <img src="./media/Image 06.png" style="width:7in">
 
 4. The import dialog starts, showing a preview of the data in the clipboard. Accept `Next` and `Continue` buttons.
 
-    <img src="./media/image 04.png" style="width:4in">
+    <img src="./media/Image 04.png" style="width:4in">
 
-    <img src="./media/image 05.png" style="width:4in"> {br}
+    <img src="./media/Image 05.png" style="width:4in">
+
 
     > **Note** The status bar at the bottom of the main iCAD interface (above). If successful, it reports the paste operation is completed. 
     
     One can view this data, by selecting the object on the Workspace Manager interface, and using *Preview Data* tool button. The data is presented in the *uiDataPreview* table. Use the `<` and `>` buttons to expand and contact the table view.
 
-    <img src="./media/image 07.png" style="width:4in">
+    <img src="./media/Image 07.png" style="width:4in">
 
 > :notebook: **Technical Note**: These data are saved in CSV format in the accompanying AutoCAD file to the project (*.xsd). They can not be edited. However, they can be replaced with modified data any time.
 
@@ -141,14 +143,13 @@ environment with ease. In iCAD, this is achieved using the
 used by all other modular solutions. Data sources for this operation can
 be either of:
 
-1)  Windows clipboard data. These can be from:
+1. Windows clipboard data. These can be from:
 
-    1.  copied from Excel, or Notepad (CSV format), or openOffice spreadsheet.
+    - copied from Excel, or Notepad (CSV format), or openOffice spreadsheet.
 
-    2.  tabular presentation of other iCAD solutions, or
+    - tabular presentation of other iCAD solutions, or
 
-    3.  graphic data from **DataLiveiw** interface copied using **Tools
-        \> Copy Graphics (for AutoCAD Plot)** menu.
+    - graphic data from **DataLiveiw** interface copied using **Tools \> Copy Graphics (for AutoCAD Plot)** menu.
 
 2)  Hosted data in AutoCAD object such as pasted raw data as explained
     in previous function or results of analysis such as from a stream
@@ -257,11 +258,11 @@ axes system and (c) creating additional axis.
 
 Floating axes are not linked to any reference. They are placed randomly, and represent arbitrary range of data.Floating axes creation and editing tools in iCAD can be invoked from the menu commands shown below.
 
-<img src="./media/image 1.png"> 
+<img src="./media/Image 1.png"> 
 
 They can also be invoked directly from the toolbar menu.
 
-<img src="./media/image 2.png">
+<img src="./media/Image 2.png">
 
 *The toolbar items are, from left to right, for New Axis creation, Editing an existing Axis, and creating a unit axis.*
 
@@ -337,11 +338,11 @@ To create a unit axes:
 1. Start `CAD Tools > Make Unit Axes`. The *Flex Plot Action* dialog appears.
 1. Select *Plot to BBox (AutoCAD)* option, and hit `Continue`.
 
-    <img src="./media/image 3.png">
+    <img src="./media/Image 3.png">
 1. AutoCAD is in select mode. Pick the circle object.
 
 This will generate the desired axis, deletes the circle object, and creates a diagonal refernced object.
-<img src="./media/image 4.png" style="width:6in">
+<img src="./media/Image 4.png" style="width:6in">
 
 1. In the *Edit Variables* dialog, set the Abcsisa and Ordinate range variables to *User*, and leave the default [0, 1] on both.
 
@@ -416,7 +417,7 @@ style="width:7in" />
 An alignment line is a polyline object drawing in AutoCAD that represents a layout instance of a canal route, or similar. Marking an alignment is the task of putting station markers along the alignment at specified intervals and text orientation.
 
 To create markers along an alignment use below steps:
-<img src="./media/image 6.png">
+<img src="./media/Image 6.png">
 
 1. Start the menu `CAD Tools > Mark Alignment` menu command, or the tool bar option. AutoCAD will be ready in select mode, promoting *Pick Alignment object to Mark:* 
    
@@ -495,81 +496,71 @@ Alignment objects should be drawn using the polyline object tool on a
 contour plot and reference it. Prepare the alignment object in this
 manner and:
 
-<img src="./media/image27.png"
-style="width:3.99028in;height:0.98681in" /> 1. Invoke the **CAD Tools \>
+1. Invoke the **CAD Tools \>
 Extract Profile** module. When the JET dialog appears, set the values of
 each variable as appropriate.
 
-- Link an object hosting cloud of spot data (the surveyors list of x,y,z
+     <img src="./media/image27.png"
+style="width:3.99028in;height:0.98681in" /> 
+
+    - Link an object hosting cloud of spot data (the surveyors list of x,y,z
   pairs) to the *Cloud source* variable.
 
-- Link the referenced alignment route object to the *Plan Layout*
+    - Link the referenced alignment route object to the *Plan Layout*
   object.
 
-- Select the desired offset settings from the dropdown list, or provide
+    - Select the desired offset settings from the dropdown list, or provide
   a different offset specification.
 
-**Tip**: The notation *\[start: increment: end\]* can be used to specify
+    **Tip**: The notation *\[start: increment: end\]* can be used to specify
 offset locations. \[-2:1:3\] for instance is the same as \[-2, -1, 0, 1,
 2, 3\].
 
-**Note**: Offsets are specified from left to right, facing towards the
+    **Note**: Offsets are specified from left to right, facing towards the
 beginning of the alignment object. For profile alignment along a river
 centerline, for example, the offset is specified from left bank to right
 bank, facing upstream.
 
-**Note**: The module can generate strip profile for a maximum of 29
+    **Note**: The module can generate strip profile for a maximum of 29
 transverse data points.
 
-**Note**: The cloud data source should be referenced to an iCAD
+    **Note**: The cloud data source should be referenced to an iCAD
 generated local axes system.
 
-**Tip**: Use 0 (or defualt ***\*0 Only at center line*** to generate
+    **Tip**: Use 0 (or defualt ***\*0 Only at center line*** to generate
 data along the center only.
 
-Accept the input values, and continue. Provide further inputs in the
+    Accept the input values, and hit `>>` to continue. Provide further inputs in the
 *Edit Variables* dialog as follows:
 
-<img src="./media/image28.png"
-style="width:2.85347in;height:1.82708in" />1. *Starting Station (m)*:
-Input starting station for the alignment route. Default is 0.00
+    <img src="./media/image28.png"
+style="width:2.85347in;height:1.82708in" />
 
-2\. *Incremental Distance (m):* The desired spacing between successive
-profile data points. Default is 20m interval.
+    - *Starting Station (m)*: Input starting station for the alignment route. Default is 0.00
 
-3\. *Include Vertex (-):* Specify whether to include vertex points of
-the alignment in profile data. Settings **Yes** forces data to be read
-at vertex points. If **No** is used data points are extracted only at
-incremental locations.
+    - *Incremental Distance (m):* The desired spacing between successive profile data points. Default is 20m interval.
+    
+    - *Include Vertex (-):* Specify whether to include vertex points of the alignment in profile data. Settings **Yes** forces data to be read at vertex points. If **No** is used data points are extracted only at incremental locations.
 
-Click **Apply** to preview the profile data.
+    Click **Apply** to preview the profile data.
 
-3\. Click on the *Data Table* toolbar in **Data Liveiw** to get the
-numerical data for further use.
+2. Click on the *Data Table* toolbar in **Data Liveiw** to get the numerical data for further use.
 
-<img src="./media/image29.png" style="width:6.5in;height:1.76667in" />
+    <img src="./media/image29.png" style="width:6.5in" />
 
-<img src="./media/image30.png"
-style="width:3.02132in;height:1.44017in" />
+    <img src="./media/image30.png" style="width:3.02132in" />
 
-<img src="./media/image31.png" style="width:6.5in;height:1.86806in" />
+    <img src="./media/image31.png" style="width:6.5in" />
 
-Note: If offset stations are provided, the profile will be plotted along
+    Note: If offset stations are provided, the profile will be plotted along
 with a band data indicating the variation of the ground level in the
 transverse direction.
 
-<img src="./media/image32.png"
-style="width:3.06458in;height:1.52361in" />When done, go to **Sessions
-\> Save** to save the extracted profile data. This will save the data to
-the alignment route object itself. The object can then be used as a
-source object for further design or analysis work, as for example in
-canal reach design.
+    <img src="./media/image32.png" style="width:4.06458in" />
 
-Note: For **Save** to be successful, the alignment route object should
-already be in the current collection of iCAD workspace. If an object is
-listed in the left box in unguided mode, it is in the current
-collection. If not, use **Workspace \> Pick Collection** or CTRL+K to
-add objects to the current collection.
+When done, go to **Sessions \> Save** to save the extracted profile data. This will save the data to the alignment route object itself. The object can then be used as a source object for further design or analysis work, as for example in canal reach design.
+
+> :bulb: **Note**: For **Save** to be successful, the alignment route object should already be in the current collection of iCAD workspace. If an object is listed in the left box in unguided mode, it is in the current collection. If not, use **Workspace \> Pick Collection** or CTRL+K to add objects to the current collection.
 
 ### Modify extracted data
 [Back to ToC](#table-of-contents)
@@ -605,41 +596,40 @@ center line) .This method helps when there is no cloud data source
 available, and only centerline profile data is available. Consider the
 center line profile data as shown in the figure below.
 
-1\. First, create a tentative layout object of comparable scale. (See
+1. First, create a tentative layout object of comparable scale. (See
 *Creating Local Axis* chapter earlier in this section to learn how to
 create axes and associate objects to it.) This object will host the
 profile data you will generate.
 
-<img src="./media/image34.png" style="width:6.5in;height:2.62778in" />2.
-Start **CAD Tools \> Extract Profile.** Choose the center line profile
+    <img src="./media/image34.png" style="width:6.5in" />
+
+2. Start **CAD Tools \> Extract Profile.** Choose the center line profile
 as the cloud source, and the layout object as the *Plan Layout* object.
 Choose or set the desired offset locations for the strip profile
 generation.
 
-<img src="./media/image36.png"
-style="width:2.74236in;height:1.75625in" />3. Set extraction variables
-to your needs, or accept the defaults. Choose *Apply* and continue.
+    <img src="./media/image36.png" style="width:2.74236in" /> {br}
 
-<img src="./media/image37.png"
-style="width:2.86528in;height:1.15764in" />4. On the *Choose Action*
-dialog, you can choose to specify an object for transverse profile, or
-choose to make it flat. For illustration, a small profile is prepared on
-the vertical axis (shown in zoom) extending between -14.5 and 20.8,
-covering the offset dimensions specified above.
+ 
+ 3. Set extraction variablesto your needs, or accept the defaults. Choose *Apply* and continue.
 
-<img src="./media/image38.png"
-style="width:1.93611in;height:1.87431in" />Note: Duing data generation,
-the transverse profile object at its STA=0.0 is snapped to the
-centerline elevation profile at each increment point. Hence, the
-variation of elevation is important rather than the elevation at which
-it is drawn.
+    <img src="./media/image37.png" style="width:2.86528in;height:1.15764in" />
+    
+ 4. On the *Choose Action* dialog, you can choose to specify an object for transverse profile, or choose to make it flat. For illustration, a small profile is prepared on
+the vertical axis (shown in zoom) extending between -14.5 and 20.8, covering the offset dimensions specified above.
 
-Choose *Yes (Pick Obj).* AutoCAD will be in Select mode. Go to AutoCAD
-and pick the transvers profile object.
+    <img src="./media/image38.png" style="width:0.93611in" />
+ 
+    Note: Duing data generation, the transverse profile object at its STA=0.0 is snapped to the centerline elevation profile at each increment point. Hence, the variation of elevation is important rather than the elevation at which it is drawn.
 
-The profile is generated, as shown. You can save and use data
+    Choose *Yes (Pick Obj).* AutoCAD will be in Select mode. Go to AutoCAD and pick the transvers profile object.
 
-<img src="./media/image39.png" style="width:6.5in;height:3.1461in" /><img src="./media/image40.png" style="width:6.5in;height:3.1461in" /><img src="./media/image41.png" style="width:6.5in;height:3.1461in" /><img src="./media/image42.png" style="width:6.5in;height:3.1461in" /><img src="./media/image43.png" style="width:6.5in;height:3.1461in" />
+    The profile is generated, as shown. You can save and use data
+
+    <img src="./media/image39.png" style="width:6.5in;height:3.1461in" />
+    
+    
+    <img src="./media/image43.png" style="width:6.5in" />
 
 ### Batch processing profiles
 [Back to ToC](#table-of-contents)
@@ -653,21 +643,17 @@ helpful for instance when preparing a system of canal layouts for
 design. Essentially, the preferences and data extraction settings will
 apply to all profile data. To use this method.
 
-1\. Prepare all your layout objects, as you would normally for profile
+1. Prepare all your layout objects, as you would normally for profile
 data extraction. This includes, referencing to a common axis. Then
 instance all the alignment objects using a host object. (See *Using CAD
 Objects Extractor, Instantiation* in this section).
 
 <img src="./media/image49.png"
-style="width:2.97153in;height:0.87847in" />2. Start **CAD Tools \>
-Extract Profile.** Choose your cloud source, and offset settings as you
-would normally. Choose the instance object for *Plan Layout* variable.
-Continue to generate the profile for objects. A progress bar will show
-status.
+style="width:2.97153in;height:0.87847in" />
 
-Note: The profile data for each Alignment object is generated and saved
-automatically. There will be no preview or interim processing of the
-data. Use the steps discussed above to view/review the extracted data.
+2. Start **CAD Tools \>Extract Profile.** Choose your cloud source, and offset settings as you would normally. Choose the instance object for *Plan Layout* variable. Continue to generate the profile for objects. A progress bar will show status.
+
+    > Note: The profile data for each Alignment object is generated and saved automatically. There will be no preview or interim processing of the data. Use the steps discussed above to view/review the extracted data.
 
 
 ## Data Visualization
@@ -692,7 +678,9 @@ Once in DataLiveiw, each data series can be viewed or processed
 separately. Tools are accessible by right clcking on the data points.
 
 <img src="./media/image59.png"
-style="width:4.61944in;height:3.64375in" />**Toggle Line**: Switches
+style="width:4.61944in;height:3.64375in" />
+
+**Toggle Line**: Switches
 on/off the connecting line between data points
 
 **Line Style**: Changes the line style of the connecting line
@@ -831,11 +819,11 @@ two fields:
 
 Ordinary — Ordinary (unadjusted) R-squared
 
-$$R^{2} = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
+R^2^ = SSR/SST= 1-SSE/SST
 
 Adjusted — R-squared adjusted for the number of coefficients:
 
-$$R_{adj}^{2} = 1 - \left( \frac{n - 1}{n - p} \right)\left( \frac{SSE}{SST} \right)\ $$
+R^2^= 1-(n-1)/(n-p)(SSE/SST)
 
 - SSE is the sum of squared error, SSR is the sum of squared regression,
   SST is the sum of squared total, n is the number of observations, and
@@ -891,8 +879,10 @@ Notice:
 - Velocity column is listed multiplied by 50x for ease of visibility
 
 <img src="./media/image64.png"
-style="width:6.56736in;height:3.90903in" /><img src="./media/image65.png"
 style="width:6.56736in;height:3.90903in" />
+
+<img src="./media/image65.png"
+style="width:6.56736in" />
 
 The standard way to visualize stage-discharge relationship is Discharge
 on abscissa and stage on the ordinate axes. But our data comes with
@@ -931,14 +921,10 @@ style="width:6.53313in;height:4.68948in" />
 ## Using CAD Objects Extractor
 [Back to ToC](#table-of-contents)
 
+The CAD Object extractor module helps to explore and use AutoCAD objects and their properties in the iCAD workspace. The most common use of the module is to extract geometric properties, such as area, length or vertex coordinates and make this data available for subsequent processing.
+
 <img src="./media/image73.png"
 style="width:4.70764in;height:0.8375in" />
-
-The CAD Object extractor
-module helps to explore and use AutoCAD objects and their properties in
-the iCAD workspace. The most common use of the module is to extract
-geometric properties, such as area, length or vertex coordinates and
-make this data available for subsequent processing.
 
 ### Collecting and Managing Objects in to the Extractor
 [Back to ToC](#table-of-contents)
@@ -953,38 +939,31 @@ AutoCAD object Coordinates.*
 
 To add objects:
 
-8.  Use \[+\] button. AutoCAD will be in select mode.
+1. Use \[+\] button. AutoCAD will be in select mode.
 
-9.  Pick the object(s) you want, and right-click when done. The objects
-    are read in to the interface and their property displayed.
+2. Pick the object(s) you want, and right-click when done. The objects are read in to the interface and their property displayed.
 
-Note: Only polyline objects can be collected in to the table.
+    > Note: Only polyline objects can be collected in to the table.
 
 To remove object(s):
 
-10. Select the checkbox for the object you want to remove from the list
+1. Select the checkbox for the object you want to remove from the list
 
-11. Use the \[x\] button.
+2. Use the \[x\] button.
 
-<img src="./media/image77.png"
-style="width:4.88333in" />
+    <img src="./media/image77.png" style="width:4.88333in" />
 
-Tip: You can check/uncheck
-the *Select All* checkbox at the bottom left, to select or deselect the
-whole collection.
+    Tip: You can check/uncheck the *Select All* checkbox at the bottom left, to select or deselect the whole collection.
 
-**Show ZTag**: Normally objects are listed using the Tag information
-provided in AutoCAD. Alternatively you can view the elevation of the
-objects by checking this box. The table would change as shown.
+To manage display and highlighting, use below tools:
 
-Note: You have to select objects after checking the box.
+- **Show ZTag**: Normally objects are listed using the Tag information provided in AutoCAD. Alternatively you can view the elevation of the objects by checking this box. The table would change as shown.
 
-<img src="./media/image78.png"
-style="width:4.12321in;height:4.77143in" />
+    > Note: You have to select objects after checking the box.
 
-**Highlight objects in
-AutoCAD**: This interactive feature highlights the currently selected
-object(s) in the table in AutoCAD.
+    <img src="./media/image78.png" style="width:4.12321in;height:4.77143in" />
+
+- **Highlight objects in AutoCAD**: This interactive feature highlights the currently selected object(s) in the table in AutoCAD.
 
 ### Exporting Data 
 [Back to ToC](#table-of-contents)
@@ -1002,30 +981,29 @@ Export the table as is for use in a word or excel document.
 
 Check the *Table Data*  radio (circle marker)
 
-13. Click on *Go Copy…* button.
+1. Click on *Go Copy…* button.
 
-14. Go to you word or excel document and paste.
+1. Go to you word or excel document and paste. 
 
+ 
 Extract and export coordinates of the selected objects:
 
-   <img src="./media/image81.png"
-    style="width:2.91667in" />
-    <img src="./media/image82.png"
-    style="width:3.91667in" />
+1. Check the *Coordinates* radio button
+
+   <img src="./media/image81.png" style="width:2.91667in" />
+
+    <img src="./media/image82.png" style="width=2in">
     <img src="./media/image83.png"
-    style="width:3.91667in" />
+    style="width:2.91667in" />
     
-    Check the *Coordinates* radio button
+ 
+1. Click *Go Copy…* button.
+ 
+1. Choose *Sparse Data (X,Y,Z pair)* and click on *Copy to clipboard.*
 
-16. Click *Go Copy…* button.
+1. Go to your word or excel document and paste.
 
-17. Choose *Sparse Data (X,Y,Z pair)* and click on *Copy to clipboard.*
-
-18. Go to your word or excel document and paste.
-
-Note: This tool allows to extract parametric plots for further
-processing. A useful application is in digitizing design charts. Request
-advanced features guide for details.
+    Note: This tool allows to extract parametric plots for further processing. A useful application is in digitizing design charts. Request advanced features guide for details.
 
 ### Instantiation
 [Back to ToC](#table-of-contents)
@@ -1045,22 +1023,22 @@ allows batch processing for many tasks including:
 
 - Extract BoQ
 
-<img src="./media/image87.png"
-style="width:4.32014in" />
+    <img src="./media/image87.png" style="width:4.32014in" />
 
 The CAD Extract interface
 allows to interactively manage instantiation of objects. To use it:
 
-1.  <img src="./media/image87.png"
+1. Clear contents and add an instance object. The instance object is imported along with the instanced objects. Here an object hosting one other object named Block50 is shown.
+
+    <img src="./media/image87.png"
     style="width:4.32014in" />
     
-    Clear contents and add an instance object. The instance object is imported along with the instanced objects. Here an object hosting one other object named Block50 is shown.
-
+    > Note: The *Loaded Instances* panel is populated and the update button activated.
+   
     <img src="./media/image88.png" style="width:2.4375in" />
 
 
-    Note: The *Loaded Instances* panel is populated and the update button activated.
-
+ 
 2.  Add the other objects in AutoCAD that you want to append to the host or instance object (denoted with (+) suffix). You can do this using the \[+\] button as described above. For this example four farm blocks are added to the list.
 
     Alternatively, use the +\[L\] button at the bottom row to import objects contained in a Layer. In the *Pick Layer* dialog, select the layer containing your objects and click OK. This will import all objects on the selected layer to the CAD Extract table.
