@@ -13,17 +13,7 @@ unique workflow that allows analysis and design of a long retaining wall
 with different segments, each with separate height and bottom width
 definition.
 
-## Conventions:
-
-The following conventions apply to while using the **Retaining Wall Design** module.
-
-- Water tables and fill heights are measured from the base of the wall.
-
-- Section view (unless in Flip Mode) is from left to right facing the beginning of the alignment route.
-
-The workflow for using the module is described below in sequence. {br}
-
-# Table of Contents
+## Table of Contents
 
 <!--TOC-->
 - [Prepare Objects](#prepare-objects)
@@ -45,10 +35,21 @@ The workflow for using the module is described below in sequence. {br}
   - [Geometric Limitations](#geometric-limitations)
 <!--/TOC-->
 
+
+## Conventions:
+
+The following conventions apply to while using the **Retaining Wall Design** module.
+
+- Water tables and fill heights are measured from the base of the wall.
+
+- Section view (unless in Flip Mode) is from left to right facing the beginning of the alignment route.
+
+The workflow for using the module is described below in sequence. {br}
+
 A typical workflow process for the use of this module is shown in the
 illustration. Each step is described in detail in subsequent sections.
 
-# Prepare Objects
+## Prepare Objects
 [Back to ToC](#table-of-contents)
 
 
@@ -70,7 +71,7 @@ These objects are needed for retaining walls with varying heights along the long
 
   > Note: It is important to have sufficient length of equal wall height along the length of the wall. Otherwise, the next step(s) may fail to proceed.
 
-# Define and Start Session
+## Define and Start Session
 [Back to ToC](#table-of-contents)
 
 To define the design session:
@@ -102,7 +103,7 @@ To define the design session:
 
     The interface is now to proceed to the next step.
 
-# ID Segments
+## ID Segments
 [Back to ToC](#table-of-contents)
 
 If the wall face is displayed in the interface, you can skip to the next step
@@ -131,7 +132,7 @@ style="width:4.39514in;height:2.96042in" />
     <img src="./media/image35.png"
 style="width:2.31944in;height:1.3125in" />
 
-# Edit/Review Parameters
+## Edit/Review Parameters
 [Back to ToC](#table-of-contents)
 
 Edit the settings for the different aspects of design and analysis from
@@ -308,8 +309,9 @@ acting on the retaining wall body. A list of common materials are built
 into the variables and reference values are available as shown in the
 screenshot next to the table.
 
-<img src="./media/image17.png"
-style="width:2.59375in;height:1.45278in" />
+<img src="./media/image17.png" style="width:6.59375in" />
+
+
 
 <table>
 <colgroup>
@@ -477,7 +479,7 @@ Note:
 - A list of preset materials are available to help choose the right
   material, or specify a different one.
 
-# Design Sections
+## Design Sections
 [Back to ToC](#table-of-contents)
 
 <img src="./media/image12.png"
@@ -686,7 +688,7 @@ locations, and a profile re-extracted.
 Walls may not be rendered fully, if WallTop and WallBottom coordinates
 do not strart at beginning and end of profile data.
 
-# Technical Notes
+## Technical Notes
 [Back to ToC](#table-of-contents)
 
 The product identifies segments along the alignment route of the wall.
@@ -695,12 +697,12 @@ height dimension, and label them in to segments. Each segment can then
 be designed separately to determine the bottom width that gives a stable
 structure.
 
-## Earth Pressure Calculation
+### Earth Pressure Calculation
 [Back to ToC](#table-of-contents)
 
 Earth pressure is computed from the relationship
 
-<img src="./media/image 001.png">
+<img src="./media/Image 001.png">
 
 Where <em>γ</em> is the unit weight of the back fill material, H is the back
 fill height, and K~a~ and K~p~ are active and passive pressure coefficients,
@@ -709,11 +711,11 @@ respectively, that depends on the method of analysis.
 Rankins Concept: Active pressure coefficient in this concept is
 determined from (Hunt 1986) (Arrora 2004) (Geo5 2005-2017) (W. 1999):
 
-<img src="./media/image 002.png">
+<img src="./media/Image 002.png">
 
 Coulomb’s concept: Active pressure in this concept is determined from
 
-<img src="./media/image 003.png">
+<img src="./media/Image 003.png">
 
 Where &phi; is the angle of internal friction, &alpha; is the back face
 inclination of structure, &delta; is the angle of friction between structure
@@ -733,40 +735,40 @@ passing through the heel of the retaining wall. Users can specify
 failure surfaces as fits their design problem, regardless of the method
 for computing pressure coefficients.
 
-## Pressure Coefficients on Cohesive soils
+### Pressure Coefficients on Cohesive soils
 [Back to ToC](#table-of-contents)
 
 Coulomb’s theory for cohesive soils estimates coefficient of active
 earth pressure from:
 
-<img src="./media/image 004.png">
+<img src="./media/Image 004.png">
 
 Corresponding crack location is computed from:
 
-<img src="./media/image 005.png">
+<img src="./media/Image 005.png">
 
 Where &gamma;~t~ is unit weight of backfill material, c~eff~ is the effective cohesion, K~ac~ is the coefficient of pressure due to cohesion, and K~a~ is the coefficient of active earth pressure. In computation, h~o~ can’t exceed the thickness of the topmost layer, or depth to water table in the backfill, whichever is smaller.
 
-## Hydrostatic and Hydrodynamic Pressure
+### Hydrostatic and Hydrodynamic Pressure
 [Back to ToC](#table-of-contents)
 
 Hydrostatic pressure is computed using
 
-<img src="./media/image 006.png">
+<img src="./media/Image 006.png">
 
 
 Hydrodynamic pressure is computed from the gradient relationship
 
-<img src="./media/image 007.png">
+<img src="./media/Image 007.png">
 
 Where h~w~ is the difference in water is surface elevation, d~d~ and
 d~u~ are the depth of the water table at heel and toe side respectively.
 
-<img src="./media/image 008.png">
+<img src="./media/Image 008.png">
 
 Where &gamma;~sat~ is the saturated unit weight of the earth body.
 
-## Pressure from external loads
+### Pressure from external loads
 [Back to ToC](#table-of-contents)
 
 
@@ -774,7 +776,7 @@ Pressure distribution from uniformly distributed, line or point loads on the gra
 
 **Uniformly distributed loads:**
 
-<img src="./media/image 009.png">
+<img src="./media/Image 009.png">
 
 
 
@@ -783,13 +785,13 @@ coefficient of active earth pressure.
 
 **Line loads:**
 
-<img src="./media/image 010.png">
+<img src="./media/Image 010.png">
 
 Where n and m are distance factors.
 
 **Point Loads:**
 
-<img src="./media/image 011.png">
+<img src="./media/Image 011.png">
 
 Where the European code of practice applies, the design approach is set
 by the user to available options. The following load factors apply
@@ -804,7 +806,7 @@ calculated.
 Table: Values of partial factors in Design Approach 1 (DA1-1, DA1-2)
 (Adrew J. Bond 2013)
 
-## Stability Analysis
+### Stability Analysis
 [Back to ToC](#table-of-contents)
 
 Stability against acting loads is verified using five parameter test,
@@ -818,7 +820,7 @@ below.
 <img src="./media/image34.png"
 style="width:2.84609in;height:1.92569in" />
 
-<img src="./media/image 012.png">
+<img src="./media/Image 012.png">
 
 Where &Sum;M~-ve~ is summation of negative or destabilizing moments,
 &Sum; M~+ve~ is summation of positive or stabilizing moments,
@@ -826,7 +828,8 @@ Where &Sum;M~-ve~ is summation of negative or destabilizing moments,
 eccentricity, c’ is cohesion of foundation soil, and q is the stress at the
 bottom of the wall (heel and toe respectively).
 
-## Geometric Limitations
+### Geometric Limitations
+[Back to ToC](#table-of-contents)
 
 The ***RetwallDesign*** module can model most wall shapes including T or
 cantilever walls, semi-gravity and gravity walls, subject to the
@@ -837,3 +840,7 @@ following limitations:
 - Unguided use of the module, without adequate technical support, for Wall sizes greater than 7 meters is not recommended.
 
 - The solution may abort with unhandled error if calculated cut profiles do not intersect NGL. This may happen for large bottom width dimensions.
+
+[Back to Toc](#table-of-contents)
+
+END.

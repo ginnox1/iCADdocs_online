@@ -69,7 +69,7 @@ The guide is organized as follows. Navigate to your desired topic to learn more.
 
 [7. Retaining Wall Design](RetainingWallDesign/RetainingWallDesign.md) {br}
 
-[8. TerraForm Module](Terraform/terraform.md)
+[8. TerraForm Module](TerraForm/TerraForm.md)
 
 '9. ChartView Module [Under Development]()
 

@@ -233,10 +233,10 @@ Route curvatures meeting all these requirements are succesfully extracted as cur
 
 The schematic below shows detailed curve information extracted.
 
-<img src="./Images/Image%20curve2.png" style="width:4in">
+<img src="./Images/Image curve2.png" style="width:4in">
 
 
-<img src="./Images/cadcurve.png" style="width:4in">
+<img src="./Images/cadCurve.png" style="width:4in">
 
 
 

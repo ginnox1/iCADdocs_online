@@ -6,15 +6,11 @@ Rating of natural streams can be developed using the product module
 USGS, providing a convenient solution environment for interactive input
 and output of solutions. 
 
-<figure> 
-    <img src="./media/image18.png"
-         alt="Sample Rating curve image" style="width:4in">
-    <figCaption>A solved rating curve for a cross-section.<figCaption>
-</figure>
+<img src="./media/image18.png" style="width:4in">
 
+*A solved rating curve for a cross-section*.
 
-
-# Table of Contents
+## Table of Contents
 <!--TOC-->
   - [Conventions:](#conventions)
   - [Typical Workflow](#typical-workflow)

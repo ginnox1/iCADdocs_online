@@ -14,6 +14,36 @@ and design weirs on different foundation material with due diligence.
 Note: This module covers all design aspects, except the design of
 abutment structures which is solved using a different module.
 
+## Table of Contents
+<!--TOC-->
+  - [Conventions](#conventions)
+  - [Workflow](#workflow)
+  - [Prepare Object types](#prepare-object-types)
+  - [Defining the session](#defining-the-session)
+  - [Transverse design](#transverse-design)
+  - [Hydraulic Parameters](#hydraulic-parameters)
+  - [Sluice bay dimensions](#sluice-bay-dimensions)
+  - [Transverse Dimensions](#transverse-dimensions)
+  - [Abutment Provisssions](#abutment-provisssions)
+  - [Longitudinal Design](#longitudinal-design)
+    - [Longitudinal Dimensions](#longitudinal-dimensions)
+    - [Overflow Section](#overflow-section)
+    - [Surface flow analysis:](#surface-flow-analysis)
+    - [Sub-surface flow analysis:](#sub-surface-flow-analysis)
+    - [Cutoff-Dimensions](#cutoff-dimensions)
+  - [Downstream Apron design and Dimensions](#downstream-apron-design-and-dimensions)
+  - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
+  - [The Sluice Bay section Design](#the-sluice-bay-section-design)
+  - [Outlet Designs and Settings](#outlet-designs-and-settings)
+  - [Technical Notes:](#technical-notes)
+    - [Overflow rating:](#overflow-rating)
+    - [Surface hydraulics:](#surface-hydraulics)
+    - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
+    - [Stability analysis:](#stability-analysis)
+    - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
+    - [References:](#references)
+<!--/TOC-->
+
 ## Conventions
 
 - Draw Weir Axis, from Left to Right, Face-upstream view
@@ -35,64 +65,28 @@ The module creates a tentative design using default parameters, and
 displays that design. Other project specific data and information are
 provided in-process. There are two steps to input these informations:
 
-- change the view to as desired view. There can be upto 5 views available including:
-    - Transverse view
-    - Longitudinal Section view (across the main overflow section, left and/or right sluice bays)
-    - Outlet seection views (across the left and/or right side outlets)
-
+- change the view to as desired view. There can be upto 5 views available, including transverse, up to three longitudinal views, and up to two outlet section views.
 - start the variable editor to edit inpus to parameters relevant to the view.
 
 A typical weir design task using iCAD follows the steps outlined below.
 
-## Table of Contents
-<!--TOC-->
-- [Prepare Object types](#prepare-object-types)
-- [Defining the session](#defining-the-session)
-- [Transverse design](#transverse-design)
-  - [Hydraulic Parameters](#hydraulic-parameters)
-  - [Sluice bay dimensions](#sluice-bay-dimensions)
-  - [Transverse Dimensions](#transverse-dimensions)
-  - [Abutment Provisssions](#abutment-provisssions)
-- [Longitudinal Design](#longitudinal-design)
-  - [Longitudinal Dimensions](#longitudinal-dimensions)
-  - [Overflow Section](#overflow-section)
-    - [Surface flow analysis:](#surface-flow-analysis)
-    - [Sub-surface flow analysis:](#sub-surface-flow-analysis)
-    - [Cutoff-Dimensions](#cutoff-dimensions)
-  - [Downstream Apron design and Dimensions](#downstream-apron-design-and-dimensions)
-  - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
-  - [The Sluice Bay section Design](#the-sluice-bay-section-design)
-  - [Outlet Designs and Settings](#outlet-designs-and-settings)
-- [Technical Notes:](#technical-notes)
-  - [Overflow rating:](#overflow-rating)
-  - [Surface hydraulics:](#surface-hydraulics)
-  - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
-  - [Stability analysis:](#stability-analysis)
-  - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
-  - [References:](#references)
-<!--/TOC-->
 
 
-# Prepare Object types
+## Prepare Object types
  [Back to Toc](#table-of-contents)
 
-Prepare three objects, namely (a) the weir axis object, (b) the stream
-cross-section object downstream of the weir axis, and (c) a data host
-object, as described here.
-
-1. The Weir Axis
+To use this module, prepare three objects:
+- the weir axis object
+- the stream cross-section object downstream of the weir axis that is rated using ChannelRate_WSPRO module, and 
+- a data host object, as described here under.
+ 
 
     <img src="./media/image6.png"
 style="width:4.09565in;height:4.08296in" />
 
-    The axis line should cover the expected weir position in the head work
-area and some more. Draw the axis using the AutoCAD polyline tool, and
-reference it to axes pairs drawn to AutoCAD WCS. Run a profile extraction session with sufficient offset detail for both incremental distance and offset
-distance. Often it may suffice to use 2.5m intervals, using -10:2.5:20.
+1. **The weir Axis object**: The axis line should cover the expected weir position in the head work area and some more. Draw the axis using the AutoCAD polyline tool, and reference it to axes pairs drawn to AutoCAD WCS. Run a profile extraction session with sufficient offset detail for both incremental distance and offsetbdistance. Often it may suffice to use 2.5m intervals, using -10:2.5:20.
 
-2. Rated Downstream section
-
-    This object is the river cross-section profile, processed using **ChannelRate_WSPRO** module, and containing solved data for the stage-discharge relation ship to be used. This must be located some distance downstream of the expected weir end.
+2. **Rated Downstream section**: This object is the river cross-section profile, processed using **ChannelRate_WSPRO** module, and containing solved data for the stage-discharge relation ship to be used. This must be located some distance downstream of the expected weir end.
 
     > :bulb: **Tip**: To Check appropriate data are readily available on the
 cross-section object, collect the object to the workspace, click on it,
@@ -100,17 +94,12 @@ and hit the **Preview Data on Current Object** tool button. If the data
 is available, the data preview table interface launches listing the
 stored data..
 
-    <img src="./media/image18.png" style="width:6.5in;height:4.43056in" />
+    <img src="./media/image18.png" style="width:6.5in" />
 
     > Note: This object is not required during session definition. However, it is required immediately upon running the defined session,
 
-3. The Date Host Object
-
-    A third object is needed to complete the session definition. This object
-stores all the information regarding the design process at all times.
-Any object can be used as a host. It is strongly recommended to use the
-appropriate shape from `CAD Tools > Create Host Objects`. To create the
-host object from this list:
+3. **The Date Host Object**: A third object is needed to complete the session definition. This object stores all the information regarding the design process at all times. Any object can be used as a host. It is strongly recommended to use the appropriate shape from `CAD Tools > Create Host Objects`. To create the
+host object:
 
     1. Start the `CadTools > Create Host Objects` tool.
     2. Prepare in AutoCAD a diagonal line that is somewhat equal in height and width using the polyline tool.
@@ -123,11 +112,11 @@ This will do two things:
 
 2)  assign a Tag string to the Object, that makes it easy to identify it in subsequent processes.
 
-    <img src="./media/image28.png" style="width:6.5in;height:2.94444in" />{br}
+    <img src="./media/image28.png" style="width:6.5in" />
 
     >NOTE: If this object in AutoCAD is DELETED, all the information saved will be inaccessible permanently.
 
-# Defining the session
+## Defining the session
  [Back to Toc](#table-of-contents)
 
 Before defining a new session, it is best practice to clear iCAD work space from the workspace browser or `Ctrl`+`0`. Then continue as follows:
@@ -152,7 +141,7 @@ If all data are available as expected, the module will start by
 displaying the transverse cross-section view of the structure. This is
 the default starting view for the module.
 
-# Transverse design
+## Transverse design
  [Back to Toc](#table-of-contents)
 
 
@@ -336,7 +325,8 @@ The schematic below shows a right side sluice bay, with three bays, and a
 slightly raised crest. The gate dimensions are automatically sized and sketched.
 
 
-<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />
+<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />{br}
+
 
 See Technical notes, to learn how sluice bay capacity is determined.
 
@@ -415,9 +405,12 @@ of segments of the abutment wall portion beyond the upstream and
 downstream aprons, and on each side of the weir.
 
 The values are input as Angle, Length Pair. The angle is measured from
-abutment wall extension as shown below.
+abutment wall extension as shown below. {br}
 
-<img src="./media/image17.png" style="width:6.5in;height:3.11111in" /> {br}
+
+<img src="./media/image17.png" style="width:6.5in;height:3.11111in" /> 
+
+{br}
 
 <table>
 <colgroup>
@@ -463,7 +456,7 @@ abutment wall extension as shown below.
 
 This completes definition of the weir structure in the transverse view. As these are defined, the overflow hydraulics is computed and displayed, ready fo the next step of longitudinal design.
 
-# Longitudinal Design
+## Longitudinal Design
  [Back to Toc](#table-of-contents)
 
 Longitudinal design handles the sizing and detailing of the weir
@@ -482,7 +475,7 @@ The overall sizing of the elements of the weir are as follows.
 <img src="./media/image31.png"
 style="width:5.10502in;height:4.78768in" />
 
-## Longitudinal Dimensions
+### Longitudinal Dimensions
  [Back to Toc](#table-of-contents)
 
 <table>
@@ -589,14 +582,14 @@ Note the following key positions set automatically:
 
 <img src="./media/image41.png" style="width:6.5in;height:3.41667in" />
 
-## Overflow Section
+### Overflow Section
  [Back to Toc](#table-of-contents)
 
 This view displays the section along the main overflow region. It allows
 to handle the main design tasks of (a) surface flow analysis, (b) Sub-surface
 flow analysis, (c) downstream apron design. These are presented below.
 
- ### Surface flow analysis:
+### Surface flow analysis:
   [Back to Toc](#table-of-contents)
 
 Surface flow condition for the entire length of the structure, i.e.,    upstream, over flow, and downstream sections, are automatically evaluated for the current geometric and hydraulic set of parameters.
@@ -607,10 +600,10 @@ Surface flow condition for the entire length of the structure, i.e.,    upstream
 
 - The plotted flow surfaces and text info highlight the results.
 
-(For details on these calculations, see Technical Notes section further
+    (For details on these calculations, see Technical Notes section further
 below.)
 
-<img src="./media/image3.png" style="width:6.5in;height:4.08333in" />
+    <img src="./media/image3.png" style="width:6.5in;height:4.08333in" />
 
 
 
@@ -1071,14 +1064,14 @@ style="width:8.06875in;height:4.19028in" />
 Figure showing key longitudinal dimensions.
 
 
-# Technical Notes:
+## Technical Notes:
  [Back to Toc](#table-of-contents)
 
 This seciton provides important details about the important hydraulic calcualtions carried out by the module.
 
 
 
-## Overflow rating: 
+### Overflow rating: 
  [Back to Toc](#table-of-contents)
 
 The rating of flow over the weir body can be calculated using one of the
@@ -1111,7 +1104,7 @@ In this case the effective overflow length is calculated from
 Where L~o~ is the total available overflow length, and H~o~ is the
 overflow height.
 
-## Surface hydraulics: 
+### Surface hydraulics: 
  [Back to Toc](#table-of-contents)
 
 The pre-jump flow conditions are computed applying the energy equation
@@ -1183,7 +1176,7 @@ point.
 The value of **L~j~** is futher checked against the common practice of **L~j Final~ = max(L~j~, 5.5(EGL~us~ - EGL~ds~))**
 
 
-## Sub-Surface hydraulics:
+### Sub-Surface hydraulics:
  [Back to Toc](#table-of-contents)
 
 Khosla’s theory is applied to estimate subsurface flow head loss and
@@ -1209,7 +1202,7 @@ The cited reference materials provide sufficient detail on the
 theoretical basis and practical application of the formula above, as
 implemented in the module.
 
-## Stability analysis: 
+### Stability analysis: 
  [Back to Toc](#table-of-contents)
 
 The stability of the weir body and its component provisions are
@@ -1222,7 +1215,7 @@ Where **FS~OT~** is factor of safety against overturning, e=
 eccentricity, **q~heel,toe~** are stresses at heel and toe of the
 bottom of the weir structure.
 
-## Sluice Bay Hydraulics
+### Sluice Bay Hydraulics
  [Back to Toc](#table-of-contents)
 
 The basic relation ship for flow under sluice bay is given by:
@@ -1245,7 +1238,7 @@ The coefficient of discharge in both cases, for a given set of upstream
 and downstream hydraulic grade levels, are determined from the below
 chart.
 
-## References:
+### References:
  [Back to Toc](#table-of-contents)
 
 
