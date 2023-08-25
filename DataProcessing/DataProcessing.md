@@ -276,7 +276,7 @@ One can create new axes, or edit existing axes for their details as shown below.
 
 3. The variable editor dialog appears. Set axis limits for Abscisa and Ordinate as desired.
    
-   <img src="./media/Image%2041.png">
+   <img src="./media/Image 41.png">
    
    **WCS data**: Uses the AutoCAD World Coordinate System the object is located to create an axis. This will enlarge the BBox a little to set starting and ending positions.
    
@@ -286,7 +286,7 @@ One can create new axes, or edit existing axes for their details as shown below.
    
    > Note: The value sets are START, STEP, END.
    
-   <img src="./media/Image%2042.png" style="width:5in">
+   <img src="./media/Image 42.png" style="width:5in">
    
    *An axis from a diagonal line used as the bounding box, and using AutoCAD WCS option.*
 
@@ -301,7 +301,7 @@ The appearance and orientation of axis labels can be changed as follows.
 
 2. In the dialog, ckick on the first row second column cell, and pick the axis to edit in AutoCAD.
    
-   <img src="./media/Image%2044.png">
+   <img src="./media/Image 44.png">
 
 3. The dialog box populates the values of the current setting in the box. Edit as desired.
    
@@ -424,17 +424,17 @@ To create markers along an alignment use below steps:
 
 2. Pick the object for marking. If the object is not referenced, a dialog will apear to confirm the process. Accept and continue. If not, it will continue. 
    
-    <img src="./media/Image%20124.png">
+    <img src="./media/Image 124.png">
 
 3. If the Alignment has longitudinal informaiton, it will continue to step 4. If not,  a dialog will apear to confirm. Accept `Set New`. Input the deisred starting station for the object.
    
-    <img src="./media/Image%20125.png">
+    <img src="./media/Image 125.png">
    
-    <img src="./media/Image%20126.png">
+    <img src="./media/Image 126.png">
    
    Markers are created using default settings.
    
-    <img src="./media/Image%20128.png">
+    <img src="./media/Image 128.png">
    
    Start the command again, and select the marked alignment to edit the specification for the markers.
    
@@ -442,7 +442,7 @@ To create markers along an alignment use below steps:
 
 4. Upon selection of a marked object, the below dialog appears to change how the markers are displayed.
    
-    <img src="./media/Image%20127.png" style="width:4in">
+    <img src="./media/Image 127.png" style="width:4in">
    
    - **Begining Station**: Starting marker value. 
    
@@ -466,7 +466,7 @@ To create markers along an alignment use below steps:
    
    Partial stations can be marked by specifing statting and ending stations accordingly. For the above example, using 300, 900) will work out as below.
    
-    <img src="./media/Image%2052.png">
+    <img src="./media/Image 52.png">
    
 
 ## Generating profile data for Alignment routes
