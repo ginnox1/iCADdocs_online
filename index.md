@@ -16,11 +16,11 @@ This online resource provides guidance on all the key aspects about installaiton
 # Table of Contents
 Follow these links to navigate in this page.
 <!--TOC-->
-- [Updates](#updates)
-- [Online Documentation](#online-documentation)
-- [Installing and Licensing iCAD product](#installing-and-licensing-icad-product)
-  - [ProducrTiers](#producrtiers)
-- [Contacts](#contacts)
+  - [md#software-installation-setup-and-updates).
+
+If you](#mdsoftware-installation-setup-and-updates.-if-you)
+  - [it our website to get your copy of the license for tria](#it-our-website-to-get-your-copy-of-the-license-for-tria)
+  - [oductionToiCAD/Introduction_to_iCAD.md](#oductiontoicadintroduction_to_icad.md)
 <!--/TOC-->
 
 
@@ -28,15 +28,17 @@ Follow these links to navigate in this page.
 [Back to ToC](#table-of-contents)
 {br}
 
-iCAD softwware is updated with newly launched modules for Diversion weirs design, and embankements analysis. The latest version is Version 2.8 (Aug 2023) release. If you have not installed this latest release, follow the steps in the **Introduction to iCAD Software** document, chapter on [Installation, setup and guide notes](IntroductionToiCAD/introduction_to_icad.md#software-installation-setup-and-updates).
+iCAD softwware is updated with newly launched modules for Diversion weirs design, and embankements analysis. The latest version is Version 2.8 (Aug 2023) release. If you have not installed this latest release, follow the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
+
+IntroductionToiCAD/introduction_to_icad.md#software-installation-setup-and-updates).
 
 If you already have the newly released product, use the update resource to ensure you are using the latest and supported version of the software. Follow below steps: 
 
 * Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_notes_Aug23.md)
 
-* Download the [Latest update for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
+* Download the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
 
-* Follow the update instructions **Installing Update Resources** [here](introductiontoicad/introduction_to_icad.md#installing-update-resources) update your application. 
+* Follow the update instructions [Installing Update Resources here](SetupAndLicensingGuide/setupguide.md#installing-update-resources) to update your application. 
 
 
 > :bulb: **Important Notice**: Please note that a valid license is required to run the program, including for trials. Contact your provider or visit our website to get your copy of the license for trial or evaluation, or subscription.
@@ -77,12 +79,12 @@ The guide is organized as follows. Navigate to your desired topic to learn more.
 We are working to include resource on other modules, so stay tuned.
 
 
-# Installing and Licensing iCAD product
+# Licensing iCAD product
 [Back to ToC](#table-of-contents)
 
 iCAD and related products are copyright protected and licensed applications. You will need to install and license the products appropriately, in order for them to funciton properly.
 
-Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md) for commplete guidance.
+Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
 
 
 ## ProducrTiers
