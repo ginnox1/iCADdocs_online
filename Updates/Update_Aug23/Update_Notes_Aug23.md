@@ -1,6 +1,6 @@
 # iCAD Update Notes (Aug 2023)
 
-[Back to Home](..\index#online-documentation)
+[Back to Home](..\index#Updates)
 
 **Hello There,** 
 
