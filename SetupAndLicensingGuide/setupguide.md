@@ -1,6 +1,6 @@
 # iCAD and Related Products Setup and Licensing
 
-[Back to Home](..\index#online-documentation)
+[Back to Home](..\index#Updates)
 
 Welcome to iCAD, and Thank you for choosing to use it. This small guide
 will assist you to get your software up and running.
