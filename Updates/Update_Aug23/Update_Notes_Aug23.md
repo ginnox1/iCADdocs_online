@@ -1,6 +1,8 @@
 # iCAD Update Notes (Aug 2023)
 
-Hello There, 
+[Back to Home](..\index#online-documentation)
+
+**Hello There,** 
 
 Well come to this update. We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
 
