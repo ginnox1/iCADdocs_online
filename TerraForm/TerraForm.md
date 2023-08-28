@@ -1,6 +1,6 @@
 # TerraForm
 
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 The analysis and visualization of fill and cut works over ground
 surfaces brings a significant challenge to designers. iCAD’s new

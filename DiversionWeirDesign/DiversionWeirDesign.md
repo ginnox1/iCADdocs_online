@@ -1,6 +1,6 @@
 # Diversion Weir Design
 
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 iCAD offers the **Diversion Weir Design** product to handle the design
 of weirs and regulating structures in an interactive environment,

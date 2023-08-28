@@ -1,6 +1,6 @@
 # Retaining Wall Design
 
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 The design and analysis of retaining structures and abutment walls is
 carried out using the **RetwallDesign** product. It provides a unique

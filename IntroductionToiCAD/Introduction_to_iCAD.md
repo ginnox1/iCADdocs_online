@@ -1,5 +1,5 @@
 # Introduction to iCAD Software
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 This page gives an overall introduction to the software, its application and use. Use the ToC below to navigate through this page. Click on [Back to Home](..\index.md#online-documentation) above to navigate back to the home page.
 

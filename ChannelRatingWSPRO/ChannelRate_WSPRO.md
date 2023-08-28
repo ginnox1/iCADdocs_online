@@ -1,6 +1,6 @@
 # Rating Curve Development for River Sections
 
-[Back to Home](..\index.md#online-documentation)
+[Back to Home](..\index#online-documentation)
 
 Rating of natural streams can be developed using the product module
 ***ChannelRate_WSPRO***. The module is built on WSPRO98 algorithm from
