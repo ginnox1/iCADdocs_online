@@ -114,9 +114,9 @@ This will do two things:
 
 2)  assign a Tag string to the Object, that makes it easy to identify it in subsequent processes.
 
-    <img src="./media/image28.png" style="width:6.5in" />
+<img src="./media/image28.png" style="width:6.5in" />
 
-    >NOTE: If this object in AutoCAD is DELETED, all the information saved will be inaccessible permanently.
+>NOTE: If this object in AutoCAD is DELETED, all the information saved will be inaccessible permanently.
 
 ## Defining the session
  [Back to Toc](#table-of-contents)
