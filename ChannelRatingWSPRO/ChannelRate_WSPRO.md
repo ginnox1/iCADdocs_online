@@ -1,5 +1,6 @@
 # Rating Curve Development for River Sections
 
+[Back to Home](..\index.md#online-documentation)
 
 Rating of natural streams can be developed using the product module
 ***ChannelRate_WSPRO***. The module is built on WSPRO98 algorithm from
@@ -24,12 +25,6 @@ and output of solutions.
   - [Technical Notes](#technical-notes)
 <!--/TOC-->
 
-This module can be used to estimate tail water
-rating curve from:
-
-1.  A surveyors profile
-
-2.  Extracted profile from cross-section axes or layout.
 
 ## Conventions: 
 [Back to ToC](#table-of-contents)
@@ -37,6 +32,14 @@ rating curve from:
 Typically, this solution adopts the conventions from the WSPRO program.
 Cross-section coordinate stations are from left to right, facing
 downstream of the flow.
+
+This module can be used to estimate tail water
+rating curve from:
+
+1.  A surveyors profile
+
+2.  Extracted profile from cross-section axes or layout.
+
 
 ## Typical Workflow
 [Back to ToC](#table-of-contents)
@@ -60,7 +63,7 @@ This can be created in one of many ways. For instance:
 - A surveyor's profile data plotted on AutoCAD (preferably using iCAD modules)
 - A drawn cross-section (e.g. digitized from a scanned image.)
 
-<img src="./media/image20.png" style="width:7in">
+<img src="./media/Image20.png" style="width:7in">
 
 *A cross-section drawing in AutoCAD ready for use by the module.*
 
@@ -79,21 +82,21 @@ If not already, start iCAD application. This will link it to the existing AutoCA
 
 1. Start the module browser from `Session > Create and Run Session` or the toolbar option. 
 
-   <img src="./media/image 14.png"> {br}
+   <img src="./media/Image 14.png">
 
 2. In the *Module Browser* dialog, choose the **ChannelRate_WSPRO** module, and hit `Continue`. Provide a unique name for the session.
 
-    <img src="./media/image2.png"> {br}
+    <img src="./media/image2.png">
 
     > Note: The requirements discussed above, are also shown at the bottom of the dialog, under *Pre requisites for Source AutoCAD Objects.*
 
 3. The *New Session* dialog opens. Here, click on the *Channel Segment* space holder. AutoCAD will be in select mode and waiting for input. Choose the ready profile object.
  
-    <img src="./media/image3.png" style="width:2.5in"> {br}
+    <img src="./media/image3.png" style="width:2.5in">
 
     If the selction is made succesfully, the spaceholder is marked. Hit the `Run Session` button.
 
-    <img src="./media/image6.png" style="width:2.5in"> {br}
+    <img src="./media/image6.png" style="width:2.5in">
     
     > Note: The object will be marked \[x\] when successfully associated to the the AutoCAD object. If not, the *Run Session* button will remain in Active.
 
@@ -107,7 +110,7 @@ Segments are parts of the cross-section profile having different hydraulic param
 
 1. To create more segments, Right-click on a location on the cross-seection profile object, and select **Add Segment.** This will insert a vertical bar at the given location. 
 
-   <img src="./media/image 16.png">
+   <img src="./media/Image 16.png" style="width:7in">
 
    You can edit the locaiton of the vertical bar. Right-click on the bar, and choose `Move...` to interactively drag to a location. Or choose `Move to Station...` to input a specific station to move to.
 
@@ -116,7 +119,7 @@ Segments are parts of the cross-section profile having different hydraulic param
 
 2. To edit the roughness coeficient for a segment, right-Click on a it and `Edit Segment` menu option.  In the *Edit Segment* dialog, change the label and roughness values as needed. The changes will be reflected in the main interface.
 
-   <img src="./media/image 18.png" style="width:7in">
+   <img src="./media/Image 18.png" style="width:7in">
     
     
 
@@ -130,7 +133,7 @@ Segments are parts of the cross-section profile having different hydraulic param
    > :bulb: **Tip**: See below for setting and using the other variables for advanced analysis and results.
 
 
-   <img src="./media/image 22.png."  style="width:3.5in"> {br}
+   <img src="./media/Image 22.png."  style="width:3.5in"> {br}
 
     The table below summarizes input description for the common variables.{br}
 
@@ -188,7 +191,7 @@ Save the work so it is avilable on subsequent runs of iCAD. To save Go to `Sessi
 
 The data for the session are saved on the cross-section object in AutoCAD. This meanse, on subsquent runs of iCAD, importing this object the iCAD workspace, will also bring the session along with the saved data for quick access.
 
-  <img src="./media/image 9.png"> {br}
+  <img src="./media/Image 9.png">
 
   > Note: If save could not complete, make sure the base cross-section object is in the iCAD workspace. 
 
@@ -224,29 +227,29 @@ The WSPRO/USGS manual, and USBR for Small Dams, recommend to use multiple cross-
   
 1. Next, start `Workflow > Manage profiles` menu tool. (This should be refered to as Manage cross-sections. But cross-sections are also profiles, hence the terminology.)  Accept the default station for the base section, or edit as needed. Then hit `Ok`.
 
-    <img src="./media/image 1.png"  style="width:6.5in">
+    <img src="./media/Image 1.png"  style="width:6.5in">
 
 1. The *uiChannelRateInit* interface will allow adding more cross-sections to the problem definition. Use `Add` to bring the other cross-sections, and specify the stations for each accordingly.
 
     > Note: Add each cross-section one by one, sequentially starting from the nearest to the farthest located cross-section, with respect to the base cross-section.
 
-    <img src="./media/image 4.png"  style="width:6.5in">
+    <img src="./media/Image 4.png"  style="width:6.5in">
 
 6. Next Edit each cross-section for hydraulic and geometric properties similar to the base cross-sectoin. To do this, check the *Show Longitudinal Profile* check box on the top of the interface. This will display all imported sections in order. Then select a section from the list on the left pane, which will also highlight the corresponding object from the longitudinal view. Then choose `Edit Current` button. 
 
-    <img src="./media/image 5.png"  style="width:6.5in">
+    <img src="./media/Image 5.png"  style="width:6.5in">
 
 6. This will close the interface, and pass the current section to the main interface. Use the usual steps to create and edit segments to this section. When done, go to `Workflow > Restore Source Section` menu command. Repeat for each section.
     > Tip: The number of segments in each cross-section must be equal to that used for the base cross-section.
 
 1. In the main interface go to `Worlflow > Edit Variables`, and set the Analysis method to *MultiSections*. And hit `Apply`.
 
-    <img src="./media/image 7.png"  style="width:4.5in">
+    <img src="./media/Image 7.png"  style="width:4.5in">
 
 The set up is completed. Now the problem can be solved. Use `Ctrl+s` or `Workdlow > Solve` to do this. The rating curve for the base section is displayed. The computed flow profile for the different sections can be viewed from `Workflow > Show Computed Profile`. {br}
 
 
-  <img src="./media/image 8.png"  style="width:6.5in"> 
+  <img src="./media/Image 8.png"  style="width:6.5in"> 
 
   This figure is an edited version of the profile plot for report purposed.
 
@@ -262,7 +265,7 @@ modelling software. ChannelRatingWSPRO module adopts the 1998 Edition of
 the program. The technical information in the user manual available from
 USGS website is also applicable here.
 
-<img src="./media/image16.png"
+<img src="./media/Image16.png"
 style="width:3.57986in;height:2.87431in" />{br}
 
 The method of computation used for water surface level computation, as is widely established in practice, uses a number of cross-sections to establish a good estimate of flow level. Usually up to seven cross-section data are used. Using more cross-section data may not improve the accuracy of the results any further. Using less cross-section data however is known to limit the accuracy of the result. This is an important factor to note, as currently only one cross-section can be used in the module.

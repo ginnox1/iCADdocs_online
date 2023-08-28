@@ -1,5 +1,7 @@
 # Retaining Wall Design
 
+[Back to Home](..\index.md#online-documentation)
+
 The design and analysis of retaining structures and abutment walls is
 carried out using the **RetwallDesign** product. It provides a unique
 and convenient workflow to analyze and document long retaining walls
@@ -16,25 +18,25 @@ definition.
 ## Table of Contents
 
 <!--TOC-->
-- [Prepare Objects](#prepare-objects)
-- [Define and Start Session](#define-and-start-session)
-- [ID Segments](#id-segments)
-- [Edit/Review Parameters](#editreview-parameters)
-- [Design Sections](#design-sections)
-- [Saving work](#saving-work)
-- [Presentation and Documentations](#presentation-and-documentations)
-  - [Standard Output Functions](#standard-output-functions)
-  - [Generating AutoCAD drawings](#generating-autocad-drawings)
+  - [Conventions:](#conventions)
+  - [Prepare Objects](#prepare-objects)
+  - [Define and Start Session](#define-and-start-session)
+  - [ID Segments](#id-segments)
+  - [Edit/Review Parameters](#editreview-parameters)
+  - [Design Sections](#design-sections)
+  - [Saving work](#saving-work)
+  - [Presentation and Documentations](#presentation-and-documentations)
+    - [Standard Output Functions](#standard-output-functions)
+    - [Generating AutoCAD drawings](#generating-autocad-drawings)
     - [Generating Plan Views](#generating-plan-views)
-- [Technical Notes](#technical-notes)
-  - [Earth Pressure Calculation](#earth-pressure-calculation)
-  - [Pressure Coefficients on Cohesive soils](#pressure-coefficients-on-cohesive-soils)
-  - [Hydrostatic and Hydrodynamic Pressure](#hydrostatic-and-hydrodynamic-pressure)
-  - [Pressure from external loads](#pressure-from-external-loads)
-  - [Stability Analysis](#stability-analysis)
-  - [Geometric Limitations](#geometric-limitations)
+  - [Technical Notes](#technical-notes)
+    - [Earth Pressure Calculation](#earth-pressure-calculation)
+    - [Pressure Coefficients on Cohesive soils](#pressure-coefficients-on-cohesive-soils)
+    - [Hydrostatic and Hydrodynamic Pressure](#hydrostatic-and-hydrodynamic-pressure)
+    - [Pressure from external loads](#pressure-from-external-loads)
+    - [Stability Analysis](#stability-analysis)
+    - [Geometric Limitations](#geometric-limitations)
 <!--/TOC-->
-
 
 ## Conventions:
 
@@ -109,13 +111,13 @@ To define the design session:
 If the wall face is displayed in the interface, you can skip to the next step
 below. This is especially true if simple walls are defined. Otherwise, define the top and bottom information from respective AutoCAD objects as follows.
 
-1. Go to **iFunctions \> Pick Wall Top Level.** Go to AutoCAD and pick
-the object defining the wall top level. Similarly, use **iFunctions \>
+1. Go to **Workflow \> Pick Wall Top Level.** Go to AutoCAD and pick
+the object defining the wall top level. Similarly, use **Workflow \>
 Pick Wall Bottom Level** and pick the corresponding object in AutoCAD.
-Refresh View from **iFunctions \> Refresh View** or CTRL+R. The wall
+Refresh View from **Workflow \> Refresh View** or CTRL+R. The wall
 face should be visible shaded in the profile view.
 
-2. Use **iFunctions \> Id Segments** to define the design segments that
+2. Use **Workflow \> Id Segments** to define the design segments that
 can be identified from the current setup. When successful, the grouping
 is displayed schematically at the bottom of the wall with different
 colors.
@@ -142,10 +144,10 @@ Edit the settings for the different aspects of design and analysis from
     <img src="./media/image15.png"
     style="width:3.74479in;height:3.92526in" />
 
-   Start the variable editor from **iFunctions \> View Variable Editor.** and set each variable to requirement. Below table summarizes input values.
+   Start the variable editor from **Workflow \> View Variable Editor.** and set each variable to requirement. Below table summarizes input values.
 
 
-   <table>
+<table>
 <colgroup>
 <col style="width: 13%" />
 <col style="width: 30%" />
@@ -197,19 +199,14 @@ Edit the settings for the different aspects of design and analysis from
 </table>
 
 
-{br}
-Notes:
 
-- Load elements heights are measured from bottom of the wall
-- Loads are applied on top of the backfill material. {br}
+> Notes: 
+    - Load elements heights are measured from bottom of the wall
+    - Loads are applied on top of the backfill material. {br}
 
 Continue.
 
-    2. Edit variables defining the geomery and orientation of the retaining wall section
-
-
-
-
+2. Edit variables defining the geomery and orientation of the retaining wall section
 
 <table>
 <colgroup>
@@ -311,6 +308,8 @@ screenshot next to the table.
 
 <img src="./media/image17.png" style="width:6.59375in" />
 
+ *Figure showing backfill material specification, woth build in parameters as a guiding tool.*
+
 
 
 <table>
@@ -364,6 +363,7 @@ is saturated unit weight</p>
 <tbody>
 </tbody>
 </table>
+
 
 4\. Edit and/or set design process related settings and safety
 parameters for the session.
@@ -434,8 +434,12 @@ of water at the heel and toe of the retaining wall.</th>
 </tbody>
 </table>
 
+Most variables will have built in list of parameters, often from referenced litrature, to simplify data input process.
+
+
 <img src="./media/image18.png"
-style="width:2.72778in;height:1.05278in" />
+style="width:7.72778in" />
+*Figure showing options for built in shear stress definition settings*
 
 <table>
 <colgroup>
@@ -470,45 +474,30 @@ style="width:2.72778in;height:1.05278in" />
 </tbody>
 </table>
 
-Note:
 
-- Safety parameters are Minimum and Maximum values of parameters with in
-  which range PASS flag is raised. Evaluated safety beyond this range
-  will raise FAIL flag in the analysis report table.
-
-- A list of preset materials are available to help choose the right
-  material, or specify a different one.
+>   Note:
+    - Safety parameters are Minimum and Maximum values of parameters with in   which range PASS flag is raised. Evaluated safety beyond this range   will raise FAIL flag in the analysis report table. 
+    - A list of preset materials are available to help choose the right material, or specify a different one.
 
 ## Design Sections
 [Back to ToC](#table-of-contents)
 
-<img src="./media/image12.png"
-style="width:4.23819in;height:1.53264in" />
+<img src="./media/image12.png" style="width:6in" />
 
-The next step in the process is to design the actual sections of the
-retaining structures, factoring safety parameters.
+The next step in the process is to design the actual sections of the retaining structures, factoring safety parameters.
 
-1\. Once in elevation view, and variables are set as well as design
-segments are identified, go to **iFunctions \> Cross Section view** or
-CTRL+X. The interface will be on interactive mode to pick a location for
-the cross-section view. Click on a region where uniform height exists.
+1\. Once in elevation view, and variables are set as well as design segments are identified, go to **Workflow \> Cross Section view** or CTRL+X. The interface will be on interactive mode to pick a location for the cross-section view. Click on a region where uniform height exists.
 
-Tip: The location picked is rounded to the nearest incremental station
-recoded during profile extraction, and the section at that location is
-generated.
+> Tip: The location picked is rounded to the nearest incremental station recoded during profile extraction, and the section at that location is generated.
 
-2\. Select **iFunctions \> Design Wall…** to get a design solution guide
-on bottom width values that can meet required safety parameters.
+2\. Select **Workflow \> Design Wall…** to get a design solution guide on bottom width values that can meet required safety parameters.
 
-The interface shown on the right is displayed with guidelines for
-picking a design point. In this snapshot, for instance, the Factor of
-safety for overturning is met at a bottom width of close to 2.0metres,
-while that for sliding is met around
+The interface shown on the right is displayed with guidelines for picking a design point. In this snapshot, for instance, the Factor of safety for overturning is met at a bottom width of close to 2.0metres, while that for sliding is met around
 2.8meters.
 
 <img src="./media/image7.png" style="width:4.56715in;height:4.5in" />
 
-Using the *Pick A Scene Solution* toolbar, a desired width can be
+Using the `Pick A Scene Solution` toolbar, a desired width can be
 selected, and the cross-section view will update automatically.
 
 <img src="./media/image32.png"
@@ -518,21 +507,18 @@ style="width:6.54931in;height:3.80903in" />
 <img src="./media/image31.png"
 style="width:5.29931in;height:4.599167in" />
 
-2\. Select **iFunctions \> Analyze Wall…** menu to analyze the
+2\. Select **Workflow \> Analyze Wall…** menu to analyze the
 cross-section using current settings. This will generate loading
 diagrams and summary of safety evaluations against set values.
 
-Tip: Navigate between incremental stations by using SHIFT+period (\>) or
-SHIFT+comma (\<) key.
+> Tip: Navigate between incremental stations by using `Shift`+ `.` (\>) or
+`Shift`+`,` (\<) key.
 
-Ensure all design parameters are met satisfactorily as indicated with
-the PASS flag at the end of the lower table. If not met, increase or
-decrease the bottom width as
-follows:
+Ensure all design parameters are met satisfactorily as indicated with the PASS flag at the end of the lower table. If not met, increase or decrease the bottom width as follows:
 
 <img src="./media/image8.png" style="width:4.83958in;height:2.7in" />
 
-3\. Invoke the variable editor for this view from **iFunctions \> View
+3\. Invoke the variable editor for this view from **Workflow \> View
 variable Editor** or CTRL+E. A compact editor window is displayed,
 allowing you to edit design segment information.
 
@@ -542,18 +528,12 @@ value. Once set to a design value, this new value is maintained.
 Insert desired value for bottom width and/or segment label and click
 ***Apply*** button.
 
-Note: Transition walls, which are walls with variable height, cannot be
-directly analyzed. However, bottom widths can be assigned from design
-results of adjacent uniform height walls. Insert Bottom width for
-transition walls in pairs, e.g., \[2.5, 3.0\] implies a uniformly
-varying bottom width for the wall starting at 2.5m and finishing at
-3.0m.
+> Note: Transition walls, which are walls with variable height, cannot be directly analyzed. However, bottom widths can be assigned from design results of adjacent uniform height walls. Insert Bottom width for transition walls in pairs, e.g., \[2.5, 3.0\] implies a uniformly varying bottom width for the wall starting at 2.5m and finishing at 3.0m.
 
-4\. Repeat steps 2 and 3 until satisfactory performance is verified
-against provided safety parameters.
+4\. Repeat steps 2 and 3 until satisfactory performance is verified against provided safety parameters.
 
 
-# Saving work
+## Saving work
 [Back to ToC](#table-of-contents)
 
 Save work from **Session\> Save** menu.
@@ -563,20 +543,16 @@ style="width:5.14931in;height:1.794306in" />
 
 
 
-# Presentation and Documentations
+## Presentation and Documentations
 [Back to ToC](#table-of-contents)
 
-Once the design is satisfactorily completed for all design segments
-identified – including transition walls, the finishing solutions can be
-used to present and/or document the numerous details of the design
-process. The following are available for this module:
+Once the design is satisfactorily completed for all design segments identified – including transition walls, the finishing solutions can be used to present and/or document the numerous details of the design process. The following are available for this module:
 
 1.  Standard output functions for report and BoQ and report generation
 
-2.  AutoCAD Drawing for Elevations, cross-sectional and plan layout
-    > views
+2.  AutoCAD Drawing for Elevations, cross-sectional and plan layout views
 
-## Standard Output Functions
+### Standard Output Functions
 [Back to ToC](#table-of-contents)
 
 Any of the finishing and presentation solutions integrated in to iCAD
@@ -584,36 +560,23 @@ workflow can be used with this module. These include:
 
 - Generating design and analysis report from **Sessions \> Build Report.**
 
-- Generating bill of quantity (BoQ) estimate from **iFunctions \> Generate BoQ**
+- Generating bill of quantity (BoQ) estimate from **Workflow \> Generate BoQ**
 
-Note: To generate a complete listing of BoQ, make sure all segments are
-designed satisfactorily, and:
+    > Note: To generate a complete listing of BoQ, make sure all segments are designed satisfactorily, Navigate cross-section view from beginning to end, and finally, Generate the plan view is also essential.
 
-\(a\) Navigate cross-section view from beginning to end
-
-\(b\) Generate the plan view is also essential.
-
-## Generating AutoCAD drawings
+### Generating AutoCAD drawings
 [Back to ToC](#table-of-contents)
 
-Refer to the finishing solutions section of the user manual to learn how
-common tools are use to generate drawings to AutoCAD, including
-Transverse and longitudinal cross-section views.
+Refer to the finishing solutions section of the user manual to learn how common tools are use to generate drawings to AutoCAD, including Transverse and longitudinal cross-section views. 
 
-## Generating Plan Views
+### Generating Plan Views
 [Back to ToC](#table-of-contents)
 
-Plan views are key output for this module. These can be used to generate
-important layout information overlaying topographic maps, as well as
-related positioning details for the drawing album. To generate the plan
-view:
+Plan views are key output for this module. These can be used to generate important layout information overlaying topographic maps, as well as related positioning details for the drawing album. To generate the plan view:
 
-1\. Make sure all identified segments are designed for appropriate
-bottom widths. Then go to **iFunctions \> Show Plan** or CTRL+T. The
-view is generated to maintain the orientation of the layout object.
+1\. Make sure all identified segments are designed for appropriate bottom widths. Then go to **Workflow \> Show Plan** or `Ctrl`+`T`. The view is generated to maintain the orientation of the layout object.
 
-2\. Use the *Generating Additional Plots to AutoCAD* option to render
-this to AutoCAD.
+2\. Use the *Generating Additional Plots to AutoCAD* option to render this to AutoCAD.
 
 <img src="./media/image33.png"
 style="width:2.91875in;height:2.26319in" />
@@ -625,68 +588,48 @@ style="width:3.03472in;height:2.00486in" />
 <img src="./media/image16.png"
 style="width:2.83889in;height:1.59444in" />
 
-Note: The shape of the plan view may be rendered as shown below, if the
+> Note: The shape of the plan view may be rendered as shown below, if the
 **Wall Face Direction** variable under ***Retwall Settings*** group is
 set to -1 (or Right). Use option as fits the context.
 
-Finally, an important guide to ensure smooth design process. The
-generation of plan view may result in unrepresentative geometry – such
-as shown below - if the vertices locations on the alignment route and
-that of the wall top/bottom profile.
+Finally, an important guide to ensure smooth design process. The generation of plan view may result in unrepresentative geometry – such as shown below - if the vertices locations on the alignment route and that of the wall top/bottom profile.
 
 <img src="./media/image13.png"
 style="width:4.39868in;height:2.34835in" />
 
-This is common, if the wall top/bottom profile objects are created after
-the alignment route is set out and the profile is done.
+This is common, if the wall top/bottom profile objects are created after the alignment route is set out and the profile is done.
 
-Note: Alignment routes generated from ***JumpDesign*** module during the
-design of weirs are free from such issues.
+> Note: Alignment routes generated from ***JumpDesign*** module during the design of weirs are free from such issues.
 
-If vertices are in alignment, the correct image should appear as shown
-here.<img src="./media/image4.png"
+If vertices are in alignment, the correct image should appear as shown here.
+
+<img src="./media/image4.png"
 style="width:4.39583in;height:2.07283in" />
 
 To avoid such issues:
 
 1\. Draw the layout object overlaying the base map
 
-2\. Mark station locations using appropriate intervals (e.g., 0.25, 0.5,
-1.0).
+2\. Mark station locations using appropriate intervals (e.g., 0.25, 0.5, 1.0).
 
-3\. Decide the beginning, end and interim points for the retaining wall
-and ensure vertices are created on those locations.
+3\. Decide the beginning, end and interim points for the retaining wall and ensure vertices are created on those locations.
 
-4\. Extract the profile with desired offset settings & save the profile
-data. Before closing the profile data view, use Tools \> Copy Graphics
-(for AutoCAD plot), and use the iCAD menu Tools \> Plot to AutoCAD (or
-CTRL+P) to plot the data to AutoCAD. Use a scale of 1.0 to plot the
-data.
+4\. Extract the profile with desired offset settings & save the profile data. Before closing the profile data view, use Tools \> Copy Graphics (for AutoCAD plot), and use the iCAD menu Tools \> Plot to AutoCAD (or CTRL+P) to plot the data to AutoCAD. Use a scale of 1.0 to plot the data.
 
-5\. Now draw the wall top level and wall bottom level geometries using
-the vertex locations positioned in step 2 above.
+5\. Now draw the wall top level and wall bottom level geometries using the vertex locations positioned in step 2 above.
 
-The design session defined using layout objects and wall top/bottom
-profiles prepared in this manner will result in expected geometries.
+The design session defined using layout objects and wall top/bottom profiles prepared in this manner will result in expected geometries.
 
-Vertices at 1.25m and 18m stations – same as the begin and end point of
-the wall top and wall bottom profile objects - as shown give the correct
+Vertices at 1.25m and 18m stations – same as the begin and end point of the wall top and wall bottom profile objects - as shown give the correct
 layout.
 
 <img src="./media/image10.png" style="width:6.5in;height:2.29649in" />
 
-Note: Wall top and/or bottom profiles need to have the same number of
-vertices. Profiles provided beyond the start and end of the profile data
-are trimmed to data range.
+> Note: Wall top and/or bottom profiles need to have the same number of vertices. Profiles provided beyond the start and end of the profile data are trimmed to data range.
 
-Tip: A convenient way to ensure proper sync of vertices between the
-layout object and the eall top/bottom profiles is to align the vertices
-of the latter to stations that are easy to locate on the layout object.
-Then the layout object can be edited for new vertices at these
-locations, and a profile re-extracted.
+> :bulb: **Tip**: A convenient way to ensure proper sync of vertices between the layout object and the eall top/bottom profiles is to align the vertices of the latter to stations that are easy to locate on the layout object. Then the layout object can be edited for new vertices at these locations, and a profile re-extracted.
 
-Walls may not be rendered fully, if WallTop and WallBottom coordinates
-do not strart at beginning and end of profile data.
+Walls may not be rendered fully, if WallTop and WallBottom coordinates do not strart at beginning and end of profile data.
 
 ## Technical Notes
 [Back to ToC](#table-of-contents)

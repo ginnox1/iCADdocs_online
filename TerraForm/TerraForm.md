@@ -1,4 +1,7 @@
 # TerraForm
+
+[Back to Home](..\index.md#online-documentation)
+
 The analysis and visualization of fill and cut works over ground
 surfaces brings a significant challenge to designers. iCAD’s new
 **Terraform** module presents the tools and analytic details needed to
@@ -15,24 +18,25 @@ The module can work on drawing and estimation works for formations consiting of 
 
 The module can be used as described below.
 
-# Table of Contents
+## Table of Contents
 
- <!--TOC-->
-- [Conventions:](#conventions)
-- [Preparing Objects](#preparing-objects)
-- [Defining the session](#defining-the-session)
-- [Creating Assemblies](#creating-assemblies)
-  - [Creating Design Levels](#creating-design-levels)
-  - [Creating Simple Assemblies](#creating-simple-assemblies)
-  - [Compound assemblies](#compound-assemblies)
-- [Creating views](#creating-views)
-  - [Section Views](#section-views)
-- [Generating Fill Work Estimates](#generating-fill-work-estimates)
-- [Assemblies with Tracer (Bees):](#assemblies-with-tracer-bees)
-- [Modified Ground Levels Processing](#modified-ground-levels-processing)
+<!--TOC-->
+  - [Conventions:](#conventions)
+  - [Preparing Objects](#preparing-objects)
+  - [Defining the session](#defining-the-session)
+  - [Creating Assemblies](#creating-assemblies)
+    - [Creating Design Levels](#creating-design-levels)
+    - [Creating Simple Assemblies](#creating-simple-assemblies)
+    - [Compound assemblies](#compound-assemblies)
+  - [Creating views](#creating-views)
+    - [Section Views](#section-views)
+  - [Generating Fill Work Estimates](#generating-fill-work-estimates)
+  - [Assemblies with Tracer (Bees):](#assemblies-with-tracer-bees)
+  - [Modified Ground Levels Processing](#modified-ground-levels-processing)
 <!--/TOC-->
 
-# Conventions:
+
+## Conventions:
 
 [Back to toc](#table-of-contents)
 
@@ -44,7 +48,7 @@ The following conventions apply for using the module.
 <img src="./media/image22.png">
 
 
-# Preparing Objects
+## Preparing Objects
 [Back to toc](#table-of-contents)
 
 
@@ -78,7 +82,7 @@ For successful execution of an session instance of TerraForm, two objects are re
     <img src="./media/image17.png" style="width:7.23443in;height:3.54439in" />
 
 
-# Defining the session
+## Defining the session
 [Back to toc](#table-of-contents)
 
 A session for this module is defined similar to other iCAD modules.
@@ -103,7 +107,7 @@ item. It is possible to exevute different functions from this menu. The
 below sections describe the available features, function and how they
 can be used to analyze formation data.
 
-# Creating Assemblies
+## Creating Assemblies
 [Back to toc](#table-of-contents)
 
 The first task should be create assemblies. Assemblies are cross-sectional information describing the geometric shapes of different formations. For bunds, this would be the finished fill profiles. For earth dams, they also  nclude filter and impervious materials. 
@@ -126,7 +130,7 @@ They both add to create the arrangement needed to completely define a
 spatial formation. Therefore, every assembly at least requires these two
 components.
 
-## Creating Design Levels
+### Creating Design Levels
 [Back to toc](#table-of-contents)
 
 The first step is hence to prepare desgn levels, for the various
@@ -134,7 +138,8 @@ formation shape geometries. This can easily be done in AutoCAD over the
 profile drawing of the axis object. Below figure shows a snapshot of
 such profile information plotted in AutoCAD.
 
-<img src="./media/image16.png" style="width:6.5in;height:2.38889in" /> {br}
+<img src="./media/image16.png" style="width:6.5in;height:2.38889in" />
+
 
 Design levels can easily be created using on this profile plot. Taking
 the example of an earth dam, three design levels are indicated in the
@@ -146,13 +151,14 @@ next figure, representing the following three formations:
 
 - Blanket level.
 
-<img src="./media/image1.png" style="width:6.5in;height:1.58333in" /> {nr}
+<img src="./media/image1.png" style="width:6.5in;height:1.58333in" />
+
 
 Before continuing, make sure that all design levels are referenced and
 appropriately tagged.
 > Note: Do not use spaces or hyphens when tagging the design level objects. Use Underscores in stead of spaces or hyphens,
 
-## Creating Simple Assemblies
+### Creating Simple Assemblies
 [Back to toc](#table-of-contents)
 
 Start the **Assembly Editor** from
@@ -210,7 +216,7 @@ Start `Workflow > Cross-section View` menu to interact dynamically with the two 
 style="width:8.42708in;height:2.384375in" />
 
 
-## Compound assemblies
+### Compound assemblies
 [Back to toc](#table-of-contents)
 
 Assemblies can be bound together to create a combined enclosed area to
@@ -234,7 +240,7 @@ Notice also, after assemblies are combined, clicking on either assembly in the l
 Use the **Save to Host** button, to save the modified assembly
 information to the host object. This will also refresh the contents in the main interface. 
 
-# Creating views
+## Creating views
 [Back to toc](#table-of-contents)
 
 Now that we have assemblies ready, generating views is possible. The
@@ -242,7 +248,7 @@ views can help in further building the assemblies to be more responsive
 to the ground conditions as will be seen later. Here the creation of
 plan and section views is discussed.
 
-## Section Views
+### Section Views
 [Back to toc](#table-of-contents)
 
 To create cross-secional view at any point, change to default (profile) view using `Ctrl`+`R`and start `Workflow > Show-section`. An interavtive tool is created, which dynamically updates the section on the Assembly Editor window for the current station.
@@ -267,7 +273,7 @@ The normal pool level information is a label only informaiton. It enhances displ
 
 
 
-# Generating Fill Work Estimates
+## Generating Fill Work Estimates
 [Back to toc](#table-of-contents)
 
 Once assemblies are defined, volumes of work involved for each area
@@ -294,7 +300,7 @@ net amount corresponding to each assembly (single or combined),
 The table data can be copied for further documentation, or processing
 using the Copy Table button.
 
-# Assemblies with Tracer (Bees):
+## Assemblies with Tracer (Bees):
 [Back to toc](#table-of-contents)
 
 Tracer assemblies are assemblies with additional geometric constraints
@@ -331,7 +337,9 @@ Cross-section views from the main interface now show the assembly
 dynamically changing size and shape as the cross-section line is moved
 along various stations.
 
-# Modified Ground Levels Processing
+## Modified Ground Levels Processing
 [Back to toc](#table-of-contents)
 
-To Be completed.
+[To be completed soon...]
+
+END.

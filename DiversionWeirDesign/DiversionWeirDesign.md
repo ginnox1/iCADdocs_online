@@ -1,5 +1,6 @@
 # Diversion Weir Design
 
+[Back to Home](..\index.md#online-documentation)
 
 iCAD offers the **Diversion Weir Design** product to handle the design
 of weirs and regulating structures in an interactive environment,
@@ -43,6 +44,7 @@ abutment structures which is solved using a different module.
     - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
     - [References:](#references)
 <!--/TOC-->
+
 
 ## Conventions
 
@@ -325,10 +327,11 @@ The schematic below shows a right side sluice bay, with three bays, and a
 slightly raised crest. The gate dimensions are automatically sized and sketched.
 
 
-<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />{br}
+<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />
 
 
 See Technical notes, to learn how sluice bay capacity is determined.
+
 
 ## Transverse Dimensions
  [Back to Toc](#table-of-contents)
@@ -397,6 +400,11 @@ well, based on values set for other variables.</p></th>
 </tbody>
 </table>
 
+
+> **Note**: Some variables affect others as well, but their effects will only be seen once the settings are applied.
+
+
+
 ## Abutment Provisssions
  [Back to Toc](#table-of-contents)
 
@@ -410,7 +418,11 @@ abutment wall extension as shown below. {br}
 
 <img src="./media/image17.png" style="width:6.5in;height:3.11111in" /> 
 
-{br}
+*FIgure showing dimensions and naming used for abutment size and shape definition.*
+
+
+Table of Abutoment Provission Variables.
+
 
 <table>
 <colgroup>
@@ -456,8 +468,9 @@ abutment wall extension as shown below. {br}
 
 This completes definition of the weir structure in the transverse view. As these are defined, the overflow hydraulics is computed and displayed, ready fo the next step of longitudinal design.
 
+
 ## Longitudinal Design
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 Longitudinal design handles the sizing and detailing of the weir
 elements in the longitudinal direction. This involves working on a
@@ -474,6 +487,7 @@ The overall sizing of the elements of the weir are as follows.
 
 <img src="./media/image31.png"
 style="width:5.10502in;height:4.78768in" />
+
 
 ### Longitudinal Dimensions
  [Back to Toc](#table-of-contents)
@@ -582,15 +596,19 @@ Note the following key positions set automatically:
 
 <img src="./media/image41.png" style="width:6.5in;height:3.41667in" />
 
+ *Figure showing key longitudinal dimensions of a diversion weir.*
+
+
 ### Overflow Section
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 This view displays the section along the main overflow region. It allows
 to handle the main design tasks of (a) surface flow analysis, (b) Sub-surface
 flow analysis, (c) downstream apron design. These are presented below.
 
+
 ### Surface flow analysis:
-  [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 Surface flow condition for the entire length of the structure, i.e.,    upstream, over flow, and downstream sections, are automatically evaluated for the current geometric and hydraulic set of parameters.
 
@@ -604,11 +622,11 @@ Surface flow condition for the entire length of the structure, i.e.,    upstream
 below.)
 
     <img src="./media/image3.png" style="width:6.5in;height:4.08333in" />
-
+*Figure for surface flow clalculation and water surface profile determination.*
 
 
 ### Sub-surface flow analysis:
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 Subsurface flow analysis is also automatically carried out, as a
 function of the dimensions and position of the different components of
@@ -638,7 +656,9 @@ The following parameters pertain to the determination and use of
 subsurface hydraulic pressure variation.
 
 ### Cutoff-Dimensions
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
+
+Table of variables for Curoff dimensions and values.
 
 <table>
 <colgroup>
@@ -714,7 +734,7 @@ thickness provision (below pool depth).</p>
 Furhter more, the following parameters dictate the analysis and sizing for the downstream apron.
 
 ## Downstream Apron design and Dimensions
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 The design of downstream appron or the stilling basin of the weir structure is based on the key dimensions provided as input. These are found in the Appron Dimensions variable group, and are set according to the descriptions in below table.
 
@@ -808,7 +828,8 @@ Here h’ represent the magnitude of the unbalanced head above the bottom of the
 
 <img src="./media/image16.png" style="width:5.96183in;height:1.74466in" />
 
-The above figures demonstrate the results of apron thickness design with and with out thickness points specified, respectively.
+*Figures demonstrate the results of apron thickness design with and with out thickness points specified, respectively.*
+
 
 ## Overall stability analysis, and safety paramters
  [Back to Toc](#table-of-contents)
@@ -869,8 +890,10 @@ The safety parameters variable group values are set according to the following t
 </tbody>
 </table>
 
+
+
 ## The Sluice Bay section Design
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 Sluice bays, if provided, are taken in to consideration in the
 positioning and sizing of the diversion structure. A cross-section view
@@ -903,6 +926,7 @@ the bays are calculated as follows:
 
 Refer to technical notes for textbook details on the hydraulic
 calculations implemented.
+
 
 ## Outlet Designs and Settings
  [Back to Toc](#table-of-contents)
@@ -1045,34 +1069,34 @@ The outlet canal way is designed using standard flow section design steps. Thus,
 
 <img src="./media/image38.png" style="width:6.5in;height:3.27778in" />
 
-B/D ration as a funciton of Discharge capacity of canals (from USBR).
+*B/D ration as a funciton of Discharge capacity of canals (from USBR)*.
 
 <img src="./media/image30.png" style="width:6.5in;height:3.38889in" />
 
-Recommended Freeboard as a funciton of Discharge capacity (from USBR)
+*Recommended Freeboard as a funciton of Discharge capacity (from USBR)*
 
 
 Below figures show the symbols used to represent the key dimensions of the diverison weir structure, as found in the variable editor.
 
 <img src="./media/image29.png" style="width:4.36111in;height:4.32778in" />
 
-Figure showing key transverse dimensions.
+*Figure showing key transverse dimensions.*
 
 <img src="./media/image36.png"
 style="width:8.06875in;height:4.19028in" />
 
-Figure showing key longitudinal dimensions.
+*Figure showing key longitudinal dimensions.*
+
 
 
 ## Technical Notes:
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 This seciton provides important details about the important hydraulic calcualtions carried out by the module.
-
-
+**
 
 ### Overflow rating: 
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 The rating of flow over the weir body can be calculated using one of the
 below formula.
@@ -1238,8 +1262,13 @@ The coefficient of discharge in both cases, for a given set of upstream
 and downstream hydraulic grade levels, are determined from the below
 chart.
 
+[Back to Toc](#table-of-contents)
+
+END.
+
+
 ### References:
- [Back to Toc](#table-of-contents)
+[Back to Toc](#table-of-contents)
 
 
 Elbaban et al, Flow Measurements Using a Sluice Gate; Analysis and

@@ -1,4 +1,5 @@
 # Surface modelling and Profile Extraction
+[Back to Home](..\index.md#online-documentation)
 
 Calculation and presentation of ground surface data is a key process in the design of irrigation infrastructure. iCAD product incorporates dedicated module to manage this task, and deliver results in a convenient and easy to use environment.  The module and its extended applications (for instance in CanalNETWORK product) leverage computational algorithms from within Matlab, to generate representations of surface models, and determine elevation values at specific query points. The technical details are described further below. In the following, the steps to profile data extraction in iCAD envronment is described.
 
@@ -248,10 +249,10 @@ The following sample route geometry shows the validity of curves for profile ext
 There are seven curves on the route, including the compound curve near station 500. The table report states that 3 out of 7 curves are extracted.
 
 
-<img src="./Images/Image%2031.png" style="width:4.5in">
+<img src="./Images/Image 31.png" style="width:4.5in">
 
 
-<img src="./Images/Image%2033.png" style="width:4.5in">
+<img src="./Images/Image 33.png" style="width:4.5in">
 
 Curve 1 is discarded, because curves at the begining and end do not mee tangency requirements.
 

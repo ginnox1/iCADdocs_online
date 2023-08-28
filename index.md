@@ -1,5 +1,6 @@
 # iCAD Product Documentation
 
+
 Hello, and well come!
 
 You are at the official online resource documentation for iCAD software and its products. We are excited to continue to bring to use new products and features to iCAD software. The software comes with modules that can work:
@@ -11,20 +12,19 @@ You are at the official online resource documentation for iCAD software and its 
 
 This online resource provides guidance on all the key aspects about installaiton, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
 
-> :warning: Only professional practicing enginners are advised to use the software product, with due deligience. While the software is validated in collaboration with responsible key sector actors, professional due deligience is also expected.
 
-# Table of Contents
+
+## Table of Contents
 Follow these links to navigate in this page.
 <!--TOC-->
-  - [md#software-installation-setup-and-updates).
-
-If you](#mdsoftware-installation-setup-and-updates.-if-you)
-  - [it our website to get your copy of the license for tria](#it-our-website-to-get-your-copy-of-the-license-for-tria)
-  - [oductionToiCAD/Introduction_to_iCAD.md](#oductiontoicadintroduction_to_icad.md)
+  - [Updates](#updates)
+  - [Online Documentation](#online-documentation)
+  - [Licensing iCAD product](#licensing-icad-product)
+    - [ProducrTiers](#producrtiers)
+  - [Contacts](#contacts)
 <!--/TOC-->
 
-
-# Updates
+## Updates
 [Back to ToC](#table-of-contents)
 {br}
 
@@ -46,14 +46,14 @@ If you already have the newly released product, use the update resource to ensur
 
 
 
-# Online Documentation
+## Online Documentation
 [Back to ToC](#table-of-contents)
 
 This online documentation provides guidance and resources for efficient use of iCAD software by practicing engineers. It is organized as below.
 
 
 
-The guide is organized as follows. Navigate to your desired topic to learn more.
+The guide is organized as follows. Navigate to your desired topic to learn more. You can click the links to navigate to each section. At the begining of each section, click on the [Back to Home]() link to navigate back to this page.
 
 > :bulb: **Note**: To return to this home page from any other page, click on the page heading **iCADdocs_online**.
 
@@ -79,7 +79,7 @@ The guide is organized as follows. Navigate to your desired topic to learn more.
 We are working to include resource on other modules, so stay tuned.
 
 
-# Licensing iCAD product
+## Licensing iCAD product
 [Back to ToC](#table-of-contents)
 
 iCAD and related products are copyright protected and licensed applications. You will need to install and license the products appropriately, in order for them to funciton properly.
@@ -87,7 +87,7 @@ iCAD and related products are copyright protected and licensed applications. You
 Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
 
 
-## ProducrTiers
+### ProducrTiers
 Standard
 - chartB
 - cadExtrract
@@ -113,12 +113,9 @@ Enterprise
 - Weir (Outlet design, energy dessiplators)
 - Terraform (Modified ground level)
 - ChannelRate (multi-section)
+-
 
-
-
----
-
-# Contacts
+## Contacts
 
 Follow us on [**LinkedIn**]() and stay upto date with what we do. Follow us, and help spread the word.
 

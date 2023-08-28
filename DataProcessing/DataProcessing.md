@@ -1,10 +1,11 @@
 # Data processing, analysis and presentation 
+[Back to Home](..\index.md#online-documentation)
 
 CAD offers a number of tools for data processing and visualization. The tools are selected to fill practical data visualization and presentation challenges in every day design tasks.
 
 This page presents each tool available, and how to use it to tackle design challenges. Use table of contents outline below to navigate through this page.
 
-# Table of Contents
+## Table of Contents
 <!--TOC-->
   - [Summary of functions](#summary-of-functions)
   - [Host Data from Excel to AutoCAD Object](#host-data-from-excel-to-autocad-object)
@@ -210,7 +211,8 @@ solutions can be used as a source.
 The workflow to using this function is:
 
 1.  Invoke the function from **CAD Tools \> Plot Table to AutoCAD.** A dialog box appears asking for a *Dump Object*, the area to place the table in AutoCAD. This is similar to the bounding box concept used in making axes. Click on the *Link to Object* cell to select an object that indicates an area to render the table data in AutoCAD. (shown in red in this example.)
-    <img src="./media/image 08.png" style="width=7in">
+
+    <img src="./media/Image 08.png" style="width:7in">
     
 
 3.  `Shift`+`Left-Click` on the *Link to object* cell of the *Source Object* variable, and type in **cb** to use clipboard data. If the data is hosted in an object, simply click and link as step one above.
