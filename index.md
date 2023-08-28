@@ -28,8 +28,6 @@ Follow these links to navigate in this page.
 
 iCAD softwware is updated with newly launched modules for Diversion weirs design, and embankements analysis. The latest version is Version 2.8 (Aug 2023) release. If you have not installed this latest release, follow the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
-IntroductionToiCAD/introduction_to_icad.md#software-installation-setup-and-updates).
-
 If you already have the newly released product, use the update resource to ensure you are using the latest and supported version of the software. Follow below steps: 
 
 * Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_Notes_Aug23.md)
