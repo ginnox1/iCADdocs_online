@@ -42,7 +42,7 @@ Connect with us on **LinkedIn** to stay up to date.
 Write to us *quanomix@gmail.com* or visit [www.quanomix.weebly.com](http://www.quanomix.weebly.com) or for any queries you may have. We love to hear from you.
 
 
-<img src="./media/Image 4.png" style="width:2.12847in;height:0.7625in" />
+<img src="./media/image4.png" style="width:2.12847in;height:0.7625in" />
 
 *Team Quanomic*
 
@@ -103,7 +103,7 @@ Before launching, make sure to setup the application as follows:
 
 1. After installation, right-click on the desktop icon, and choose `Properties`. 
 
-   <img src="./Media/Image 12.png" style="width:6in" >
+   <img src="./media/image12.png" style="width:6in" >
 
 1. In the *iLauncher* dialog copy the contents in the **Target** field, and paste to the **Start In** field.Before completing, remove the last part of the text you pasted **iLauncer.exe**.
 
@@ -158,6 +158,7 @@ This happens because AutoCAD is not setup yet. Follow below steps to set up Auto
      Hit `Close` to finish.
 
  1. The *Load/Unload Applications* dialog confirms the operation at the bottom.
+
       <img src="./media/Image 010.png" style="width:4in">
 
 AutoCAD is now set. It will always load this application on startup, and you will not have to do this setup every time.
