@@ -32,13 +32,12 @@ It has the following features:
 - Full surface, and sub-surface flow hydraulis, with appron sizing and design features
 - and more.
 
-	<img src="./media/image22.png" style="width:4in">
-
 ## TerraForm module for embankment works analysis :new:
 [Back to ToC](#table-of-contents)
 
 We have designed and implemented an ambitious workflow in formation analysis and work volume estimation for embankement works. TerraForm module builds on previous versions of surface analysis to give users the computational edge and easy workflow to tackle earth work estimation and drawing generation tasks.
-<img src="./image22.png">
+
+<img src="./media/image22.png">
 
 This version includes the follwing features:
 - Easy definition of complex shape assemblies
@@ -55,7 +54,7 @@ This version includes the follwing features:
 
 ChannelRating module is upgraded to include complex analyis features that enable determination of a stage discharge curve from multiple river or stream cross-sections. This methos is known to be more accurate than the conventional method that used one cross-section only.
 
-<img src="./media/Image16.png" style="width:5in">
+<img src="./media/image16.png" style="width:5in">
 
 This feature is validated using data provided by WSPRO/USGS and found to be accurate. Read the validation document [here]().
 
