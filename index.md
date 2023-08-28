@@ -103,15 +103,13 @@ Pro
 - SCS model
 - Retaining wall
 - Profile
-- Multi-label plotter
-- 
+- Multi-label plotter 
 
 Enterprise
 - Render to CAD
 - Weir (Outlet design, energy dessiplators)
 - Terraform (Modified ground level)
 - ChannelRate (multi-section)
--
 
 ## Contacts
 
