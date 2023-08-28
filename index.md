@@ -12,8 +12,6 @@ You are at the official online resource documentation for iCAD software and its 
 
 This online resource provides guidance on all the key aspects about installaiton, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
 
-
-
 ## Table of Contents
 Follow these links to navigate in this page.
 <!--TOC-->
