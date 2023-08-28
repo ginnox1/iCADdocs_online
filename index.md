@@ -32,7 +32,7 @@ IntroductionToiCAD/introduction_to_icad.md#software-installation-setup-and-updat
 
 If you already have the newly released product, use the update resource to ensure you are using the latest and supported version of the software. Follow below steps: 
 
-* Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_notes_Aug23.md)
+* Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_Notes_Aug23.md)
 
 * Download the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
 
