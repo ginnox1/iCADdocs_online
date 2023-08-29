@@ -1,21 +1,25 @@
 # iCAD and Related Products Setup and Licensing
 
-[Back to Home](..\index#updates-for-this-release)
+[Back to Home](..\index.md#updates-for-this-release)
 
 Welcome to iCAD, and Thank you for choosing to use it. This small guide
 will assist you to get your software up and running.
 
 ## Table of Contents
 <!--TOC-->
-- [System Requirements](#system-requirements)
-- [Installation and setup guide](#installation-and-setup-guide)
+  - [Introduction](#introduction)
+  - [System Requirements](#system-requirements)
+  - [Installation and setup guide](#installation-and-setup-guide)
   - [Setup Installation](#setup-installation)
   - [Setup AutoCAD for use with iCAD and related products](#setup-autocad-for-use-with-icad-and-related-products)
   - [Installing Update resources](#installing-update-resources)
   - [Software Updates](#software-updates)
 - [Licensing Guide](#licensing-guide)
-  - [Using iCAD with AutoCAD 2010 and later releases](#using-icad-with-autocad-2010-and-later-releases)
-<!--/TOC--># Introduction
+  - [Enabling VBA for AutoCAD](#enabling-vba-for-autocad)
+<!--/TOC-->
+
+
+## Introduction
 [Back to ToC](#table-of-contents)
 
 iCAD is a unique software that can significantly and positively impact how you work and deliver your projects. Although iCAD is designed to be easy to use and intuitive, a minimum guidance is required to understand how it operates.
@@ -48,18 +52,21 @@ Write to us *quanomix@gmail.com* or visit [www.quanomix.weebly.com](http://www.q
 
 *Team Quanomic*
 
-# System Requirements
-iCAD and related software products have the following system requirements.
+## System Requirements
+iCAD and related software products have the following system requirements. These are the minimum recommended capcity specifications. 
 
 - Operating System: Windows 10 or latter 
 - Architecture: X64
 - Processor: Coire i7 or equivalent, or latter
 - RAM: 4GB or more
-- Screen: FHD (1020x1080)
+- Screen: FHD (1020x1080), two screens strongly recommended for using AutoCAD side by side.
 - AutoCAD: 2018 or latter
 
+> Notes: Using on i5 machines is possible, but performance is not guaranteed. 
 
-# Installation and setup guide
+> Notes: Using lower screen resolution is possible with additional setting to re-arrange the user interface area - especially for CanalNETWORK product.
+
+## Installation and setup guide
 [Back to ToC](#table-of-contents)
 
 Make sure to obtain the correct and recent release of the installation file from your organizations IT dept, or from our website [here]().
@@ -98,7 +105,7 @@ This will complete the installation. A short cut should be available on the desk
 
 iCAD software is newly released as version 2.8 (Aug 2023) This version must be installed in a users machine. Any and previous versions and components of the software are not supported, and can be uninstalled.
 
-## Setup Installation
+## Licensing Your Product
 [Back to ToC](#table-of-contents)
 
 Before launching, make sure to setup the application as follows:
@@ -174,6 +181,10 @@ This setup process insures that, iCAD and related products communicate seamlessl
 ## Installing Update resources
 [Back to ToC](#table-of-contents)
 
+Software updates will be available from time to time. We will release updaes by period. Check for updates is automatically done by your application every once in a while. Where the application prompts there is a new version available, either follow the manual or direct (download and update) methods to update your applciation.
+
+Each update release will have corresponding documetion to let users know what is new, and will ne accessible from the index/home page (click on the [Back to Home](#icad-and-related-products-setup-and-licensing) link at the top of this page).
+
 At any time when using the application, users can check for updates from `Help > Updates...` menu command, and then choosing `Check Online`.
 
 <img src="./media/Image 2.png" style="width:3In">
@@ -189,17 +200,6 @@ If an update is required, we recommend the abort the launcg process, and then fo
 
 Your applicatoin must now be fully updated and working normally.
 
-
-## Software Updates
-[Back to ToC](#table-of-contents)
-
-Software updates will be available from time to time. We will release updaes by period. Check for updates is automatically done by your application every once in a while. Where the application prompts there is a new version avaionble, either follow the manual or direct (download and update) methods to update your applciation.
-
-Furtehr detail is available on every new release on the update page for the specific period. This is available in the index/home page (Click at the top of this page on **iCADdocs_online**).
-
-END.
-
-[Back to ToC](#table-of-contents)
 
 # Licensing Guide
 

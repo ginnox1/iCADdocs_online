@@ -15,10 +15,10 @@ This online resource provides guidance on all the key aspects about installaiton
 ## Table of Contents
 Follow these links to navigate in this page.
 <!--TOC-->
-  - [Updates](#updates)
+  - [Updates for this Release](#updates-for-this-release)
   - [Online Documentation](#online-documentation)
   - [Licensing iCAD product](#licensing-icad-product)
-    - [ProducrTiers](#producrtiers)
+  - [ProducrTiers](#producrtiers)
   - [Contacts](#contacts)
 <!--/TOC-->
 
@@ -83,7 +83,7 @@ iCAD and related products are copyright protected and licensed applications. You
 Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
 
 
-### ProducrTiers
+## ProducrTiers
 Standard
 - chartB
 - cadExtrract

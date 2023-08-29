@@ -200,6 +200,55 @@ alt="graphic" />
     - Edit axis tick marks, labels, scaling and more using`CAD Tools > Edit/Make Linear Axis` menu command.
     - Add grid lines using the **Mark Curves** and **Draw Grids to Axes** addon tools from with in AutoCAD (shown above)
 
+## Plot Graphic elements to AutoCAD
+Most modules create graphical information on the main interface area of iCAD. These data represent solutions to specific to the modules. The user can export these data in two ways:
+
+### Save to a File
+To save the graphic areas as is for documentation purposes follow below steps.
+1. Start `Tools > Copy Graphics (to file)` menu command. 
+
+    <img src="./media/Image 001.png" style="width:7in">
+
+1. In the *save as* dialog specify the locaiton and file name for the image, and hit `Save` button.
+    
+    <img src="./media/Image 002.png" style="width:7in">
+
+The file can now be used as any other image file.
+ 
+### Generating to AutoCAD
+A drawing of all the graphic elements can be generated to AutoCAD with or with out scaling as needed. To generate drawings, follow these steps.
+
+> Note: iCAD generates drawings to the currently linked AutoCAD file. Make sure there are no multiple files opened, or at least you do not point to another file. This may cause your AutoCAD application to Crash.
+
+1. Start the `Workflow > Render to AutoCAD...` menu command or `Ctrl`+'P' short cut. This will list all objects in the graphic area grouped by tags.
+
+    <img src="./media/Image 003.png" style="width:7in">
+
+2. In the *Select Groups* dialog, select the **Copy BBox** group. This will create the reference axis and object required for plotting. On the next dialog, choose *Plot to BBox*, and hit `Continue`.
+
+    <img src="./media/Image 004.png" style="width:5in">
+
+3. AutoCAD will be in select mode, requiring to select a bounding box area to position the ploted autocad objects. If not prepared, click on a blank area. Dont mind the *Invalid Pick* dialog. Prepare the rectangle. Now back in the dialog, hit the `Retry` button.
+
+    <img src="./media/Image 007.png" style="width:5in">
+
+4. The axis creation process beings with default settings. Specify how to plot the data and the scaling in the *uiPlotOptions* dialog. This will complete the axis creataion.
+
+    <img src="./media/Image 008.png" style="width:7in">
+
+5. Back in iCAD, restart the process from `Ctrl`+'P' or the menu command as in step 1 above. This time, select all tag groups or the ones you desire. Use `Shift`+`Click` to selectively pick groups.
+
+    <img src="./media/Image 009.png" style="width:3in">
+
+1. AutoCAD will be in select mode. Click on the diagonal object created in earlier step. This will serve as a refernece object to position and scale the new plots.
+
+    <img src="./media/Image 010.png" style="width:6in">
+
+All the objects are now generated in the AutoCAD environment. The image below is after some axis editing as explained further below [here](#create-and-edit-floating-axes).
+
+  <img src="./media/Image 011.png" style="width:7in">
+
+
 
 ## Plot Text Table to AutoCAD
 
