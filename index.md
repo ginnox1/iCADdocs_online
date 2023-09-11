@@ -15,12 +15,58 @@ This online resource provides guidance on all the key aspects about installaiton
 ## Table of Contents
 Follow these links to navigate in this page.
 <!--TOC-->
-  - [Updates for this Release](#updates-for-this-release)
   - [Online Documentation](#online-documentation)
   - [Licensing iCAD product](#licensing-icad-product)
-  - [ProducrTiers](#producrtiers)
+  - [Updates for this Release](#updates-for-this-release)
   - [Contacts](#contacts)
 <!--/TOC-->
+
+
+
+## Online Documentation
+[Back to ToC](#table-of-contents)
+
+This online documentation provides guidance and resources for efficient use of iCAD software by practicing engineers. It is organized as below.
+
+
+
+The guide is organized as follows. Navigate to your desired topic to learn more. You can click the links to navigate to each section. At the begining of each section, click on the [Back to Home]() link to navigate back to this page.
+
+> :bulb: **Note**: To return to this home page from any other page, click on the page heading **iCADdocs_online**.
+
+> Note: Sections with TBD are under development.
+
+1. [Introduction to iCAD software](IntroductionToiCAD/Introduction_to_iCAD.md)
+
+1. [Data Processing & Presentation](DataProcessing/DataProcessing.md)
+
+1. [Surface Data and Profile Extraction](SurfaceDataProcessing/Surface_modelling_and_interpolation.md)
+
+1. [Cloud Data and Contour Generation](CloudContour/CloudContour.md)
+
+1. [Channel Rating](ChannelRatingWSPRO/ChannelRate_WSPRO.md)
+
+1. [Diversion Weir Design](DiversionWeirDesign/DiversionWeirDesign.md)
+
+1. [Retaining Wall Design](RetainingWallDesign/RetainingWallDesign.md) {br}
+
+1. [TerraForm Module](TerraForm/TerraForm.md)
+
+1. [SCSModel for Peak Hydrograph](SCSModel/SCSModel.md)
+
+1. [Chart Reading Module](ChartRead/ChartRead.md)
+
+
+More sections and content will be available, as we continue to work on new tools and enhancement of existing features. Stay tuned!
+
+
+## Licensing iCAD product
+[Back to ToC](#table-of-contents)
+
+iCAD and related products are copyright protected and licensed applications. You will need to install and license the products appropriately, in order for them to funciton properly.
+
+Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
+
 
 ## Updates for this Release
 [Back to ToC](#table-of-contents)
@@ -38,51 +84,6 @@ If you already have the newly released product, use the update resource to ensur
 
 
 > :bulb: **Important Notice**: Please note that a valid license is required to run the program, including for trials. Contact your provider or visit our website to get your copy of the license for trial or evaluation, or subscription.
-
-
-
-
-## Online Documentation
-[Back to ToC](#table-of-contents)
-
-This online documentation provides guidance and resources for efficient use of iCAD software by practicing engineers. It is organized as below.
-
-
-
-The guide is organized as follows. Navigate to your desired topic to learn more. You can click the links to navigate to each section. At the begining of each section, click on the [Back to Home]() link to navigate back to this page.
-
-> :bulb: **Note**: To return to this home page from any other page, click on the page heading **iCADdocs_online**.
-
-> Note: Sections with TBD are under development.
-
-[1. Introduction to iCAD software](IntroductionToiCAD/Introduction_to_iCAD.md)
-
-[2. Data Processing & Presentation](DataProcessing/DataProcessing.md)
-
-[3. Surface Data and Profile Extraction](SurfaceDataProcessing/Surface_modelling_and_interpolation.md)
-
-[5. Channel Rating](ChannelRatingWSPRO/ChannelRate_WSPRO.md)
-
-[6. Diversion Weir Design](DiversionWeirDesign/DiversionWeirDesign.md)
-
-[7. Retaining Wall Design](RetainingWallDesign/RetainingWallDesign.md) {br}
-
-[8. TerraForm Module](TerraForm/TerraForm.md)
-
-[9. SCSModel for Peak Hydrograph](SCSModel/SCSModel.md)
-
-'9. ChartView Module [Under Development]()
-
-
-We are working to include resource on other modules, so stay tuned.
-
-
-## Licensing iCAD product
-[Back to ToC](#table-of-contents)
-
-iCAD and related products are copyright protected and licensed applications. You will need to install and license the products appropriately, in order for them to funciton properly.
-
-Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
 
 
 

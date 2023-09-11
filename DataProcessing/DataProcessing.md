@@ -7,31 +7,16 @@ This page presents each tool available, and how to use it to tackle design chall
 
 ## Table of Contents
 <!--TOC-->
-  - [Summary of functions](#summary-of-functions)
-  - [Host Data from Excel to AutoCAD Object](#host-data-from-excel-to-autocad-object)
-  - [Plot Data in to AutoCAD](#plot-data-in-to-autocad)
-  - [Plot Text Table to AutoCAD](#plot-text-table-to-autocad)
-  - [Local Coordinate system and Object Referencing for iCAD use](#local-coordinate-system-and-object-referencing-for-icad-use)
-    - [Create and Edit floating Axes](#create-and-edit-floating-axes)
-      - [Create a new axes](#create-a-new-axes)
-      - [Editing Axis](#editing-axis)
-      - [Creating Unit axes](#creating-unit-axes)
-    - [Creating Referenced Axis](#creating-referenced-axis)
-    - [Referencing objects to an Axis system](#referencing-objects-to-an-axis-system)
-  - [Create and Edit Alignment Markers](#create-and-edit-alignment-markers)
-  - [Generating profile data for Alignment routes](#generating-profile-data-for-alignment-routes)
-    - [Conventions](#conventions)
-    - [Extracting and displaying profile data](#extracting-and-displaying-profile-data)
-    - [Modify extracted data](#modify-extracted-data)
-    - [2.5D Profile data generation](#2.5d-profile-data-generation)
-    - [Batch processing profiles](#batch-processing-profiles)
-  - [Data Visualization](#data-visualization)
-    - [Technical Notes: Fitting a Model or adding a trendline:](#technical-notes-fitting-a-model-or-adding-a-trendline)
-  - [Using CAD Objects Extractor](#using-cad-objects-extractor)
-    - [Collecting and Managing Objects in to the Extractor](#collecting-and-managing-objects-in-to-the-extractor)
-    - [Exporting Data](#exporting-data)
-    - [Instantiation](#instantiation)
+  - [e, and can position/la](#e-and-can-positionla)
+  - [hance the use of AutoCAD enviro](#hance-the-use-of-autocad-enviro)
+  - [img src="./media/Image 06](#img-src.mediaimage-06)
+  - [One of the most needed f](#one-of-the-most-needed-f)
+  - [kflow to plot data using this function is as follows:](#kflow-to-plot-data-using-this-function-is-as-follows)
+  - [the modules. The user can exp](#the-modules.-the-user-can-exp)
+- [ow back in the di](#ow-back-in-the-di)
+  - [s editing as explained furth](#s-editing-as-explained-furth)
 <!--/TOC-->
+
 
 ## Summary of functions
 [Back to ToC](#table-of-contents)
@@ -70,7 +55,7 @@ reference AutoCAD objects to cater for modules in iCAD environment.
 A typical set of tasks that can be accomplished using tools and functionalities are presented below.
 
 
-## Host Data from Excel to AutoCAD Object
+## Host Data to AutoCAD Objects
 [Back to ToC](#table-of-contents)
 
 One of the power features of iCAD is its ability to enhance the use of AutoCAD environment as a true design environment by allowing objects to host raw data or relevant processed data.

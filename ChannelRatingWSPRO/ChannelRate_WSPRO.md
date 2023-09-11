@@ -173,7 +173,24 @@ Segments are parts of the cross-section profile having different hydraulic param
 ## Solve and explore solutions
 [Back to ToC](#table-of-contents)
 
-One can now solve the problem, and explore solutions. Solve the setup from `Workflow > Solve`  View results using different options:
+There are three differnet options available to solve for the rating curve, and this can be selected from the `Workflow > Edit Variables` by clicking on the *Analysis Method* variable.
+
+<img src="./media/Image21.png" style="width:7in">
+
+1. **Mannings Equation**: This method applies the mannings equation to the defined cross-section, and uses the slope value from the *Stream Bed Slope* variable. 
+    > **Note** This method uses the arithmatic average of Roughness values assigned for the segments in the cross-section.
+1. **Use Tempate x5**: This methos uses the built in WSPRO engine to compute water surface profiles. It replicates the cross-section 5 times in the downstream direction. It solves the rating curve for the downstream most section, and progresses upstream, refining the solution each time.
+
+
+
+1. **Use Multiple Sections**: This method can take input for multiple cross-sections of the river down stream of the desired location. The for each cross-section must be plotted and referenced in AutoCAD.
+
+> **Note** The last two methods properly accounts for the variation of roughness values for differnet segments along the defined cross-section.
+
+
+After setting the solution method, solve the session from `Workflow > Solve`.
+
+View and explore results as follows:
 
 - Toggle `Workflow > View Depth Plots` to view stage or depth plots {br}
     

@@ -17,15 +17,33 @@ abutment structures which is solved using a different module.
 
 ## Table of Contents
 <!--TOC-->
-  - [am view
-
-- Longitudinal v](#am-view-longitudinal-v)
-  - [e="width:4.09565in;heig](#ewidth4.09565inheig)
-  - [d object is needed to com](#d-object-is-needed-to-com)
-  - [Select yhe desi](#select-yhe-desi)
-  - [is DELETED](#is-deleted)
+  - [Conventions](#conventions)
+  - [Workflow](#workflow)
+  - [Prepare Object types](#prepare-object-types)
+  - [Defining the session](#defining-the-session)
+  - [Transverse design](#transverse-design)
+  - [Hydraulic Parameters](#hydraulic-parameters)
+  - [Sluice bay dimensions](#sluice-bay-dimensions)
+  - [Transverse Dimensions](#transverse-dimensions)
+  - [Abutment Provisssions](#abutment-provisssions)
+  - [Longitudinal Design](#longitudinal-design)
+    - [Longitudinal Dimensions](#longitudinal-dimensions)
+    - [Overflow Section](#overflow-section)
+    - [Surface flow analysis:](#surface-flow-analysis)
+    - [Sub-surface flow analysis:](#sub-surface-flow-analysis)
+    - [Cutoff-Dimensions](#cutoff-dimensions)
+  - [Downstream Apron design and Dimensions](#downstream-apron-design-and-dimensions)
+  - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
+  - [The Sluice Bay section Design](#the-sluice-bay-section-design)
+  - [Outlet Designs and Settings](#outlet-designs-and-settings)
+  - [Technical Notes:](#technical-notes)
+    - [Overflow rating:](#overflow-rating)
+    - [Surface hydraulics:](#surface-hydraulics)
+    - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
+    - [Stability analysis:](#stability-analysis)
+    - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
+    - [References:](#references)
 <!--/TOC-->
-
 
 ## Conventions
 
