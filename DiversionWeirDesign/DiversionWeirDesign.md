@@ -17,32 +17,13 @@ abutment structures which is solved using a different module.
 
 ## Table of Contents
 <!--TOC-->
-  - [Conventions](#conventions)
-  - [Workflow](#workflow)
-  - [Prepare Object types](#prepare-object-types)
-  - [Defining the session](#defining-the-session)
-  - [Transverse design](#transverse-design)
-  - [Hydraulic Parameters](#hydraulic-parameters)
-  - [Sluice bay dimensions](#sluice-bay-dimensions)
-  - [Transverse Dimensions](#transverse-dimensions)
-  - [Abutment Provisssions](#abutment-provisssions)
-  - [Longitudinal Design](#longitudinal-design)
-    - [Longitudinal Dimensions](#longitudinal-dimensions)
-    - [Overflow Section](#overflow-section)
-    - [Surface flow analysis:](#surface-flow-analysis)
-    - [Sub-surface flow analysis:](#sub-surface-flow-analysis)
-    - [Cutoff-Dimensions](#cutoff-dimensions)
-  - [Downstream Apron design and Dimensions](#downstream-apron-design-and-dimensions)
-  - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
-  - [The Sluice Bay section Design](#the-sluice-bay-section-design)
-  - [Outlet Designs and Settings](#outlet-designs-and-settings)
-  - [Technical Notes:](#technical-notes)
-    - [Overflow rating:](#overflow-rating)
-    - [Surface hydraulics:](#surface-hydraulics)
-    - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
-    - [Stability analysis:](#stability-analysis)
-    - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
-    - [References:](#references)
+  - [am view
+
+- Longitudinal v](#am-view-longitudinal-v)
+  - [e="width:4.09565in;heig](#ewidth4.09565inheig)
+  - [d object is needed to com](#d-object-is-needed-to-com)
+  - [Select yhe desi](#select-yhe-desi)
+  - [is DELETED](#is-deleted)
 <!--/TOC-->
 
 
@@ -624,6 +605,7 @@ below.)
     <img src="./media/image3.png" style="width:6.5in;height:4.08333in" />
 *Figure for surface flow clalculation and water surface profile determination.*
 
+> :bulb: **Important Note**: The flow surface profile created is a result of the calculations made according to the provisions in the Technical Notes (at the end of this page), and may vary from results that may be obtained from numerical analysis or simulation methods.
 
 ### Sub-surface flow analysis:
 [Back to Toc](#table-of-contents)
@@ -851,6 +833,8 @@ One can see that:
 - FS-OT (Factor of safety against overturning) is calculated and shown, along with the resultant of all acting forces
 
 - The crossing of the resultant on the bottom surface is also shown, with the middle-third highlighted in green.
+
+> :bulb: **Important Note**: Stability analysis is carried out neglecting any downstream water below the toe of the weir body. However, pressure due to sub-surface flow is accounted fully. As such, FOS determined form fully submerged weirs is not in the scope of the current release.
 
 The variables relevant to stability analysis, can also be edited from
 the overflow section view. They are listed below.

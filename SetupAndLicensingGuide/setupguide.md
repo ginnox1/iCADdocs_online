@@ -126,6 +126,22 @@ Now, you are ready to lauch the application.
 1. If the Update Check dialog appears, that is normal. Choose `Update Latter` if the option is there, and continue. If not, choose `Abort Launch` and exit. Then follow the steps below in [Installing Update Resources](#installaing-update-resources).
 
 
+## Regular License Check 
+The license system checks and validates installed licenses with the information registered online. The frequency may vary, but typically between 7 to 10 days. This ensures authorized use of properly maintained products across all user groups and clients.
+
+In this process it is normal to get the following messages every while.
+
+<img src="./media/Image26.png">
+
+This is only a warning that the system wants to check online, but currently unable to do so. Getting an internet connection and restarting the application will resolve the issue.
+
+If online validation is not done with in the specified number of days, then the application will alert with the validation failed message below.
+
+<img src="./media/image27.png">.
+
+Connecting to an internet and launching the application will resolve this issue.
+
+
 ## Setup AutoCAD for use with iCAD and related products
 
 Upon first start, it is common to get the *Failed to Link* warning dialog. This happens if a running AutoCAD application is not detected while launching iCAD. That is normal, and continue by hitting `Ok` button. The application will start.

@@ -1,6 +1,6 @@
 # TerraForm
 
-[Back to Home](..\index#online-documentation)
+[Back to Home](..\index.md#online-documentation)
 
 The analysis and visualization of fill and cut works over ground
 surfaces brings a significant challenge to designers. iCAD’s new
@@ -271,6 +271,25 @@ The normal pool level information is a label only informaiton. It enhances displ
 
 <img src="./media/image9.png" style="width:3.07813in;height:2.0997in" />
 
+> Note: You can use 0 value to suppress the pool level text from appearing. Use negative values to render it on the left (-ve offset) side of the section, and positive values to do the reverse.
+
+### Creating Plan Views
+[Back to toc](#table-of-contents)
+
+The module creates accurate presentation quality plan views using the ground surface and the top-most assembly (in the assembly list), showing slope edges and hair lines to indicate slope direction. These drawings can be generated to AutoCAD with desired scaling.
+
+
+<img src="./media/image27.png" style="width:6in">
+
+*Figure of a straight axis alignment with hidden contours under fill.*
+
+
+<img src="./media/image26.png" style="width:6in">
+
+*Figure of a formation resulting from a curved axis alignment showing accurate presentation of plan view.*
+
+Plan views are generated from `Workflow > Plan View` menu command. Choose options for generating contour as desired, and proceed.
+
 
 
 ## Generating Fill Work Estimates
@@ -313,6 +332,8 @@ station.
 
 Fig: Plan view of a fill work with schematic of tracer objects or lines.
 
+> **Important Note**: The tracer objects must be prepared in exactly the above orientation so that x coordinates represent station along the axis, and y coordinates represent distance from the alignment axis.
+
 This can be applied to any assembly section to dynamically transform how
 the assembly changes shape along the stations.
 
@@ -337,9 +358,17 @@ Cross-section views from the main interface now show the assembly
 dynamically changing size and shape as the cross-section line is moved
 along various stations.
 
+> Note: Tracer bee techniques of configuring assemblies will not work for alignments with curves, for the current version.
+
 ## Modified Ground Levels Processing
 [Back to toc](#table-of-contents)
 
 [To be completed soon...]
+
+## Working with Alignments with curves
+[Back to toc](#table-of-contents)
+
+[To be completed soon...]
+
 
 END.

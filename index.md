@@ -69,6 +69,8 @@ The guide is organized as follows. Navigate to your desired topic to learn more.
 
 [8. TerraForm Module](TerraForm/TerraForm.md)
 
+[9. SCSModel for Peak Hydrograph](SCSModel/SCSModel.md)
+
 '9. ChartView Module [Under Development]()
 
 
@@ -83,31 +85,6 @@ iCAD and related products are copyright protected and licensed applications. You
 Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
 
 
-## ProducrTiers
-Standard
-- chartB
-- cadExtrract
-- Plot Data
-- Mark Alignment
-- Edit Axes
-- inquire3d
-
-Pro
-- Plot to AutocAD
-- ContourCloud
-- Weir (simple energy desipator)
-- Terraform
-- ChannelRate
-- SCS model
-- Retaining wall
-- Profile
-- Multi-label plotter 
-
-Enterprise
-- Render to CAD
-- Weir (Outlet design, energy dessiplators)
-- Terraform (Modified ground level)
-- ChannelRate (multi-section)
 
 ## Contacts
 
