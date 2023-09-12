@@ -322,23 +322,16 @@ using the Copy Table button.
 ## Assemblies with Tracer (Bees):
 [Back to toc](#table-of-contents)
 
-Tracer assemblies are assemblies with additional geometric constraints
-defined. The constraints are defined using an AutoCAD object
-representing a plan view of the desired constraint. The constraint
-represents the extent to which b (in b,m,h triplet) extends at any given
-station.
+Tracer assemblies are assemblies with additional geometric constraints defined. The constraints are defined using an AutoCAD object representing a plan view of the desired constraint. The constraint represents the extent to which b (in b,m,h triplet) extends at any given station.
 
 <img src="./media/image3.png" style="width:6.5in;height:3.72222in" />
 
-Fig: Plan view of a fill work with schematic of tracer objects or lines.
+Fig: Plan view of a fill work with schematic of tracer lines.
 
-> **Important Note**: The tracer objects must be prepared in exactly the above orientation so that x coordinates represent station along the axis, and y coordinates represent distance from the alignment axis.
 
-This can be applied to any assembly section to dynamically transform how
-the assembly changes shape along the stations.
+This can be applied to any assembly section to dynamically transform how the assembly changes shape along the stations.
 
-Note: All tracer lines must be drawn to scale, referenced to a valid
-axis pair, and properly Tagged.
+Note: All tracer lines must be drawn to scale, referenced to a valid axis pair, and properly Tagged.
 
 To add a tracer line to an assembly:
 
@@ -348,17 +341,20 @@ To add a tracer line to an assembly:
 
 3.  Upon selection, the geometry of the selected object is applied to the assembly. Choose the Edit button, and you will notice that the selected object is included in the last row.
 
-<img src="./media/image5.png"
-style="width:3.85938in;height:2.61238in" />
+<img src="./media/image5.png" style="width:3.85938in;height:2.61238in" />
 
-To complete the definition, choose how it is to be applied (either to
-the left or right side of the assembly, defined in rows 4 or 5 above).
+To complete the definition, choose how it is to be applied (either to the left or right side of the assembly, defined in rows 4 or 5 above).
 
-Cross-section views from the main interface now show the assembly
-dynamically changing size and shape as the cross-section line is moved
-along various stations.
+Cross-section views from the main interface now show the assembly dynamically changing size and shape as the cross-section line is moved along various stations.
 
-> Note: Tracer bee techniques of configuring assemblies will not work for alignments with curves, for the current version.
+> :bulb: **Tip**: Edits in the coordinates of tracer lines or design levels, can be updated at any time with out leaving the session by using `Workflow > Reload Assemblies`. However, make sure to NOT EDIT the starting coordinate of any of these. If so, re-reference the objects before reloading.
+
+
+> **Note**: Tracer bees can not be applied to top most assemblies. If lower assemblies with tracer bee data are moved up, the data will be cleared upon reload.
+
+
+> **Note**: Assigning different assembly sets for different (sections of) stations is not allowed in the current version.
+
 
 ## Modified Ground Levels Processing
 [Back to toc](#table-of-contents)

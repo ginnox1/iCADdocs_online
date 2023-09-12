@@ -27,7 +27,7 @@ To use this module, you will need the image of the chart or graph to read ready 
 
     > :bulb: **Tip**: Control the visibility of the image (its transparency) from the `Workflow > Variable Editor` by changing *Transparency Value* as desired.
 
-1. Create the reference frame for the data set from `Workflow > Pick BBox Rectangle`. On the image, click on the left-bottom corner of the image, and then the top-right corner of the image, as accurately as you can. Both points represent the starting and ending ranges of the data to read in the axis.
+1. Create the reference frame for the data set from `Workflow > Pick BBox Rectangle`. On the image, **click and drag ** from he left-bottom corner of the image to the top-right corner of the image. Start and finish accurately on the limits of the graph area. This will determine the accuracy of the chart reading process later.
 
 1. Go to `Workflow > Variable Editor` and set the data range. Also, specify the scaling for each axis, i.e., whether linear or log.
 
@@ -86,6 +86,8 @@ To achieve this, follow below steps.
 1. Now, start the reader from `Workflow > Read Chart`, and hover arround. The values are interpolated for the desired value and displayed.
 
     <img src="./media/Image 014.png" style="Width:6in">
+
+> :notebook: **Note**: If more than two series data are found, then the interpolation method used to calcualte the new value will use that specified in the *Variable Editor.*
 
 
 
