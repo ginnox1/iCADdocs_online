@@ -18,6 +18,8 @@ abutment structures which is solved using a different module.
 ## Table of Contents
 <!--TOC-->
   - [Conventions](#conventions)
+  - [Known Issues](#known-issues)
+  - [Features under development](#features-under-development)
   - [Workflow](#workflow)
   - [Prepare Object types](#prepare-object-types)
   - [Defining the session](#defining-the-session)
@@ -52,6 +54,17 @@ abutment structures which is solved using a different module.
 - Transverse design is drawn in Face-upstream view
 
 - Longitudinal view drawn facing the right-bank (facing upstream).
+
+## Known Issues
+- When creating an ogee overflow shape, maintaining the actual flare width specified by the user varies slightly from the generated profile.
+
+## Features under development
+The following features are under development, and will be available as soon as they are completed.
+- BoQ extraction
+- Bridge Deck addtion to weir top
+- Energy desipators (Type II, Type IV), currently simple pool is available for energy dessipation.
+- Report generation (for Sluice bays, Outlets), currently available reports include upstream flow hydraulics, pre and post jump flow hydraulics, Stability analysis, appron design, 
+- Auto Design feature to guide the engineer safe weir dimensions form iterative solutions as a funciton of some (or all ) varying parameters, such as Top width, flare width, downstream slope and bottom key dimensions
 
 ## Workflow
 
@@ -327,6 +340,11 @@ slightly raised crest. The gate dimensions are automatically sized and sketched.
 
 
 <img src="./media/image12.png" style="width:6.5in;height:4.86111in" />
+
+The size of the gate for the sluice bays are uniform. The width equals the width of the bays, and the height is determined from the maximum of:
+- hu/2+hprd
+- hbay/2, where the bay clear height hbay excludes bay crest height.
+
 
 
 See Technical notes, to learn how sluice bay capacity is determined.
@@ -611,7 +629,9 @@ flow analysis, (c) downstream apron design. These are presented below.
 
 Surface flow condition for the entire length of the structure, i.e.,    upstream, over flow, and downstream sections, are automatically evaluated for the current geometric and hydraulic set of parameters.
 
-- The upstream flow hydraulics is estimated from solutions of Bosenisques energy equation at different sections.
+- The upstream flow hydraulics is estimated from solutions of Bosenisques energy equation at different sections. For ogee shaped weirs, the emperical relations from Ref 2 are used assuming a vertical upstream face and no piers.
+
+    <img src="./media/uppernappe.jpg" style="width:4in">
 
 - The downstream flow hydraulics is determined by analyzing the type of expected hydraulic jump in relation to the prevalent tail water depth condition.
 
@@ -949,7 +969,9 @@ and the upstream apron level. The following are key assumptions used.
 
 - The invert level for the top slap is provided by applying the clearance value desired above the crest level of the weir (NPL).
 
-- The FSL in the offtaking canal is calculated by solving the manning's flow equation for uniform flow for the specified canal geometry and bed slope.
+- The FSL in the offtaking canal is determined from NPL elevation less the desired driving head. This sizes the canal by solving the manning's flow equation for uniform flow for the specified canal geometry and bed slope.
+
+- The gate height is determined from the resulting opening width set equal to the bottom width of the off-taking canal, and height set to the bottom of the top slab + 10cms.
 
 The settings responsible for the hydraulic design and sizing of the outlet structure are presented below.
 
@@ -1117,6 +1139,10 @@ charts below.
 
 <img src="./media/image45.png">
 
+Alternatively, solutions from below chart can be used.
+
+<img src="./media/ogeeRating.jpg" style="width:5in">
+
 In the above equations, Cd= Coefficient of discharge, Ho, H= depth of
 overflow, B= top width of the weir, P= height of the weir, L= length of
 overflow, and g= gravitational acceleration.
@@ -1127,15 +1153,22 @@ In this case the effective overflow length is calculated from
 <img src="./media/image51.png">
 
 
+
 Where L~o~ is the total available overflow length, and H~o~ is the
 overflow height.
 
 ### Surface hydraulics: 
  [Back to Toc](#table-of-contents)
 
-The pre-jump flow conditions are computed applying the energy equation
-between the approach section, and points along the downstream glacis
-(Asawa 2002).
+ The pre-jump flow profile is determined by approximating subcritical flow conditions until 3/4th of critical depth, and solving bernoulis equation there after for the super critical flow contiions.
+
+ For ogee type overflow sections, the surface flow profile is computed from the following relation ship (Open Channel Hydraulics, Chow)
+
+ <img src="./media/image52.png" style="width:5in">
+
+ <img src="./media/uppernappe.jpg" style="width:3in">
+
+For all types of weirs, and prefered methods of computing coeficient of discharge, the pre-jump flow conditions are computed applying the energy equation between the approach section, and points along the downstream glacis (Asawa 2002).
 
 
 <img src="./media/image 001.png">
@@ -1239,7 +1272,26 @@ evaluated against the following (Asawa 2002):
 
 Where **FS~OT~** is factor of safety against overturning, e=
 eccentricity, **q~heel,toe~** are stresses at heel and toe of the
-bottom of the weir structure.
+bottom of the weir structure. 
+
+To determine contributing forces and their moments the following are considered.
+1. Hotizontal Water Pressure due to overflowing water (PW1, and PW2), determined as a function of total overflow height above apron level, and weir height respectively.
+2. Vertical and Horizontal pressure due to impounded silt, PS, caclualted as a funciton of the heigh otf silt deposited above us apron level.
+1. Horizontal pressure due to pre-jump water depth (PW3) on the downstream side, neglected.
+1. Vertical pressure force on weir body due to overflowing water (VW2) calculated considering water level to US HGL up to weir axis, and acting both on the top width and us flare area.
+1. Uploift Pressure (PU1 and PU2) calculated separately for the resulting rectangular and wedge distributions.
+1. Self Weight, calculated from the cross-sectional area of the weir, and the location of the CG.
+
+A part of a report from a stabiliity analysis is shown below as a sample.
+
+<img src="./media/Image53.png" style="width:5in">
+
+The result of a stabilty analysis is also presented graphically, proving highlights of the stability evaluation result.
+
+<img src="./media/Image54.png" style="width:4in">
+
+One can see the magnitude of the resultant acting force, overall-factor of safety, as well as conditions for stress at bottom floor. If one of these is not satisfied, the text will beshown in red.
+
 
 ### Sluice Bay Hydraulics
  [Back to Toc](#table-of-contents)

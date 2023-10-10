@@ -32,9 +32,8 @@ This online documentation provides guidance and resources for efficient use of i
 
 The guide is organized as follows. Navigate to your desired topic to learn more. You can click the links to navigate to each section. At the begining of each section, click on the [Back to Home]() link to navigate back to this page.
 
-> :bulb: **Note**: To return to this home page from any other page, click on the page heading **iCADdocs_online**.
+> :bulb: **Tip**: To return to this home page from any other page, click on the page heading **iCADdocs_online**.
 
-> Note: Sections with TBD are under development.
 
 1. [Introduction to iCAD software](IntroductionToiCAD/Introduction_to_iCAD.md)
 

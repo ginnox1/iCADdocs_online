@@ -228,6 +228,8 @@ documentation and presentation.
 
     <img src="./media/image12.png" style="width:6.5in;height:3.0125in" />
 
+Any of the results on the main interface can also be drawn to AutoCAD using the `Workflow > Draw All to AutoCAD` or `Workslof > Select Draw to AutoCAD` menu commands.
+
 You can read more on this from the guide on *Interacting with iCAD environment* for more details.
 
 ## Rating curve for multiple cross-sectoins

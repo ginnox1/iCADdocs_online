@@ -7,15 +7,34 @@ This page presents each tool available, and how to use it to tackle design chall
 
 ## Table of Contents
 <!--TOC-->
-  - [e, and can position/la](#e-and-can-positionla)
-  - [hance the use of AutoCAD enviro](#hance-the-use-of-autocad-enviro)
-  - [img src="./media/Image 06](#img-src.mediaimage-06)
-  - [One of the most needed f](#one-of-the-most-needed-f)
-  - [kflow to plot data using this function is as follows:](#kflow-to-plot-data-using-this-function-is-as-follows)
-  - [the modules. The user can exp](#the-modules.-the-user-can-exp)
-- [ow back in the di](#ow-back-in-the-di)
-  - [s editing as explained furth](#s-editing-as-explained-furth)
-<!--/TOC-->
+  - [Summary of functions](#summary-of-functions)
+  - [Host Data to AutoCAD Objects](#host-data-to-autocad-objects)
+  - [Plot Data in to AutoCAD](#plot-data-in-to-autocad)
+  - [Plot Graphic elements to AutoCAD](#plot-graphic-elements-to-autocad)
+    - [Save to a File](#save-to-a-file)
+    - [Generating to AutoCAD](#generating-to-autocad)
+  - [Plot Text Table to AutoCAD](#plot-text-table-to-autocad)
+  - [Local Coordinate system and Object Referencing for iCAD use](#local-coordinate-system-and-object-referencing-for-icad-use)
+    - [Create and Edit floating Axes](#create-and-edit-floating-axes)
+      - [Create a new axes](#create-a-new-axes)
+      - [Editing Axis](#editing-axis)
+      - [Creating Unit axes](#creating-unit-axes)
+    - [Creating Referenced Axis](#creating-referenced-axis)
+    - [Referencing objects to an Axis system](#referencing-objects-to-an-axis-system)
+  - [Create and Edit Alignment Markers](#create-and-edit-alignment-markers)
+  - [Generating profile data for Alignment routes](#generating-profile-data-for-alignment-routes)
+    - [Conventions](#conventions)
+    - [Extracting and displaying profile data](#extracting-and-displaying-profile-data)
+    - [Modify extracted data](#modify-extracted-data)
+    - [2.5D Profile data generation](#2.5d-profile-data-generation)
+    - [Batch processing profiles](#batch-processing-profiles)
+  - [Data Visualization](#data-visualization)
+    - [Technical Notes: Fitting a Model or adding a trendline:](#technical-notes-fitting-a-model-or-adding-a-trendline)
+  - [Using CAD Objects Extractor](#using-cad-objects-extractor)
+    - [Collecting and Managing Objects in to the Extractor](#collecting-and-managing-objects-in-to-the-extractor)
+    - [Exporting Data](#exporting-data)
+    - [Instantiation](#instantiation)
+<!--/TOC--><!--/TOC-->
 
 
 ## Summary of functions
@@ -446,6 +465,36 @@ Once can also reference objects by using previously referenced objects. If alrea
 <img src="./media/image22.png"
 style="width:7in" />
 *AutoCAD will confirm successfully referenced objects on the command line.*
+
+## Drawing Results to AutoCAD
+Any solution on the main interface can be sent to AutoCAD for scaled drawing and further processing. This is made possible in one of two ways.
+
+### 1. Using Menu command
+The first method is to use the menu command available for each session under the **Workflow** menu.
+
+<img src="./media/image102.png" style="width:5in">
+
+Choosing the *Select Draw* item allows to draw elements of the results selectively. It will invoke a dialog that allows to pick items for sending to AutoCAD.
+
+<img src="./media/image103.png" style="width:3in">
+
+Select any set of objects and hit `Ok` to continue. AutoCAD will be in select mode. Pick a refernced object in an already existing axis to continue.
+
+> :exclamation: **Important Note**: Do not select a plotted object, whose coordinates are trimmed (see method 2 below), or the plotted objects will shift.
+
+
+
+### 2. Using the Toolbar Command
+One can draw to AutoCAD using the toolbar item command. This tool invariably generates all the displayed graphic elements to AutoCAD.
+
+As opossed to above method which requires a referenced object, this tool also generates its own local axis system to plot the elements. On start, pick a bounding box object in AUtoCAD. The rest will be automatically completed.
+
+> :bulb: **Note**: VIsible elements, with in the boundary of the view port, are creatd in AutoCAD. Elements extending beyond the current axes limits (view area) will be trimmed for their X values before sending to AutoCAD>
+
+
+<img src="./media/image101.png" style="width:5in">
+
+
 
 ## Create and Edit Alignment Markers
 [Back to ToC](#table-of-contents)

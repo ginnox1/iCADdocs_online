@@ -57,10 +57,13 @@ illustration. Each step is described in detail in subsequent sections.
 
 The prerequisite objects and their prerequisite is outlined in the *Module Browser* dialog, while defining the session. Prepare the objects as follows:
 
-1. Draw the layout object following the footprint of the toe of the wall (front face edge) on a plan view area in AutoCAD. Then create a profile data with offsets covering adequate transverse distance.
+1. Draw the layout object following the footprint of the toe of the wall (front face edge) on a plan view area in AutoCAD. Then create a profile data for the Alignment objeect. The profile data creation best serves design and visualization needs if:
+    1. enough offset locations in the transverse directions are included, and
+    1. finer resoltion is available, to allow sufficient incremental representation between segments. (usually 0.5m interval is recommended).
 
 
-    > Tip: The vertices of the layout object must be aligned longitudinally with the vertices of wall top and bottom profile objects. In illustration  below, for instance, the layout object must have four (4) vertices.
+
+> Tip: The vertices of the layout object must be aligned longitudinally with the vertices of wall top and bottom profile objects. In illustration  below, for instance, the layout object must have four (4) vertices.
 
 2. Prepare wall top and bottom profile objects. This is best prepared
 from overlaying the profile plot from the layout object, as shown in the
@@ -72,6 +75,8 @@ style="width:6.43889in;height:2.53264in" />
 These objects are needed for retaining walls with varying heights along the longitudinal direction. A good example is the abutment wall of diversion weir structures. Otherwise, simple polylines can be used to represent the top and bottom of the retaining wall.
 
   > Note: It is important to have sufficient length of equal wall height along the length of the wall. Otherwise, the next step(s) may fail to proceed.
+
+  > Note: Make sure the wall begins with uniform wall height for a certain distance (5*incremental distance used to generate the profile).
 
 ## Define and Start Session
 [Back to ToC](#table-of-contents)
@@ -97,13 +102,23 @@ To define the design session:
 
     Provide the dimensions as needed, and proceed.
 
-    <img src="./media/image1.png" style="width:3.80712in;height:2.68037in" />
+    <img src="./media/image1.png" style="width:3.80712in" />
 
     Note an important limitation of simple walls: 
     - BoQ is extracted for the wall only. No earth volume is included.
     - Plan view is not available.
 
-    The interface is now to proceed to the next step.
+    The interface is now to proceed to the next step. If profile data is found, the profile data along the centerline, max and min elevations in transverse direction, as well as the wall face-break points are shown.
+
+    <img src="./media/image37.png" style="width:2in">
+    
+    *Figure: Plan view of a retaining wall alignment line for a diversion weir structure.*
+
+    <img src="./media/Image38.png" style="width:7in">
+
+    *Figure: Starting view of a retaining wall design for complete data, including wall face-break lines*
+
+    > :bulb: **Note**: In above figure, that the vertices in the alignment drawing in AutoCAD are understood to represent face-break locations along the longitudinal dimensions of the wall.
 
 ## ID Segments
 [Back to ToC](#table-of-contents)
