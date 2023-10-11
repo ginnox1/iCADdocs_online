@@ -112,7 +112,7 @@ Before launching, make sure to setup the application as follows:
 
 1. After installation, right-click on the desktop icon, and choose `Properties`. 
 
-   <img src="./media/image12.png" style="width:6in" >
+   <img src="./media/image 12.png" style="width:6in" >
 
 1. In the *iLauncher* dialog copy the contents in the **Target** field, and paste to the **Start In** field.Before completing, remove the last part of the text you pasted **iLauncer.exe**.
 

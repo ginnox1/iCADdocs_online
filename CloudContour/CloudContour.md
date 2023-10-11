@@ -8,7 +8,6 @@ To start using the **ContourCloud** module, one must have the point cloud data h
 
 ## Table of Contents
 <!--TOC-->
-  - [Defining the module](#defining-the-module)
   - [Defiing Boundaries](#defiing-boundaries)
   - [Creating Regions of Interest (RoIs)](#creating-regions-of-interest-rois)
     - [Automatic Boudndary creaion](#automatic-boudndary-creaion)
@@ -18,10 +17,9 @@ To start using the **ContourCloud** module, one must have the point cloud data h
     - [Filetering Data to RoIs](#filetering-data-to-rois)
     - [Identifying Outliers](#identifying-outliers)
     - [Generating Contours](#generating-contours)
-- [Generated AutoCAD Plots](#generated-autocad-plots)
-  - [](#)
+  - [Generated AutoCAD Plots](#generated-autocad-plots)
+    - [Working with large data sets](#working-with-large-data-sets)
 <!--/TOC-->
-
 
 
 ## Defiing Boundaries
@@ -167,7 +165,7 @@ The interval for generating contours can be controlled from `Workflow > Edit Var
 
 
 
-# Generated AutoCAD Plots
+## Generated AutoCAD Plots
 [Back to ToC](#table-of-contents)
 
 Contour plots and boundary data can be easily plotted to AutoCAD environment using the `Workflow > Render to AutoCAD` menu command.
@@ -179,7 +177,19 @@ Select the objects to draw to AutoCAD and follow the prompts. For more informati
 > :bulb:    **Tip**: Controus are generated to AutoCAD with contour label information. Use the *AutoCAD Addon*  tools to create the labels.
 
 
+###  Working with large data sets
 [Back to ToC](#table-of-contents)
+
+When working with larger data sets, contour generation to AutoCAD can take some time. The following workaround may help save some time, in such cases. Assuming the user needs a contour plot of 1.0 unit interval:
+
+First, generate the contours with out the need for labeling, i.e., every 1unit interval, and export using *Render to File* option. This process should complete much faster.
+
+Finally, generate the contours that require labeling, such as major contour lines at 5m intervals, and generate directly (with out the *render to file* option). This may take a while, but because the contour lines are much smaller in number, there is a timve saving.
+
+<img src="./media/Image 026.png" style="width:7in">
+
+
+
 
 END.
  
