@@ -78,7 +78,7 @@ Use `Workflow > Auto Delineate Region` to create a boundary area around the data
 
 > :bulb: **Tip**: Use the *Shrink Factor* variable setting to control how the boundary is created for the cloud point data set.
 
-### Manuall Edit or creation.
+### Manuall Boundary creation or Edit
 [Back to ToC](#table-of-contents)
 
 One can also manually create new boundary data from `Workflow > Draw Region` menu command,

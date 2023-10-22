@@ -105,36 +105,35 @@ Then follow below typical workflow:
 
 1.  Prepare the Object in AutoCAD. Draw an arbitrary object using the AutoCAD polyline command. Use the *Attach Tag* addon tool to give it a recognizable name.
  
-    <img src="./media/Image 01.png">
+    <img src="./media/Image 01.png" style="width:5in">
 
 
-2.  Start the workspace manager from iCAD interface, and Add the object to the current collection set using the *Add Objects* button. 
+3.  If your data is in a file, skip this step. To use windows clipboard, open the data in excel environment, select data and copy using `CTRL`+`C` short cut.
+
+
+2.  Start the menu command from 'Tools > Paste to Object` from iCAD interface.
     
-    <img src="./media/Image 02.png">
-    
-    You will see the object listed on the left box with the tag string provided and it’s AutoCAD Object ID.
+    <img src="./media/Image 012.png" style="width:4in">
 
-    > :bulb: **Tip**: Check the *Check for Objects* box, to change view between object list and session list.
-
-3.  Select your desired data in Excel and copy to windows clipboard
-    using `CTRL`+`C` short cut.
-
-4.  Back on Workspace Manager, click on the object and select Paste Data tool button. This will start *Select Source* dialog. Choose `Clipboard`. 
-
-    <img src="./media/Image 06.png" style="width:7in">
+4.  In the dialog, pick `File` or `Clipboard` depending on your data source locaiton.
+    <img src="./media/Image 014.png">
 
 4. The import dialog starts, showing a preview of the data in the clipboard. Accept `Next` and `Continue` buttons.
 
     <img src="./media/Image 04.png" style="width:4in">
 
-    <img src="./media/Image 05.png" style="width:4in">
-
+    <img src="./media/Image 05.png" style="width:4in">{br}
 
     > **Note** The status bar at the bottom of the main iCAD interface (above). If successful, it reports the paste operation is completed. 
     
-    One can view this data, by selecting the object on the Workspace Manager interface, and using *Preview Data* tool button. The data is presented in the *uiDataPreview* table. Use the `<` and `>` buttons to expand and contact the table view.
+    To view this data, go to `Tools > View CSV Data`. Go to AutoCAD and pick the host object.
 
-    <img src="./media/Image 07.png" style="width:4in">
+    <img src="./media/Image 013.png" style="width:4in">
+
+    The data is presented in the  *uiDataPreview* table. Toggle its visibility from the *Show Table Data* toolbar button.{br}
+
+    <img src="./media/Image 015.png">
+
 
 > :notebook: **Technical Note**: These data are saved in CSV format in the accompanying AutoCAD file to the project (*.xsd). They can not be edited. However, they can be replaced with modified data any time.
 
