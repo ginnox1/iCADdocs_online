@@ -71,7 +71,12 @@ Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/
 [Back to ToC](#table-of-contents)
 {br}
 
-iCAD softwware is updated with newly launched modules for Diversion weirs design, and embankements analysis. The latest version is Version 2.8 (Aug 2023) release. If you have not installed this latest release, follow the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
+iCAD softwware is updated with newly launched modules for Diversion weirs design, and embankements analysis. Recent updates also include new features to ChannelRate_WSPRO mdoule.
+
+
+:bulb: The latest release is **Version 2.8.3.9022** 
+
+If you have not installed this latest release, follow the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
 If you already have the newly released product, use the update resource to ensure you are using the latest and supported version of the software. Follow below steps: 
 

@@ -1,4 +1,4 @@
-# iCAD Update Notes (Aug 2023)
+# iCAD Update Notes (Nov 2023)
 
 [Back to Home](..\index#updates-for-this-release)
 
@@ -6,7 +6,8 @@
 
 Well come to this update. We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
 
-> :warning: **Important Notice**: If you have a previous version of iCAD, remove it from your system, and install the new release. It is an improved one-click installation, avoidng the need to download and install other applications previously required.
+The current release is **Version 2.8.3.9022**
+
 
 
 Key in this release include new modules for diversion weir design and embankment works analysis.
@@ -18,6 +19,22 @@ Key in this release include new modules for diversion weir design and embankment
   - [Enhanced ChartView](#enhanced-chartview)
   - [Support for Latest AutoCAD Releases](#support-for-latest-autocad-releases)
 <!--/TOC-->
+
+## ChannelRating_WSPRO
+Recent updates to ChannelRate_WSPRO are included to make the module more interactive and generate rich information to AutoCAD.
+The following are key features:
+- New variable included to show flood levels for upto two discharges
+
+	<img src="./media/Image24.png" style="width:6in">
+
+- Show the solutoin method used for analysis
+- Generate texts and annotations to AutoCAD
+    <img src="./media/Image25.png" style="width:6in">
+- Improved error handling for disxharge ranges.
+
+
+	
+
 
 ## Diversion Weir Design :new:
 [Back to ToC](#table-of-contents)
