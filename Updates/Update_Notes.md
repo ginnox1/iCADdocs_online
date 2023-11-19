@@ -6,7 +6,7 @@
 
 Well come to this update. We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
 
-The current release is **Version 2.8.3.9022**
+The current release is **Version 2.8.3.9028**
 
 
 
@@ -19,6 +19,35 @@ Key in this release include new modules for diversion weir design and embankment
   - [Enhanced ChartView](#enhanced-chartview)
   - [Support for Latest AutoCAD Releases](#support-for-latest-autocad-releases)
 <!--/TOC-->
+
+
+## Data Table View
+iCAD's Data viewer table interface is frequently used to explore data contents of AutoCAD objects. In this update, it can directly call on AutoCAD objects to see if CsvData is hosted and its contents, if any.
+* Choose **Tools > Show Csv Data** menu command or the toolbar item to start the command. Go to AutoCAD, and pick the object whose data you want to explore.
+
+	<img src= "./media/Image 004.png" style="width:5in">
+
+## Retwall Module
+Retaining wall module is enhanced to indlude the following features, particularly suited for designing long retaining wall.
+
+
+
+* New variable included to allow Segment identification from Wall Top and bottom profiles. This is a useful feature giving the user additional flexibility to define and solve practical problems.
+
+	<img src="./media/Image 001.png" style="width:5in">
+
+
+* New variable included to allow flexible BoQ extraction (summarized or detailed). The summary will generate BoQ for all Segments in the wall.
+
+	<img src="./media/Image 002.png" style="width:5in">
+
+
+* A new safety criteria included on the Design Scene selector showing trends on eccentriciy and aiding in desin width selection.
+
+	<img src="./media/Image 003.png" style= "width:5in">
+
+
+Bill of quantity generation 
 
 ## ChannelRating_WSPRO
 Recent updates to ChannelRate_WSPRO are included to make the module more interactive and generate rich information to AutoCAD.

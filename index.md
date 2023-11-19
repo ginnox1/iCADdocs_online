@@ -67,24 +67,22 @@ iCAD and related products are copyright protected and licensed applications. You
 Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
 
 
-## Updates for this Release
+## Updates for the Latest Release
 [Back to ToC](#table-of-contents)
 {br}
 
-iCAD softwware is updated with newly launched modules for Diversion weirs design, and embankements analysis. Recent updates also include new features to ChannelRate_WSPRO mdoule.
+iCAD softwware is continuously updated with more features and functionanlites. The release for the most recently version is shown below. Make sure to stay up to date.
 
+:bulb: The latest release is **Version 2.8.3.9028** (Nov 2023)
 
-:bulb: The latest release is **Version 2.8.3.9022** 
+You can find installation guidelines for iCAD product by following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
-If you have not installed this latest release, follow the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
+* **Download** the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
 
-If you already have the newly released product, use the update resource to ensure you are using the latest and supported version of the software. Follow below steps: 
-
-* Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_Notes_Aug23.md)
-
-* Download the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
 
 * Follow the update instructions [Installing Update Resources here](SetupAndLicensingGuide/setupguide.md#installing-update-resources) to update your application. 
+
+* Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_Notes_Aug23.md)
 
 
 > :bulb: **Important Notice**: Please note that a valid license is required to run the program, including for trials. Contact your provider or visit our website to get your copy of the license for trial or evaluation, or subscription.
