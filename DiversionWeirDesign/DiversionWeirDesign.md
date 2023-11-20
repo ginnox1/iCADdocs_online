@@ -15,7 +15,6 @@ and design weirs on different foundation material with due diligence.
 Note: This module covers all design aspects, except the design of
 abutment structures which is solved using a different module.
 
-## Table of Contents
 <!--TOC-->
   - [Conventions](#conventions)
   - [Known Issues](#known-issues)
@@ -46,6 +45,7 @@ abutment structures which is solved using a different module.
     - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
     - [References:](#references)
 <!--/TOC-->
+
 
 ## Conventions
 
@@ -247,7 +247,7 @@ curve determination.
 ## Sluice bay dimensions
  [Back to Toc](#table-of-contents)
 
-The variables in this group determine the size and orientation of sluiceways at one or both ends of the weir
+The variables in this group determine the size and orientation of sluiceways at one or both ends of the weir.{br}
 
 <table>
 <colgroup>
@@ -335,11 +335,13 @@ overflow.</p></th>
 </tbody>
 </table>
 
+
+{br}
 The schematic below shows a right side sluice bay, with three bays, and a
 slightly raised crest. The gate dimensions are automatically sized and sketched.
 
 
-<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />
+<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />{br}
 
 The size of the gate for the sluice bays are uniform. The width equals the width of the bays, and the height is determined from the maximum of:
 - hu/2+hprd

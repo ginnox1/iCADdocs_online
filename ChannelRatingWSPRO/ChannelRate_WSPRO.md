@@ -284,8 +284,8 @@ modelling software. ChannelRatingWSPRO module adopts the 1998 Edition of
 the program. The technical information in the user manual available from
 USGS website is also applicable here.
 
-<img src="./media/Image16.png"
-style="width:3.57986in;height:2.87431in" />{br}
+<img src="./media/image16.png"
+style="width:3.57986in;height:2.87431in" />
 
 The method of computation used for water surface level computation, as is widely established in practice, uses a number of cross-sections to establish a good estimate of flow level. Usually up to seven cross-section data are used. Using more cross-section data may not improve the accuracy of the results any further. Using less cross-section data however is known to limit the accuracy of the result. This is an important factor to note, as currently only one cross-section can be used in the module.
 
