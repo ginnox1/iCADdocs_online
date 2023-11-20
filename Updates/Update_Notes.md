@@ -47,7 +47,9 @@ Retaining wall module is enhanced to indlude the following features, particularl
 	<img src="./media/Image 003.png" style= "width:5in">
 
 
-Bill of quantity generation 
+
+
+
 
 ## ChannelRating_WSPRO
 Recent updates to ChannelRate_WSPRO are included to make the module more interactive and generate rich information to AutoCAD.

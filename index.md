@@ -12,15 +12,12 @@ You are at the official online resource documentation for iCAD software and its 
 
 This online resource provides guidance on all the key aspects about installaiton, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
 
-## Table of Contents
-Follow these links to navigate in this page.
 <!--TOC-->
   - [Online Documentation](#online-documentation)
   - [Licensing iCAD product](#licensing-icad-product)
-  - [Updates for this Release](#updates-for-this-release)
+  - [Updates for the Latest Release](#updates-for-the-latest-release)
   - [Contacts](#contacts)
 <!--/TOC-->
-
 
 
 ## Online Documentation
@@ -82,7 +79,7 @@ You can find installation guidelines for iCAD product by following the steps in 
 
 * Follow the update instructions [Installing Update Resources here](SetupAndLicensingGuide/setupguide.md#installing-update-resources) to update your application. 
 
-* Documentation is available to learn about the [updates in this release here](Updates/Update_Aug23/Update_Notes_Aug23.md)
+* Documentation is available to learn about the [updates in this release here](Updates/Update_Notes.md)
 
 
 > :bulb: **Important Notice**: Please note that a valid license is required to run the program, including for trials. Contact your provider or visit our website to get your copy of the license for trial or evaluation, or subscription.
