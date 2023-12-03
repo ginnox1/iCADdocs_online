@@ -6,7 +6,10 @@
 
 Well come to this update. We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
 
-The current release is **Version 2.8.3.9028**
+The current release is **Version 2.8.3.9040**.
+
+:bulb: **Note:** The release is currently released for validation purposed. It will be available on 06Dec2023.
+
 
 
 
@@ -14,12 +17,15 @@ Key in this release include new modules for diversion weir design and embankment
 
 ## Table of Contents
 <!--TOC-->
+  - [Data Table View](#data-table-view)
+  - [Retwall Module](#retwall-module)
+  - [ChannelRating_WSPRO](#channelrating_wspro)
+  - [Diversion Weir Design :new:](#diversion-weir-design-new)
   - [TerraForm module for embankment works analysis :new:](#terraform-module-for-embankment-works-analysis-new)
   - [Advanced Stream rating curve development using WSPRO](#advanced-stream-rating-curve-development-using-wspro)
   - [Enhanced ChartView](#enhanced-chartview)
   - [Support for Latest AutoCAD Releases](#support-for-latest-autocad-releases)
 <!--/TOC-->
-
 
 ## Data Table View
 iCAD's Data viewer table interface is frequently used to explore data contents of AutoCAD objects. In this update, it can directly call on AutoCAD objects to see if CsvData is hosted and its contents, if any.
@@ -120,6 +126,9 @@ ChartView module is enhanced to quickly digitize charts, read interpolated value
 <img src="./media/Image 1.png" style="width:6in">
 
 In this demo, it was easy to read values for parameter z=2.5, based on values for z=1, 2, and 3.
+
+
+
 
 ## Support for Latest AutoCAD Releases
 We are continually integrating latest versions of AutoCAD to our products. AutoCAD 2o22 and 23 are now supported with our applications.

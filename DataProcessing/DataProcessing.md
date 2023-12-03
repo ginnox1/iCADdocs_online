@@ -126,13 +126,20 @@ Then follow below typical workflow:
 
     > **Note** The status bar at the bottom of the main iCAD interface (above). If successful, it reports the paste operation is completed. 
     
-    To view this data, go to `Tools > View CSV Data`. Go to AutoCAD and pick the host object.
+ To view stored data, follow below steps.
+ 1. Go to `Tools > View CSV Data`. 
 
     <img src="./media/Image 013.png" style="width:4in">
+
+ 2. Go to AutoCAD and pick the host object. The status update bar reports if a data is found or not.
 
     The data is presented in the  *uiDataPreview* table. Toggle its visibility from the *Show Table Data* toolbar button.{br}
 
     <img src="./media/Image 015.png">
+
+ Alternatively, you can use the menu command in **Data Table View** interfac, and repeat step 2 above. The data content of the table is updated accordingly if found.
+
+   <img src="./media/image104.png" style="width:4in">
 
 
 > :notebook: **Technical Note**: These data are saved in CSV format in the accompanying AutoCAD file to the project (*.xsd). They can not be edited. However, they can be replaced with modified data any time.
@@ -165,6 +172,9 @@ A typical workflow to plot data using this function is as follows:
     AutoCAD** menu. This will bring the input dialog.
 
 2.  Specify the data source in the first row. Click on the *Link to object…* cell to pick an AutoCAD object hosting the data to be plotted. Shift click on *Link to Object…* cell to type **cb** or **clipboard** and use the data on windows clipboard.
+
+    :bulb:**Note:** For cliboard source, make sure the source data is prepared in an Excel workbook, and the first row contains acceptable data header strings.
+    
 
 3.  Specify which data columns are to be plotted on the abscisa and
     ordinate axis, and select the plot type.

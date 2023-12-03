@@ -59,11 +59,12 @@ The prerequisite objects and their prerequisite is outlined in the *Module Brows
 
 1. Draw the layout object following the footprint of the toe of the wall (front face edge) on a plan view area in AutoCAD. Then create a profile data for the Alignment objeect. The profile data creation best serves design and visualization needs if:
     1. enough offset locations in the transverse directions are included, and
-    1. finer resoltion is available, to allow sufficient incremental representation between segments. (usually 0.5m interval is recommended).
+    1. finer resoltion is available, to allow sufficient incremental representation between segments. (usually 2 to 5m incremtnal interval is recommended).
+
+    :bulb: **Note:** Using curves on alignment objects for retaining walls is will give inaccurate results in plan view and BoQ results. If curves are there, represent using as many vertices as needed.
 
 
 
-> Tip: The vertices of the layout object must be aligned longitudinally with the vertices of wall top and bottom profile objects. In illustration  below, for instance, the layout object must have four (4) vertices.
 
 2. Prepare wall top and bottom profile objects. This is best prepared
 from overlaying the profile plot from the layout object, as shown in the
@@ -126,11 +127,15 @@ To define the design session:
 If the wall face is displayed in the interface, you can skip to the next step
 below. This is especially true if simple walls are defined. Otherwise, define the top and bottom information from respective AutoCAD objects as follows.
 
-1. Go to **Workflow \> Pick Wall Top Level.** Go to AutoCAD and pick
-the object defining the wall top level. Similarly, use **Workflow \>
-Pick Wall Bottom Level** and pick the corresponding object in AutoCAD.
-Refresh View from **Workflow \> Refresh View** or CTRL+R. The wall
+1. Go to **Workflow \> Pick Wall Levels**.
+1. Click on the *Wall Top* variable value. Go to AutoCAD and pick
+the object defining the wall top level. 
+1. Similarly, click on the *Wall Bottom Level* variable value, and Go to autocad to pick the wall bottom object.
+
+1. Refresh View from **Workflow \> Refresh View** or CTRL+R. The wall
 face should be visible shaded in the profile view.
+
+    <img src="./media/Image39.png">
 
 2. Use **Workflow \> Id Segments** to define the design segments that
 can be identified from the current setup. When successful, the grouping
@@ -444,6 +449,27 @@ condition</th>
 <th>If ignored, hydrostatic pressures is considered factoring the depth
 of water at the heel and toe of the retaining wall.</th>
 </tr>
+
+<tr class="header">
+<th></th>
+<th>Bottom Width Limits (bwLims)</th>
+<th>Whether to limit bottom width dimension input for valid geometry in plan view </th>
+<th>If set to None, no limits apply. It can also be set to Alignment Vertices to Automatically set valid limits.</th>
+</tr>
+
+<tr class="odd">
+<th></th>
+<th>Segment Id Source (-)</th>
+<th>Determines how wall segments are identified. It can be set to either of Alignment Vertices or WTBL Vertices.</th>
+<th>If available, using the WTL and WBL objects from AutoCAD is strongly recommended.</th>
+</tr>
+
+<tr class="odd">
+<th></th>
+<th>BoQ Listing (-)</th>
+<th>Dictates how BoQ is generated. It can be set to Detailed or Summary</th>
+<th>Detailed BoQ lists all items of work for each segment. While Summary option rolls up all quantities of each segment in to individual items of work.</th>
+</tr>
 </thead>
 <tbody>
 </tbody>
@@ -507,10 +533,9 @@ The next step in the process is to design the actual sections of the retaining s
 
 2\. Select **Workflow \> Design Wall…** to get a design solution guide on bottom width values that can meet required safety parameters.
 
-The interface shown on the right is displayed with guidelines for picking a design point. In this snapshot, for instance, the Factor of safety for overturning is met at a bottom width of close to 2.0metres, while that for sliding is met around
-2.8meters.
+The interface shown is displayed with guidelines for picking a design point. In this snapshot, for instance, the Factor of safety for overturning and sliding are met below 1.5meters width. However, the eccentricity safety factor is only met after 2.0meters.
 
-<img src="./media/image7.png" style="width:4.56715in;height:4.5in" />
+<img src="./media/Image40.png" style="width:4.56715in;height:4.5in" />
 
 Using the `Pick A Scene Solution` toolbar, a desired width can be
 selected, and the cross-section view will update automatically.

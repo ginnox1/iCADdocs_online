@@ -168,13 +168,39 @@ The interval for generating contours can be controlled from `Workflow > Edit Var
 ## Generated AutoCAD Plots
 [Back to ToC](#table-of-contents)
 
-Contour plots and boundary data can be easily plotted to AutoCAD environment using the `Workflow > Render to AutoCAD` menu command.
+Contour plots and boundary data can be easily plotted to AutoCAD environment. FOllow below steps:
+1. Start the `Workflow > Select Draw to AutoCAD` menu command.
 
-<img src="./media/Image 025.png" style="width:7in">
+    <img src="./media/Image 025.png" style="width:7in">
 
-Select the objects to draw to AutoCAD and follow the prompts. For more information and guidance see the [Data Processing and Presetation Section](.\DataProcessing\DataProcesssing).
+1. From the *Select Groups* dialog, select the objects to draw to AutoCAD. You can choose Contours, Boundy or both. Then follow the prompts.
+   
+   Note that, Contours are created as groups.
 
-> :bulb:    **Tip**: Controus are generated to AutoCAD with contour label information. Use the *AutoCAD Addon*  tools to create the labels.
+1. Once in AutoCAD environment, you can label contoures as follows. Start the AutoCAD addon tool as shown below.
+
+    <img src="./media/Image 027.Png">
+
+1. When prompted, pick a sample text. The Height of the sample text selected will be used to generate the contour labels. Note, the text style used will be the current style of AutoCAD. Simply hit ENTER to input a desired text height.
+
+1. When prompted, pick all the contour line objects you want to label. Right Click when done. 
+1. You will be prompted to draw a crossing line along the locations where you want contour labels. Pick a starting and ending ponts.
+
+    <img src="./media/Image 028.png">
+
+1. The contour labels will be generated as shown below.
+
+     <img src="./media/Image 029.png" style="Width:5in">
+
+
+1. Repeat from step 5 to continue generating more labels, or hit Enter key to finish.
+
+
+For more information on generating drawings to AutoCAD see the [Data Processing and Presetation Section](.\DataProcessing\DataProcesssing).
+
+> :bulb:    **Tip**: Controus are generated to AutoCAD with contour label information, and at the elevation matching the contour level. Use the *AutoCAD Addon*  tools to create the labels.
+
+
 
 
 ###  Working with large data sets
