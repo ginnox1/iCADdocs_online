@@ -70,6 +70,8 @@ Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/
 
 iCAD softwware is continuously updated with more features and functionanlites. The release for the most recently version is shown below. Make sure to stay up to date.
 
+ Learn about the [updates in this release here](Updates/Update_Notes.md)
+
 The latest release for Nov 2023 will be uploaded on **06 Dec 2023**.
 <!--
 :bulb: The latest release is **Version 2.8.3.9028** (Nov 2023)
