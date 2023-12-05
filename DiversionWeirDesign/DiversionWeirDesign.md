@@ -24,7 +24,6 @@ abutment structures which is solved using a different module.
   - [Defining the session](#defining-the-session)
   - [Transverse design](#transverse-design)
   - [Hydraulic Parameters](#hydraulic-parameters)
-  - [Sluice bay dimensions](#sluice-bay-dimensions)
   - [Transverse Dimensions](#transverse-dimensions)
   - [Abutment Provisssions](#abutment-provisssions)
   - [Longitudinal Design](#longitudinal-design)
@@ -37,6 +36,7 @@ abutment structures which is solved using a different module.
   - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
   - [The Sluice Bay section Design](#the-sluice-bay-section-design)
   - [Outlet Designs and Settings](#outlet-designs-and-settings)
+  - [Sluice bay dimensions](#sluice-bay-dimensions)
   - [Technical Notes:](#technical-notes)
     - [Overflow rating:](#overflow-rating)
     - [Surface hydraulics:](#surface-hydraulics)
@@ -244,112 +244,6 @@ desired.</p>
 See technical notes at the end of this page for details on each method of rating
 curve determination.
 
-## Sluice bay dimensions
- [Back to Toc](#table-of-contents)
-
-The variables in this group determine the size and orientation of sluiceways at one or both ends of the weir.{br}
-
-<table>
-<colgroup>
-<col style="width: 7%" />
-<col style="width: 26%" />
-<col style="width: 16%" />
-<col style="width: 49%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No</th>
-<th>Variable Name</th>
-<th>Default Values</th>
-<th>Notes</th>
-</tr>
-<tr class="odd">
-<th>1</th>
-<th>Crest Sill Height(m)</th>
-<th>0.150</th>
-<th><p>Height of sluice crest above upstream apron level (Max of 0.50
-meter is allowed.)</p>
-<p>0.0&lt;=hbay&lt;=0.50</p></th>
-</tr>
-<tr class="header">
-<th>2</th>
-<th>Individual Bay Width(m): [Left, Right]</th>
-<th>[1.0, 1.0]</th>
-<th><p>Width of individual bays (Face Up Stream):</p>
-<ul>
-<li><p>for left side bays</p>
-<li><p>for right side bays</p>
-</blockquote></li>
-</ul>
-<p>Accepted range of values: 0.0&lt;=Wbay&lt;=2.0</p>
-<p>0 value means no bay is needed.</p></th>
-</tr>
-<tr class="odd">
-<th>3</th>
-<th>Number of Bays: {Left, Right]=</th>
-<th>[1, 3.000]</th>
-<th><p>Number of bays desired on each side. The bays are provided using
-the bay width value provided above.</p>
-<p>If bay width is 0/0, this value is ignored, and no bay is
-provided.</p></th>
-</tr>
-<tr class="header">
-<th>4</th>
-<th>Pier Thickness(m)</th>
-<th>0.300</th>
-<th><p>The thickness of pier columns dividing sluice bays.</p>
-<p>Accepted Range of Values; 0.30&lt;=t&lt;=0.50</p>
-<p>If the bay width is 0.0, this value is ignored, and no piers walls
-are provided.</p></th>
-</tr>
-<tr class="odd">
-<th>5</th>
-<th>Divide wall Width(m)</th>
-<th>0.500</th>
-<th><p>The thickness of divide wall provision separating the overflow
-span from the sluice bay (if any).</p>
-<p>Accepted Range of Values: 0.50&lt;=t&lt;=2.0</p>
-<p>If bay width is 0/0, this value is ignored, and no divide wall is
-provided.</p></th>
-</tr>
-<tr class="header">
-<th>6</th>
-<th>Divide wall extension(m)</th>
-<th>1.0</th>
-<th><p>The extension length of the divide wall downstream of the end of
-the weir structure (behind the end of glacis).</p>
-<p>Accepted Range of Values: 0&lt;=L&lt;=1000</p>
-<p>1000 represents a length equal to the length of the downstream apron,
-resulting in complete isolation of undersluice flow from crest
-overflow.</p></th>
-</tr>
-<tr class="odd">
-<th>7</th>
-<th>Gate Proud Height(m)</th>
-<th>0.200</th>
-<th><p>The height of the gate panels above the weir crest elevation.</p>
-<p>Accepted Range of Values: 0.10&lt;=h&lt;=0.30</p></th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-
-
-{br}
-The schematic below shows a right side sluice bay, with three bays, and a
-slightly raised crest. The gate dimensions are automatically sized and sketched.
-
-
-<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />{br}
-
-The size of the gate for the sluice bays are uniform. The width equals the width of the bays, and the height is determined from the maximum of:
-- hu/2+hprd
-- hbay/2, where the bay clear height hbay excludes bay crest height.
-
-
-
-See Technical notes, to learn how sluice bay capacity is determined.
 
 
 ## Transverse Dimensions
@@ -1114,6 +1008,112 @@ style="width:8.06875in;height:4.19028in" />
 *Figure showing key longitudinal dimensions.*
 
 
+## Sluice bay dimensions
+ [Back to Toc](#table-of-contents)
+
+The variables in this group determine the size and orientation of sluiceways at one or both ends of the weir.{br}
+
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 26%" />
+<col style="width: 16%" />
+<col style="width: 49%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>No</th>
+<th>Variable Name</th>
+<th>Default Values</th>
+<th>Notes</th>
+</tr>
+<tr class="odd">
+<th>1</th>
+<th>Crest Sill Height(m)</th>
+<th>0.150</th>
+<th><p>Height of sluice crest above upstream apron level (Max of 0.50
+meter is allowed.)</p>
+<p>0.0&lt;=hbay&lt;=0.50</p></th>
+</tr>
+<tr class="header">
+<th>2</th>
+<th>Individual Bay Width(m): [Left, Right]</th>
+<th>[1.0, 1.0]</th>
+<th><p>Width of individual bays (Face Up Stream):</p>
+<ul>
+<li><p>for left side bays</p>
+<li><p>for right side bays</p>
+</blockquote></li>
+</ul>
+<p>Accepted range of values: 0.0&lt;=Wbay&lt;=2.0</p>
+<p>0 value means no bay is needed.</p></th>
+</tr>
+<tr class="odd">
+<th>3</th>
+<th>Number of Bays: {Left, Right]=</th>
+<th>[1, 3.000]</th>
+<th><p>Number of bays desired on each side. The bays are provided using
+the bay width value provided above.</p>
+<p>If bay width is 0/0, this value is ignored, and no bay is
+provided.</p></th>
+</tr>
+<tr class="header">
+<th>4</th>
+<th>Pier Thickness(m)</th>
+<th>0.300</th>
+<th><p>The thickness of pier columns dividing sluice bays.</p>
+<p>Accepted Range of Values; 0.30&lt;=t&lt;=0.50</p>
+<p>If the bay width is 0.0, this value is ignored, and no piers walls
+are provided.</p></th>
+</tr>
+<tr class="odd">
+<th>5</th>
+<th>Divide wall Width(m)</th>
+<th>0.500</th>
+<th><p>The thickness of divide wall provision separating the overflow
+span from the sluice bay (if any).</p>
+<p>Accepted Range of Values: 0.50&lt;=t&lt;=2.0</p>
+<p>If bay width is 0/0, this value is ignored, and no divide wall is
+provided.</p></th>
+</tr>
+<tr class="header">
+<th>6</th>
+<th>Divide wall extension(m)</th>
+<th>1.0</th>
+<th><p>The extension length of the divide wall downstream of the end of
+the weir structure (behind the end of glacis).</p>
+<p>Accepted Range of Values: 0&lt;=L&lt;=1000</p>
+<p>1000 represents a length equal to the length of the downstream apron,
+resulting in complete isolation of undersluice flow from crest
+overflow.</p></th>
+</tr>
+<tr class="odd">
+<th>7</th>
+<th>Gate Proud Height(m)</th>
+<th>0.200</th>
+<th><p>The height of the gate panels above the weir crest elevation.</p>
+<p>Accepted Range of Values: 0.10&lt;=h&lt;=0.30</p></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+
+{br}
+The schematic below shows a right side sluice bay, with three bays, and a
+slightly raised crest. The gate dimensions are automatically sized and sketched.
+
+
+<img src="./media/image12.png" style="width:6.5in;height:4.86111in" />{br}
+
+The size of the gate for the sluice bays are uniform. The width equals the width of the bays, and the height is determined from the maximum of:
+- hu/2+hprd
+- hbay/2, where the bay clear height hbay excludes bay crest height.
+
+
+
+See Technical notes, to learn how sluice bay capacity is determined.
 
 ## Technical Notes:
 [Back to Toc](#table-of-contents)
