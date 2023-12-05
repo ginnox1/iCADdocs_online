@@ -15,6 +15,7 @@ and design weirs on different foundation material with due diligence.
 Note: This module covers all design aspects, except the design of
 abutment structures which is solved using a different module.
 
+## Table of Contents
 <!--TOC-->
   - [Conventions](#conventions)
   - [Known Issues](#known-issues)
