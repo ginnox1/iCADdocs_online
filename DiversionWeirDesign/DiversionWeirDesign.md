@@ -37,10 +37,12 @@ abutment structures which is solved using a different module.
   - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
   - [The Sluice Bay section Design](#the-sluice-bay-section-design)
   - [Outlet Designs and Settings](#outlet-designs-and-settings)
-  - [Sluice bay dimensions](#sluice-bay-dimensions)
   - [Technical Notes:](#technical-notes)
     - [Overflow rating:](#overflow-rating)
     - [Surface hydraulics:](#surface-hydraulics)
+      - [Pre-Jump flow profile](#pre-jump-flow-profile)
+      - [Hydraulic Jump profile](#hydraulic-jump-profile)
+    - [Scour Depth](#scour-depth)
     - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
     - [Stability analysis:](#stability-analysis)
     - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
@@ -648,7 +650,24 @@ thickness provision (below pool depth).</p>
 </tbody>
 </table>
 
-Furhter more, the following parameters dictate the analysis and sizing for the downstream apron.
+
+It is common practice to use estimated scour depths to fix the cutoff depth of the upstream cutoff. The module provides guidance of these locations below the upstream cutoff wall as shown below (marked inside elipse).
+
+<img src="./media/Image58.png" style="width:5in">
+
+Each of these lines represent the recommended scour depths. According to Lacey's  the depth of scour below the HFL (high flood level) is given by the following relation ship.
+
+**R= 1.35(q^2^/f~1~)^2^**
+
+Where, f~1~ is the silt factor determined from median size of river material d~mean~ as foloows:
+
+**f~1~=1.76*sqrt(d~mean~)**
+
+> Note: Mean bed material size (**d~mean~**) is set in the Material Properties group of variables availble on longitudinal view.
+
+The depth guidelines generated are therefore located at depths of 1.25R, 1.5R, and 1.75R. The upstream curoff depth can be positioned to meet requirements using these as visual guides.
+
+
 
 ## Downstream Apron design and Dimensions
 [Back to Toc](#table-of-contents)
@@ -1076,19 +1095,23 @@ overflow height.
 ### Surface hydraulics: 
  [Back to Toc](#table-of-contents)
 
- The pre-jump flow profile is determined by approximating subcritical flow conditions until 3/4th of critical depth, and solving bernoulis equation there after for the super critical flow contiions.
+#### Pre-Jump flow profile
 
- For ogee type overflow sections, the surface flow profile is computed from the following relation ship (Open Channel Hydraulics, Chow)
-
- <img src="./media/image52.png" style="width:5in">
-
- <img src="./media/uppernappe.jpg" style="width:3in">
+For broad crested weirs, the pre-jump flow profile is determined by approximating subcritical flow conditions until 3/4th of critical depth, and solving bernoulis equation there after for the super critical flow contiions.
 
 For all types of weirs, and prefered methods of computing coeficient of discharge, the pre-jump flow conditions are computed applying the energy equation between the approach section, and points along the downstream glacis (Asawa 2002).
 
 
 <img src="./media/image 001.png">
 
+For ogee type overflow sections, the surface flow profile is computed from the following relation ship (Open Channel Hydraulics, Chow)
+
+ <img src="./media/image52.png" style="width:5in">
+
+ <img src="./media/uppernappe.jpg" style="width:3in">
+
+
+#### Hydraulic Jump profile
 
 Hydraulic jump is calculated using the relationship:
 
@@ -1112,7 +1135,9 @@ if y~2~ < y~tail~, Type B jump occurs.
 
 <img src="./media/image5.png">
 
+The above method of jump classification is best understood in context as shown below in shcematic diagram.
 
+<img src= "./media/Image56.png" style="Width:5in">
 
 Jump profile is estimated from the design chart shown below, where x is
 distance from jump beginning, and y2 and y1 are sequent depths of the
@@ -1127,14 +1152,16 @@ canals,
 <img src="./media/image35.png"> {br}
 
 
-<img src="./media/image24.png">
+<img src="./media/image24.png">{br}
 
-<img src="./media/image 005.png">
+<img src="./media/image 005.png" style="width:2.5in">
 
 
 
 For type B, C and D jumps, the location of the jump on the glacis is
 determined from the following chart.
+
+<img src="./media/Image57.png" style="width:6in">
 
 The length of the jump is determined from the below chart relating the
 Froud number **F~r~** calculated above to the ratio of total jump length
@@ -1149,6 +1176,13 @@ point.
 <img src="./media/image27.png" style="width:6.5in;height:3.31944in" />
 
 The value of **L~j~** is futher checked against the common practice of **L~j Final~ = max(L~j~, 5.5(EGL~us~ - EGL~ds~))**
+
+### Scour Depth
+
+Scour depth calculation method used is based on mean grain size of river bed material. The material input parmeter list built in to the code is following the guiding values in the following table.
+
+<img src="./media/Image59.png">
+
 
 
 ### Sub-Surface hydraulics:
@@ -1172,6 +1206,7 @@ Correction for mutual interference for key points is applied as:
 The exit gradient is estimated from:
 
 <img src="./media/image21.png">
+
 
 The cited reference materials provide sufficient detail on the
 theoretical basis and practical application of the formula above, as
