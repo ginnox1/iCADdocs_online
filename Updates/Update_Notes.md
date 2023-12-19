@@ -60,6 +60,8 @@ Retaining wall module is enhanced to indlude the following features, particularl
 ## ChannelRating_WSPRO
 Recent updates to ChannelRate_WSPRO are included to make the module more interactive and generate rich information to AutoCAD.
 The following are key features:
+- Enhancement to handle comple river bed levels with raised bed levels.
+<img src="./media/Image26.png" style="width:7in">
 
 - New variable included to show flood levels for upto two discharges
 
