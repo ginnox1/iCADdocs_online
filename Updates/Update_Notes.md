@@ -82,7 +82,13 @@ The following are key features:
 - Show the solutoin method used for analysis
 - Generate texts and annotations to AutoCAD
     <img src="./media/Image25.png" style="width:6in">
-- Improved error handling for discharge ranges.
+
+- Additional Solution method using original stream section (and not templates) which is useful for comparison of rating curves with anlytical solutions
+
+    <img src="./media/Image33.png" style="width:6in">
+
+
+- Improved error handling for discharge ranges. An bug in calculation of rated levels. that gave exagerated elevations, is also corrected.
 
 
 	
