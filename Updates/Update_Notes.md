@@ -12,28 +12,35 @@ The current release is **Version 2.8.3.9040**.
 
 
 
+## Table of Contents
 
 Key in this release include new modules for diversion weir design and embankment works analysis.
-
-## Table of Contents
 <!--TOC-->
   - [Data Table View](#data-table-view)
   - [Retwall Module](#retwall-module)
   - [ChannelRating_WSPRO](#channelrating_wspro)
-  - [Diversion Weir Design :new:](#diversion-weir-design-new)
-  - [TerraForm module for embankment works analysis :new:](#terraform-module-for-embankment-works-analysis-new)
+  - [Diversion Weir Design](#diversion-weir-design)
+    - [Increased Weir Heights](#increased-weir-heights)
+    - [More Energy Dessipator types](#more-energy-dessipator-types)
+    - [Relaxed locking with min RBL](#relaxed-locking-with-min-rbl)
+  - [TerraForm module for embankment works analysis](#terraform-module-for-embankment-works-analysis)
   - [Advanced Stream rating curve development using WSPRO](#advanced-stream-rating-curve-development-using-wspro)
   - [Enhanced ChartView](#enhanced-chartview)
   - [Support for Latest AutoCAD Releases](#support-for-latest-autocad-releases)
 <!--/TOC-->
 
+
 ## Data Table View
+[Back to ToC](#table-of-contents)
+
 iCAD's Data viewer table interface is frequently used to explore data contents of AutoCAD objects. In this update, it can directly call on AutoCAD objects to see if CsvData is hosted and its contents, if any.
 * Choose **Tools > Show Csv Data** menu command or the toolbar item to start the command. Go to AutoCAD, and pick the object whose data you want to explore.
 
 	<img src= "./media/Image 004.png" style="width:5in">
 
 ## Retwall Module
+[Back to ToC](#table-of-contents)
+
 Retaining wall module is enhanced to indlude the following features, particularly suited for designing long retaining wall.
 
 
@@ -58,9 +65,14 @@ Retaining wall module is enhanced to indlude the following features, particularl
 
 
 ## ChannelRating_WSPRO
+[Back to ToC](#table-of-contents)
+
 Recent updates to ChannelRate_WSPRO are included to make the module more interactive and generate rich information to AutoCAD.
 The following are key features:
-- Enhancement to handle comple river bed levels with raised bed levels.
+- Relaxed the bed slope entry parameter range to up to a value of 1/20.
+<img src="./media/Image27.png" style="width:6in">
+
+- Enhancement to handle complex river bed levels with raised bed levels.
 <img src="./media/Image26.png" style="width:7in">
 
 - New variable included to show flood levels for upto two discharges
@@ -70,13 +82,13 @@ The following are key features:
 - Show the solutoin method used for analysis
 - Generate texts and annotations to AutoCAD
     <img src="./media/Image25.png" style="width:6in">
-- Improved error handling for disxharge ranges.
+- Improved error handling for discharge ranges.
 
 
 	
 
 
-## Diversion Weir Design :new:
+## Diversion Weir Design
 [Back to ToC](#table-of-contents)
 
 A flexible and easy to use diversion weir design module is now integrated and available as part of the Professional iCAD Software edition. It offers up to 8 different views to work with different compoentns of the structure.
@@ -91,7 +103,27 @@ It has the following features:
 - Full surface, and sub-surface flow hydraulis, with appron sizing and design features
 - and more.
 
-## TerraForm module for embankment works analysis :new:
+The December update has allowed flexible data entry options as well as other types of energy dessipators than Type I.
+
+### Increased Weir Heights
+Up to 5 meters of weir height are now allowed.
+
+<img src="./media/Image28.png" style="width:6in">
+
+
+### More Energy Dessipator types
+Type II, III and IV type desipators are now included.
+
+<img src="./media/Image29.png" style="width:6in">
+
+### Relaxed locking with min RBL
+Users can now lock the upstream appron level of the weir with in 1.0 meters of the minimum river bed level on the weir axis.
+
+<img src="./media/Image30.png" style="width:7in">
+
+
+
+## TerraForm module for embankment works analysis
 [Back to ToC](#table-of-contents)
 
 We have designed and implemented an ambitious workflow in formation analysis and work volume estimation for embankement works. TerraForm module builds on previous versions of surface analysis to give users the computational edge and easy workflow to tackle earth work estimation and drawing generation tasks.
@@ -107,6 +139,20 @@ This version includes the follwing features:
 - and more.
 
 <img src="./media/image19.png">
+
+In this release, many features are enhanced to allow quicked modelling of fill zones (materials) focusing on embankement dams.
+
+A major one is the ability to model offset assemblies, whose centerline is different than the embankement centerline.
+
+<img src="./media/Image31.png" style="width:7in">
+
+In addition, zone areas are now visible in the assmebly editor, as shown above.
+
+The plan view generator is enhanced to handle a bit more complexity, as shown below.
+
+<img src="./media/Image32.png" style="width:7in">
+
+
 
 ## Advanced Stream rating curve development using WSPRO
 [Back to ToC](#table-of-contents)

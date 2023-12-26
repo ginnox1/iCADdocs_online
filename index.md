@@ -72,10 +72,7 @@ iCAD softwware is continuously updated with more features and functionanlites. T
 
  Learn about the [updates in this release here](Updates/Update_Notes.md)
 
-THIS IS AN INTERIM UPDATE. The final release for Dec 2023 will be uploaded on or before **05 Jan 2024**.
-
-
-:bulb: The latest release is **Version 2.8.3.9049** (Dec 2023~a~)
+:bulb: The latest release is **Version 2.8.3.9061** (Dec 2023)
 
 You can find installation guidelines for iCAD product by following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
