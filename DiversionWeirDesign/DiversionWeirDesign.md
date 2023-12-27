@@ -540,9 +540,17 @@ Surface flow condition for the entire length of the structure, i.e.,    upstream
 below.)
 
     <img src="./media/image3.png" style="width:6.5in;height:4.08333in" />
-*Figure for surface flow clalculation and water surface profile determination.*
+ 
+ *Figure for surface flow clalculation and water surface profile determination.*
 
-> :bulb: **Important Note**: The flow surface profile created is a result of the calculations made according to the provisions in the Technical Notes (at the end of this page), and may vary from results that may be obtained from numerical analysis or simulation methods.
+ It is **imperative to note** the following default settings and understand how the module positions the key elevations for the weir structure:
+ 1. Upstream apron level is fixed to the minimum river bed level at the weir axis. This can be controlled by the user and can be adjusted to with in 1.0meter of this value from the variable editor.
+ 1. The End-sill of the down stream appron is fixed at an elevation equal to the minimum river bed level corresponding to the total length of the weir structure. This is not controlled by the user, rather by the existing river bed conditions.
+
+
+The flow surface profile created is a result of the calculations made according to the provisions in the [Technical Notes](#technical-notes) (further down this page)
+
+> **IMPORTANT NOTE:** We underline the design approach followed in developing this module again. The appron length is determined by the Froude number. The Froude Number depends on the energy difference, which is determined based on the appron length. It is therefore impertive to **Refresh** until pool level values stop changing, before accepting design values.
 
 ### Sub-surface flow analysis:
 [Back to Toc](#table-of-contents)
@@ -700,9 +708,9 @@ structure.</p>
 <th></th>
 <th>Jump Mechanism (-)</th>
 <th>TypeI</th>
-<th><p>The choice of energy dissipation mechanism in the downstream
+<th><p>The choice of USBR Type energy dissipation mechanism in the downstream
 pool.</p>
-<p>Allowable values: Currently only Type I pool is available.</p></th>
+<p>Allowable values: Type I, TypeII, TypeIII, TypeIV.</p></th>
 </tr>
 <tr class="odd">
 <th></th>
@@ -744,6 +752,8 @@ thickness.</p>
 <tbody>
 </tbody>
 </table>
+
+Refer to [Technical Notes](#technical-notes) below for details on the provission for different types of energy dessipators.
 
 Once the variables are set to desired values, the design of the downstream apron is carried out by calculating the unbalanced pressure acting on the apron, using the specifics detailed above. Three possible evaluations can be made:
 
@@ -1060,7 +1070,7 @@ This seciton provides important details about the important hydraulic calcualtio
 The rating of flow over the weir body can be calculated using one of the
 below formula.
 
-<img src="./media/image50.png">
+<img src="./media/Image50.png">
 
 
 
@@ -1085,7 +1095,7 @@ overflow, and g= gravitational acceleration.
 Flow contraction coefficient is considered when K~a~ >= 0 is input.
 In this case the effective overflow length is calculated from
 
-<img src="./media/image51.png">
+<img src="./media/Image51.png">
 
 
 
@@ -1102,36 +1112,36 @@ For broad crested weirs, the pre-jump flow profile is determined by approximatin
 For all types of weirs, and prefered methods of computing coeficient of discharge, the pre-jump flow conditions are computed applying the energy equation between the approach section, and points along the downstream glacis (Asawa 2002).
 
 
-<img src="./media/image 001.png">
+<img src="./media/Image 001.png">
 
 For ogee type overflow sections, the surface flow profile is computed from the following relation ship (Open Channel Hydraulics, Chow)
 
- <img src="./media/image52.png" style="width:5in">
+ <img src="./media/Image52.png" style="width:5in">{br}
 
- <img src="./media/uppernappe.jpg" style="width:3in">
+ <img src="./media/uppernappe.jpg" style="width:4in">
 
 
 #### Hydraulic Jump profile
 
 Hydraulic jump is calculated using the relationship:
 
-<img src="./media/image 002.png">
+<img src="./media/Image 002.png">
 
 and
 
-<img src="./media/image 003.png">
+<img src="./media/Image 003.png">
 
 Where Z, y, v, F represent the elevation, depth of flow, velocity and
 Froude numbers in pre-jump and post jump conditions.
 
 
-Jumps are classified comparing with tail water conditions as follows:
+Jumps are classified comparing with tail water depth (h~t~) conditions as follows.
+1. Compute Sequent depth, h~2~^*^ for a horizontal channel condition. If h~2~^*^ > h~t~, then Type A Jump occurs
+1. If not, Use Kindsvater's equation to determine h~2~= f(y~1~, G) where y~1~ is the pre-jump depth of flow.
+1. If h~2~=h~t~, Type C jump occurs
+1. If h~2~>h~t~, Type B jump occurs, or
+1. If h~2~<h~t~, Type D jump occcurs.
 
-If y~2~ > y~tail~, Type A jump,
-
-if y~2~ = y~tail~, Type CD jump, and
-
-if y~2~ < y~tail~, Type B jump occurs.
 
 <img src="./media/image5.png">
 
@@ -1154,7 +1164,7 @@ canals,
 
 <img src="./media/image24.png">{br}
 
-<img src="./media/image 005.png" style="width:2.5in">
+<img src="./media/Image 005.png" style="width:2.5in">
 
 
 
@@ -1176,6 +1186,39 @@ point.
 <img src="./media/image27.png" style="width:6.5in;height:3.31944in" />
 
 The value of **L~j~** is futher checked against the common practice of **L~j Final~ = max(L~j~, 5.5(EGL~us~ - EGL~ds~))**
+
+### Energy Dessipators Provission
+Type I energy dessipators are simple provissions that are (assumed to) occur on a horizontal channel. These may not be practical options, as in many cases the froude numbers dictate a more intense hydraulic jump conditions. 
+
+A user can select the type of Jump desired from the variable editor dialog as shown below. The options are as recommended by USBR, and classfied basedn on Fr values.
+
+ <img src="./media/Image 011.png" style="width:6.5in">
+
+When the user chooses any of these types, two things are handled automatically:
+- The downstream apron floor level is set to a fixed value, that is obtained by considering the minimum river bed level at the end-of-apron location (determined from figure chart for expected length of hydraulic jump at the design discharge, Q~DES~).
+- The sequent depth of flow is set to a value corresponding to the tail water level for the given discharge (Q~i~)
+
+    <img src="./media/Image 010.png" style="width:6.5in">
+
+Length of jump for Type IV is applied equal to the length of the jump in a horizontal stilling basin with out appurtenances, and determined from the this same chart for Type I. (Chow)
+
+The appurtenant structures for each type of stilling basin are then applied per recommended values in USBR, as shown below.
+
+ <img src="./media/Image 008.png" style="width:6.5in">
+
+
+<img src="./media/Image 007.png" style="width:6.5in">
+
+<img src="./media/Image 009.png" style="width:6.5in">
+
+> Note: The jump profile calculation is carried out and updated for the current discharge amount, while the apron level and appurtenant provisions (baffle blocks and legnth of pool) are fixed based on the Design Discharge.
+
+
+> **IMPORTANT NOTE:** We underline the design approach followed in developing this module again. The appron length is determined by the Froude number. The Froude Number depends on the energy difference, which is determined based on the appron length. It is therefore impertive to **Refresh** until pool level values stop changing, before accepting design values.
+
+The Froude number determinesThe Module respects an iterative approach for sizing the weir and its appurtenant structures. AWhen solving the weir appron for a particular jump type,
+
+
 
 ### Scour Depth
 
@@ -1218,7 +1261,7 @@ implemented in the module.
 The stability of the weir body and its component provisions are
 evaluated against the following (Asawa 2002):
 
-<img src="./media/image 006.png">
+<img src="./media/Image 006.png">
 
 
 Where **FS~OT~** is factor of safety against overturning, e=
@@ -1259,7 +1302,7 @@ below figure.
 The sluice gate is considered to be submerged if the following condition
 is fulfilled
 
-<img src="./media/image37.png"> {br}
+<img src="./media/image37.png">{br}
 
 <img src="./media/image19.png">
 
