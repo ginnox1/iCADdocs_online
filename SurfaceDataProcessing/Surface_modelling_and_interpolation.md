@@ -144,6 +144,68 @@ To create a profile data for a single alignment route, start by making sure iCAD
 
 [... more content to be added soon...]
 
+## Elevation Data Inquiry
+At times, it is required to know the elevation value at a known easting and northing location. This can be easily achieved using the tool available in iCAD (as well as canal network).
+
+1. Start the tool. The tool is accessible from **Cad Tools > Inquire 3D...**. It can also be directly launched from the toolbar.
+
+    <img src="./Images/Image 52.png" style="width:5in">
+
+1. Pick a surface data source. 
+   
+   If a surface data is not brought to the workspace (as shown below), this action will prompt to pick a source of cloud data object in AutoCAD. Upon selection, this will make the data available for surface modelling and interpolation.
+
+   <img src="./Images/Image 55.png" style="width:3in">
+ 
+    If the selected surface data source object in AutoCAD is not referenced to any axes, the module will present a dialog to either pick in AutoCAD or simply use AutoCAD's WCS.
+
+    <img src="./Images/Image 53.png" style="width:3in">
+ 
+ 1. Pick locations.
+
+    Upon selection of appropriate reference source, AutoCAD will be in pick mode waiting for a location. As soon as one is picked, elevations are calculated and presented in a dialog.
+
+    <img src="./Images/Image 54.png" style="width:6in">{br}
+
+
+ 1. To continue inquiry, choose the **Inquire** button. To exit the tool, choose **Exit**.
+
+ ## Gradient Search Tool
+ This tool will use a given starting point and an initial search direction, to determine an alignment that satisfy a desired grade. Examples of common use include determining alignments for supply or drainage canal routes that have to meet certain design gradients.
+
+ We will demonstrate this assuming a canal alignment for 1/1000 gradient slope from a weir axis. 
+ 
+ The **Cad Tools > Inquire 3D** command (described just above) is used to start this tool. Follow all the steps until step 2.
+
+ 1. When prompted in AutoCAD, pick the starting point for the gradient search. The outlet point after the abutment is seleted in this example.
+
+ 1. When the ***Inquire*** dialog appears, choose the ^^Gradient Search** button. The Variable Editor displays key parameters for the search. 
+
+    <img src="./Images/Image 56.png" style="width:7in">
+
+    <u>Gradient Value (m/m):</u> The desired gradient for the alignment as measured on the top of the surface. Positive values dictate a downgrade search, and negative values dictate an upgrade search. For this example we will use 1000 for a down grade search of 1/1000 value.
+
+    <u> Incremental Search Radius(m):</u> The radius of a search leg to be used. This will determine the length of each segment of the resulting alignment.
+
+    <u> No Of Stations to search(-):</u> The number of legs to search before pausing for next action.
+
+    <u>Estimated Starting Bearing (Deg East):</u> The starting bearing with respect to east for the search. Keep 0 (default) to indicate interactively on AutoCAD.
+
+    <u> Action when done(-):</u> The desired action when the specified number of legs have been searched. One can choose to Exit, do more Inquiry, or Continue the search. For long alignment searches, it *Continue Search* option is recommended.
+
+
+
+    When done, hit the *Apply* button. AutoCAD will be waiting to select a bearing for the initiail search direction. Pick on a point.
+
+    <img src="./Images/Image 57.png" style="width:7in">
+
+
+
+The resulting alignment is created, similar to the one shown below.
+
+<img src="./Images/Image 58.png" style="width:7in">
+
+
 ## Surface Interpolant
 [Back to ToC](#table-of-contents)
 
@@ -217,6 +279,7 @@ Curves, if found in the AutoCAD alignment object, will be considered while extra
 - Curve radius(R), the curve length (L), and the chord length (Lc) are all greater than or equal to 20meters
 
 - The backward tangent and forward tongent lines to the curve begining and ending, respectively, align with the preceeding and following segments with in acceptable error.
+- The incremental distance specified for profile extraction is >=5.0 meters.
 
 > Note that these are limitations set to ensure practicality of designs, as curves of a smaller size are not encouraged in practice. If all the conditions are not met, no curve data will be extracted. 
 
@@ -289,7 +352,7 @@ Rarely, we have noted that transverse profile data are flipped. These are common
 
 The profile extraction process relies on a number of assumptions to execute the above mentioed tasks. Observing the following conventions and assumptions will help to avoid failed attempts, and hence save time. 
 
-**Direction of Increasing Station**: Profile extraction process is designed to work from the begining vertex of the alignment object towards the its end vertex, when extracting elevations at incremental locations. This is based on the key convention stating, 'alignments are drawn from begining to ending station.' For canal alignments, this would mean from upstream to downstream direction. All preceeding and subsequent tasks to profile extraction build on this convention. It is therefore mandatory to work accordingly, to avoid mulitple invonveniences as the design task progresses.
+**Direction of Increasing Station**: Profile extraction process is designed to work from the begining vertex of the alignment object towards its end vertex, when extracting elevations at incremental locations. This is based on the key convention stating, 'alignments are drawn from begining to ending station.' For canal alignments, this would mean from upstream to downstream direction. All preceeding and subsequent tasks to profile extraction build on this convention. It is therefore mandatory to work accordingly, to avoid mulitple invonveniences as the design task progresses.
 
 **Scaling of routes**: Canal routes are required to be referenced to a pair of axes generated by iCAD product. Generally, this referencing is not limited in any way. That is to say, the user can adopt any prefered scalling for the referencing to work. However, when applied to canal routes, the scaling used may impact the quality - or even success  - of profile extraction. 
 
@@ -303,7 +366,7 @@ The optimal incremental distance to be used shall depend on the project scale/ty
 
 **Curve data limitations:** The size of curves that can be read in to alignment profile data, as seen above, is limited by design for iCAD and CanalNETWORK products. Irrigation canals are, by practice, expected to meet some general principles of practice. The software products attempt to implemtn a pragramatic approach towards filtering curves provided by the user in the original AutoCAD drawing. As mentioned above, the smallest allowable curve radius and length, are limited to 15 and 20 meters, respectively. We anticipate that provissions below these limits are not practical, and hence are automatically filtered out during the extraction process.
 
-
+<u>**Important Tip** Add cross-section data from field surveys to a cloud source file (.csv) to ensure cross-sections represent sufficient detail. This is critical when working on weirs and dams.</u>
 
 [Back to ToC](#table-of-contents)
 
