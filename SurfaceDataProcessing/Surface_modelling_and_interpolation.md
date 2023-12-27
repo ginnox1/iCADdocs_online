@@ -101,9 +101,9 @@ To create a profile data for a single alignment route, start by making sure iCAD
    
    <u>Starting Station</u>: The desired starting station for the profile data. Default is 0, and it is recommended to leave it as is, unless for special purposes which also require other steps to consider.
    
-   <u>Incremental Distance(m)</u>: The interval for profile data extraction. The default is 20m. Incremental distance can be set as low as 2.5meters. 
+   <u>Incremental Distance(m)</u>: The interval for profile data extraction. The default is 20m. Incremental distance can be set as low as 0.5meters.
    
-   ***Important Note: Using small incremental distance can increase the accuracy of the design, say the calculated eatth volumes. However, the different computational processes could increase significantly.***
+   **Important Note: *Incremental lengths less than 5 meters do not extract curve parameters. Such small values are intended for use only with diversion weir or dam axis alignments (~up to few hyndred meters long only). Using small incremental distance for long alignments, such as canal routes, is not recommended, and may cause the profile extraction process to ABORT PREMATURELY.***
    
    <u>Include Vertices(-)</u>: This allows to include or exclude profile data at vertex locations along the alignment route. In recent versions, vertex locations are ALWAYS included, and this variable is redundant, and left at the default value of YES. It can be used to suppress curve extraction if set to NO.
 
