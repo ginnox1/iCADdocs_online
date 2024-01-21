@@ -76,7 +76,18 @@ Use `Workflow > Auto Delineate Region` to create a boundary area around the data
 <img src="./media/Image 010.png" style="width:7in">
 
 
-> :bulb: **Tip**: Use the *Shrink Factor* variable setting to control how the boundary is created for the cloud point data set.
+The generated boundary can be made more tight or loose around the point cloud data using the shrink factor variable.
+
+<img src="./media/Image 030.png" style="width:5in">
+
+Choose a value close to 1, to make the boundary more tight around the points as shown below.
+
+<img src="./media/Image 032.png" style="Width:5in">
+
+
+Choose a value close to 0 for a more loose boundary.
+
+<img src="./media/Image 031.png" style="Width:5in">
 
 ### Manuall Boundary creation or Edit
 [Back to ToC](#table-of-contents)
@@ -152,6 +163,14 @@ To make sure the data from the host object is also clean, filter the data as out
 ### Generating Contours
 [Back to ToC](#table-of-contents)
 
+Contours can be generated using different specifications. These are found in the variables editor under the Contour Parameters group.
+
+<img src="./media/Image 033.png" style="Width:4in">{br}
+
+- Grid Intervals: Higher and lower ordeer grid intervals for calculating a regularly spaced mesh data for input to contour generation. The most important parameter is the lower value. For most uses, 20 is a good value.
+- Contour Intervals: The values of contour levels to generate, specifing the starting level, the incremental level, and the final level. In the snap shot above 1090, 2000, 2010, ..., 1500 will be created.
+- Smoothing Points per Grid: This value is by default 0, indicating no smoothing applied. Input an integer value between 1 and 4 to smoothen the contours. Each grid cell is subdivided in to smaller regions based on this setting, and cubic interpolation is applied on the grid data, resulting in a more smoother contour.
+- Text Label: Show sparse or dense contour labels along the generated contours.
 
 Contours are generated using `Workflow > Create Contours` menu command. 
 
@@ -162,6 +181,12 @@ The interval for generating contours can be controlled from `Workflow > Edit Var
 > :bulb: **Tip**: For computational efficiency, boundary and grid data are calculated once and stored. This may some times cause contour plots to NOT respond to new boundary areas created. If this happens, use `Workflow > Clear Calcualted Data` and run again.
 
 <img src="./media/Image 024.png" style="width:7in">
+
+The following image shows contours generated for the same data, with and with out smooting. Smoothing gives a more presentable result, as can be seen in parts of the contour area.
+
+<img src="./media/Image 034.png" style="width:5in">{br}
+
+> **Note:** It is important to keep in mind that smoothed out contours are second level interpolations and DO NOT accurately represent surface variation. They are also not used in subsequent analysis in any way in iCAD and related products. 
 
 
 

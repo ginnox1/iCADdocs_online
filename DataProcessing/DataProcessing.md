@@ -21,6 +21,9 @@ This page presents each tool available, and how to use it to tackle design chall
       - [Creating Unit axes](#creating-unit-axes)
     - [Creating Referenced Axis](#creating-referenced-axis)
     - [Referencing objects to an Axis system](#referencing-objects-to-an-axis-system)
+  - [Drawing Results to AutoCAD](#drawing-results-to-autocad)
+    - [1. Using Menu command](#1.-using-menu-command)
+    - [2. Using the Toolbar Command](#2.-using-the-toolbar-command)
   - [Create and Edit Alignment Markers](#create-and-edit-alignment-markers)
   - [Generating profile data for Alignment routes](#generating-profile-data-for-alignment-routes)
     - [Conventions](#conventions)
@@ -28,14 +31,15 @@ This page presents each tool available, and how to use it to tackle design chall
     - [Modify extracted data](#modify-extracted-data)
     - [2.5D Profile data generation](#2.5d-profile-data-generation)
     - [Batch processing profiles](#batch-processing-profiles)
-  - [Data Visualization](#data-visualization)
+  - [Data Visualization and Presentation](#data-visualization-and-presentation)
+    - [List data visualizaiton and presentaiton](#list-data-visualizaiton-and-presentaiton)
+    - [Visual Presentation solutions for iCAD](#visual-presentation-solutions-for-icad)
     - [Technical Notes: Fitting a Model or adding a trendline:](#technical-notes-fitting-a-model-or-adding-a-trendline)
   - [Using CAD Objects Extractor](#using-cad-objects-extractor)
     - [Collecting and Managing Objects in to the Extractor](#collecting-and-managing-objects-in-to-the-extractor)
     - [Exporting Data](#exporting-data)
     - [Instantiation](#instantiation)
-<!--/TOC--><!--/TOC-->
-
+<!--/TOC-->
 
 ## Summary of functions
 [Back to ToC](#table-of-contents)
@@ -750,13 +754,11 @@ style="width:2.97153in;height:0.87847in" />
     > Note: The profile data for each Alignment object is generated and saved automatically. There will be no preview or interim processing of the data. Use the steps discussed above to view/review the extracted data.
 
 
-## Data Visualization
+## Data Visualization and Presentation
 [Back to ToC](#table-of-contents)
 
-Data can be viewed in the iCAD environment with ease. Data sources can
-be AutoCAD objects hosting results of a pre-run iCAD module, e.g.,
-ChannelRate_WSPRO hosting stage discharge relationships; or a data table
-from an MSExcel worksheet.
+### List data visualizaiton and presentaiton
+List Data - from spreadsheet applications or CSV files, can be viewed in the iCAD environment with ease. Data sources can be AutoCAD objects hosting results of a pre-run iCAD module, e.g., ChannelRate_WSPRO hosting stage discharge relationships; or a data table from an MSExcel worksheet.
 
 <img src="./media/image57.png"
 style="width:3.7125in" />
@@ -889,6 +891,58 @@ the ordinate, and vice versa. See example beow.</td>
 </tr>
 </tbody>
 </table>
+
+### Visual Presentation solutions for iCAD
+[Back to ToC](#table-of-contents)
+
+iCAD main interface serves as a presentation and interaction medium for all its modules. The graphic contents in the interface can be enhanced for presentation purposes as follows:
+
+1. Show Hide Elements
+    
+    Users see the list of items plotted in the main interface from **View > Graphics View Manager** or `Ctrl`+`M` keyboard short cut. Notice the displayed table at the bottom left corner.
+
+    <img src="./media/Image 100.png" style="width:5in">
+
+    - Select/deselect the check boxes under *Show Graphic* column to show/hide the objects.
+    - select/deselect the check boxes under *Show Text* column to show/hide the texts pertaining to the object. Note that, this will not have any effect if the graphic of the object is not vissible.
+    - right-click on the table to display the options, and choose one of four alternative locations for the table (Upper Right, Upper Left, Lower Right, and Lower Left)
+    - to hide the table, right-click on it and choose *Hide*, or use the keyboard shortcut `Ctrl`+`M`.
+
+1. Data Cursor Tips
+    
+    Users can label graohic elements using the *Data Tips* toolbar item or from the **View > Data Tips (Toggle)** menu item. Clicking on either will toggle the data cursor tip status for the graphic display area.
+
+    <img src="./media/Image 105.png" style="width:7in">
+
+    - To label graphic elements, toggle to ON, and hover on any graphic object. The cursor will change to a plus, indicating its ready to pick a point. Upon click, the data tip is inserted.
+    - To add more labels, hold any one of the shift/Ctrl/Alt keys while clicking on the object to label.
+    - to remove a data tip, right click on the data tip, and choose *Delete Current Data Tip*
+    - to remove all data tips, right click on any data tip, and choose *Delete All Data Tips
+
+    > Note: By default, data tips can be positioned on data points only. To create data tips along lines, right click on any data tip, navigate to *Selection Style* and choose *Mouse Position*.
+
+
+1. Copy Graphic area contetns
+    
+    Users can copy the contents of the graphic window for various purposes. The following tools are available.
+    - Tools > Copy Graphics (To File) allows to save the current contents of the graphic area to a bitmap (.bmp) file.
+    - Tools > Copy Graphics (To Clipboard) copies the contents of the current display to the windows clipboard. Use `Ctrl`+`V` keyboard shortcut to paste the drawing to other applications such as word, excel or AutoCAD. The following figure shows such an image pasted to AutoCAD environemnt.
+
+    <img src="./media/Image 107.png" style="width:7in">
+
+1. Generate Drawings to AutoCAD
+
+    Generally, all contents of the graphic area can be exported to AutoCAD and plotted at desired scaling. 
+    - Use the **Plot All to AutoCAD** toolbar item to generate all the contents of the graphic area to AutoCAD. Notice the toolbar status message, indicating AutoCAD is in selection mode waiting for input
+    <img src= "./media/Image 108.png" style="width:7in">
+    - In AutoCAD select a bounding box object. 
+    - Pick a desired scaling, and create. If *All* scale value is used, the plot will be confined to the limits of this bounding box upon creation in AutoCAD. Otherwise, the objects are generated per given scaling with the origin set to the lower-left corner of the bounding box.
+
+An alternative method is available to plot individual objects to AutoCAD. This is available along with other workflow items for the active session, in **Workflow > Select Draw to AitoCAD** or `Ctrl`+`P` keyboard short cut.
+
+> Note: To use this method, a referenced object is required in AutoCAD.
+
+
 
 ### Technical Notes: Fitting a Model or adding a trendline:
 [Back to ToC](#table-of-contents)

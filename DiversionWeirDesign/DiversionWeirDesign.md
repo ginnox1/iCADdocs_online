@@ -665,13 +665,13 @@ It is common practice to use estimated scour depths to fix the cutoff depth of t
 
 Each of these lines represent the recommended scour depths. According to Lacey's  the depth of scour below the HFL (high flood level) is given by the following relation ship.
 
-**R= 1.35(q^2^/f~1~)^2^**
+**R= 1.35(q^2^/f<sub>1</sub>)^2^**
 
-Where, f~1~ is the silt factor determined from median size of river material d~mean~ as foloows:
+Where, f<sub>1</sub> is the silt factor determined from median size of river material d<sub>mean</sub> as foloows:
 
-**f~1~=1.76*sqrt(d~mean~)**
+**f<sub>1</sub>=1.76*sqrt(d<sub>mean</sub>)**
 
-> Note: Mean bed material size (**d~mean~**) is set in the Material Properties group of variables availble on longitudinal view.
+> Note: Mean bed material size (**d<sub>mean</sub>**) is set in the Material Properties group of variables availble on longitudinal view.
 
 The depth guidelines generated are therefore located at depths of 1.25R, 1.5R, and 1.75R. The upstream curoff depth can be positioned to meet requirements using these as visual guides.
 
@@ -1092,14 +1092,14 @@ In the above equations, Cd= Coefficient of discharge, Ho, H= depth of
 overflow, B= top width of the weir, P= height of the weir, L= length of
 overflow, and g= gravitational acceleration.
 
-Flow contraction coefficient is considered when K~a~ >= 0 is input.
+Flow contraction coefficient is considered when K<sub>a</sub> >= 0 is input.
 In this case the effective overflow length is calculated from
 
 <img src="./media/Image51.png">
 
 
 
-Where L~o~ is the total available overflow length, and H~o~ is the
+Where L<sub>o</sub> is the total available overflow length, and H <sub>o</sub> is the
 overflow height.
 
 ### Surface hydraulics: 
@@ -1135,12 +1135,12 @@ Where Z, y, v, F represent the elevation, depth of flow, velocity and
 Froude numbers in pre-jump and post jump conditions.
 
 
-Jumps are classified comparing with tail water depth (h~t~) conditions as follows.
-1. Compute Sequent depth, h~2~^*^ for a horizontal channel condition. If h~2~^*^ > h~t~, then Type A Jump occurs
-1. If not, Use Kindsvater's equation to determine h~2~= f(y~1~, G) where y~1~ is the pre-jump depth of flow.
-1. If h~2~=h~t~, Type C jump occurs
-1. If h~2~>h~t~, Type B jump occurs, or
-1. If h~2~<h~t~, Type D jump occcurs.
+Jumps are classified comparing with tail water depth (h<sub>t</sub>) conditions as follows.
+1. Compute Sequent depth, h<sub>2</sub> for a horizontal channel condition. If h<sub>2</sub><sup>*</sup> > h<sub>t</sub>, then Type A Jump occurs
+1. If not, Use Kindsvater's equation to determine h<sub>2</sub>= f(y<sub>1</sub>, G) where y<sub>1</sub> is the pre-jump depth of flow.
+1. If h<sub>2</sub>=h<sub>t</sub>, Type C jump occurs
+1. If h<sub>2</sub>>h<sub>t</sub>, Type B jump occurs, or
+1. If h<sub>2</sub><h<sub>t</sub>, Type D jump occcurs.
 
 
 <img src="./media/image5.png">
@@ -1174,7 +1174,7 @@ determined from the following chart.
 <img src="./media/Image57.png" style="width:6in">
 
 The length of the jump is determined from the below chart relating the
-Froud number **F~r~** calculated above to the ratio of total jump length
+Froud number **F<sub>r</sub>** calculated above to the ratio of total jump length
 to the sequent depth.
 
 <img src="./media/image1.png" style="width:6.33333in;height:3.0584in" />
@@ -1185,7 +1185,7 @@ point.
 
 <img src="./media/image27.png" style="width:6.5in;height:3.31944in" />
 
-The value of **L~j~** is futher checked against the common practice of **L~j Final~ = max(L~j~, 5.5(EGL~us~ - EGL~ds~))**
+The value of **L<sub>j</sub>** is futher checked against the common practice of **L<sub>j, Final</sub> = max(L<sub>j</sub>, 5.5(EGL<sub>us</sub> - EGL<sub>ds</sub>))**
 
 ### Energy Dessipators Provission
 Type I energy dessipators are simple provissions that are (assumed to) occur on a horizontal channel. These may not be practical options, as in many cases the froude numbers dictate a more intense hydraulic jump conditions. 
@@ -1195,8 +1195,8 @@ A user can select the type of Jump desired from the variable editor dialog as sh
  <img src="./media/Image 011.png" style="width:6.5in">
 
 When the user chooses any of these types, two things are handled automatically:
-- The downstream apron floor level is set to a fixed value, that is obtained by considering the minimum river bed level at the end-of-apron location (determined from figure chart for expected length of hydraulic jump at the design discharge, Q~DES~).
-- The sequent depth of flow is set to a value corresponding to the tail water level for the given discharge (Q~i~)
+- The downstream apron floor level is set to a fixed value, that is obtained by considering the minimum river bed level at the end-of-apron location (determined from figure chart for expected length of hydraulic jump at the design discharge, Q<sub>DES</sub>).
+- The sequent depth of flow is set to a value corresponding to the tail water level for the given discharge (Q<sub>i</sub>)
 
     <img src="./media/Image 010.png" style="width:6.5in">
 
@@ -1264,8 +1264,8 @@ evaluated against the following (Asawa 2002):
 <img src="./media/Image 006.png">
 
 
-Where **FS~OT~** is factor of safety against overturning, e=
-eccentricity, **q~heel,toe~** are stresses at heel and toe of the
+Where **FS<sub>OT</sub>** is factor of safety against overturning, e=
+eccentricity, **q<sub>heel,toe</sub>** are stresses at heel and toe of the
 bottom of the weir structure. 
 
 To determine contributing forces and their moments the following are considered.

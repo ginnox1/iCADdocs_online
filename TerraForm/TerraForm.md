@@ -28,11 +28,14 @@ The module can be used as described below.
     - [Creating Design Levels](#creating-design-levels)
     - [Creating Simple Assemblies](#creating-simple-assemblies)
     - [Compound assemblies](#compound-assemblies)
+  - [Defining Shapes from Valid AutoCAD Objects](#defining-shapes-from-valid-autocad-objects)
   - [Creating views](#creating-views)
     - [Section Views](#section-views)
+    - [Creating Plan Views](#creating-plan-views)
   - [Generating Fill Work Estimates](#generating-fill-work-estimates)
   - [Assemblies with Tracer (Bees):](#assemblies-with-tracer-bees)
   - [Modified Ground Levels Processing](#modified-ground-levels-processing)
+  - [Listing Volumes](#listing-volumes)
 <!--/TOC-->
 
 
@@ -58,7 +61,7 @@ For successful execution of an session instance of TerraForm, two objects are re
 
     This object in AutoCAD represents the centerline for the earth formation. This is conveniently drawn overlaying a contour/feature map. The axis object must be:
 
-    - Drawn from left to right, facing upstream/upslope direction
+    - Drawn from left to right, facing downstream direction
 
     - Referenced
 
@@ -175,10 +178,11 @@ style="width:2.57292in;height:1.30208in" />
 In the Variable editor dialog, enter unique informations to the desired
 assembly. 
 - The tag given will be used for listing the assembly in the *Assembly Editor* interface.
-- Earth shape defines how the embankement shapes form a shape to the left and to the right of the centerline. Use the drop-down selector for some of preset values.
+- Earth shape defines how the embankement form a shape to the left and to the right of the centerline. Use the drop-down selector to pick from a list of of preset values.
 
+> **Note**: The ***Assembly Tag*** name can contain only letters and underscore. Numbers can not be at the begining. No spaces are allowed.
 
-> Note: The Design Level name value is set to the tag provided to the object in AutoCAD and can not be changed.
+> **Note**: The ***Design Level*** name value is set to the tag provided to the object in AutoCAD and can not be changed.
 
 <img src="./media/image11.png" style="width:6.5in;height:3.04167in" />
 
@@ -188,6 +192,10 @@ informaitons, or delete the assembly.
 
 <img src="./media/image20.png"
 style="width:4.49479in;height:2.74442in" />
+
+> **Note**: Both Left and right of centerline specification are required for a valid shape specification.
+
+> **Tip**: See further below, to learn how to pick shapes from AutoCAD Objects.
 
 Repeat the steps above to create the next two assemblies of core and blanket.
 
@@ -240,6 +248,57 @@ Notice also, after assemblies are combined, clicking on either assembly in the l
 Use the **Save to Host** button, to save the modified assembly
 information to the host object. This will also refresh the contents in the main interface. 
 
+Once a desired assembly is fully defined, clicking on the assembly shows which areas are included as part of the assembly for cut and fill volume computation. 
+
+<img src="./media/Image51.png">
+
+> Note: The order of appearance of the assemblies affects how zones are calculated. Use the buttons on the right of the assembly list to change the priorities of assemblies as needed.
+
+
+## Defining Shapes from Valid AutoCAD Objects
+[Back to toc](#table-of-contents)
+
+As stated above, assembly shapes can be defined by listing geometry of the desired shape using the bmh triplet specification. An alternative method is to draw the desired shape in AutoCAD and use it as a source. The source AutoCAD object must fulfil the following requirements:
+
+- drawn using LWPolyline 
+- drawn begining from the centerline
+- must have even number of segments, and the minium is 2)
+- odd segments must be perfectly horizontal
+
+If the object fails to meet any one of the above, it will not be used.
+
+As an example, consider the following shape templates defined in AutoCAD. The shapes for left of Centerline and right of centerline are separately prepared, adn referenced to the axis.
+
+<img src="./media/Image33.png" style="width:9in">
+
+To read the gemoetry of these shapes, start the assembly definition dialog as you would for any assembly. Once the dialog shown below appeadrs, follow the next steps.
+
+1. Type the left arrow key `<` for the **Earth Shape (Left of CL)** variable.
+
+
+    <img src="./media/Image31.png" style="width:4in">
+
+2. Click outside, and click on the cell again. AutoCAD will be in select mode.
+
+    <img src="./media/Image34.png" style="width:7in">
+
+3. In AutoCAD, pick the red shape object. If the object selected does not meet the criteria, the following dialog appears. Resolve the issue and try again. If acceptable, then the values are read and recreated in the dialog, as shown below.
+
+     <img src="./media/Image35.png" style="width:5in">
+
+3. Repeat the same process for the right side, to pick the blue shape in AutoCAD representing the geometry for the Right of Center Line. The shape values will be listed as shown below.
+ 
+    <img src="./media/Image36.png" style="Width:5in">
+
+4. Click `Apply` when ready. The shapes are drawn in the assembly editor as shown below.
+
+    <img src="./media/Image37.png" style="width:7in">
+
+In this manner, users can create and use AutoCAD defined shapes for assembly creation.
+
+> Note: The shape data are read once, and updating the object does not update the geometry listing.
+
+
 ## Creating views
 [Back to toc](#table-of-contents)
 
@@ -289,8 +348,6 @@ The module creates accurate presentation quality plan views using the ground sur
 *Figure of a formation resulting from a curved axis alignment showing accurate presentation of plan view.*
 
 Plan views are generated from `Workflow > Plan View` menu command. Choose options for generating contour as desired, and proceed.
-
-
 
 ## Generating Fill Work Estimates
 [Back to toc](#table-of-contents)
@@ -359,12 +416,74 @@ Cross-section views from the main interface now show the assembly dynamically ch
 ## Modified Ground Levels Processing
 [Back to toc](#table-of-contents)
 
-[To be completed soon...]
+In real-life projects, fill works are created over well prepared ground levels that can be very different from the original ground level formation. Modified ground levels in TerraForm allow to imitate this workflow, and generate realistic drawings and quantities.
 
-## Working with Alignments with curves
+Modified ground levels are created using an already defined assembly data. The assembly data must represent a cut shape. For this example, take the below assembly definition. The Fill works are currently drawn over the existing ground level.
+
+<img src="./media/Image39.png">
+
+In reality however, the fill works are desired above the excavated ground level - commonly known as the **General Foundation Level(GFL)**. To create this condition:
+
+1. In the main iCAD interface, go to Workflow > Create MGL. 
+1. On the *Pick Assembly* dialog, choose the **Trench** assembly representing the GFL, and click `Ok`.
+
+    <img src="./media/Image40.png" style="width:7in">.
+1. Notice the progress bar, and the status bar at the bottom for progress. As indicated on the status bar, the resulting list is displayed in the Data Table view.
+
+    <img src="./media/Image41.png" style="width:7in">
+
+1. If not already, click on the *Table View* toolbar to see the result. The desctiption on the table view underlines the list is a result of the calcualtions for **Ground Level Modifications** and a summary value, also highlighted in yelow at the bottom of the table.
+    
+    <img src="./media/Image42.png" style="width:3in">
+
+1. Before you can see the change in the assembly editor, go to the **Workflow > Create MGL** once again. Notice, it is not checked. Click on it and a dialog will apear. 
+    1. Choose **Toggle** to change the status to on/off. If the state is on, a check mark will be put before the menu item as shown below.
+    1. Choose **Clear** to clear all modified ground level data, and start over.
+    2. Choose **Modify** to create another modified level, which we will use next.
+     
+     For this step, we will choose the **Toggle** button, and confirm the action in the menu item.
+
+    <img src="./media/Image44.png" style="width:8in">
+
+1. Start the **Workflow > Show Section** command or `Ctrl`+`X` keyboard short cut and move the cursor back and forth to see how the modified ground level is created. Notice the deep in the thick graye line indicating the new ground level.
+
+    <img src="./media/Image45.png" style="width:8in">
+
+1. We will still need to modify the GFL to incorporate the shape of the deep trench. To achieve this go to **Workflow > Create MGL** once again. Note the menu item is **Checked**. When the dialog appears, choose **Modify**. This will start the *Pick Assembly* dialog. Choose the Trench assembly, which represents the deep trench in the schematic.
+ 
+    <img src="./media/Image46.png" style="width:8in">
+
+    The progress bar will show status and complete as above.
+
+1. Start the table view to see the change in volumes due to the ground level modification. Notice the highlighted areas showing cummulative values for estimated change in volume (also at the bottom of the table)
+
+     <img src="./media/Image47.png">
+
+1. Repeat step 6 to see the changes in the assembly editor. As shown below, the fill works now extend to the newly modifed ground level.
+
+    <img src="./media/Image48.png" style="width:8in">
+
+Modified levels created in this manner are available for use and/or further modification after saving.
+
+
+## Listing Volumes
 [Back to toc](#table-of-contents)
 
-[To be completed soon...]
+Volumes can be listed for all fill and cut related works in one step.
 
+1. Start the **Worflow > Calculate Volumes** to update all figures.
+
+1. Then use the **Workflow > List Volumes...**. A dialog appears requesting input for desired stations. One can choose any length span to calculate volumes with in valid ranges.
+
+    <img src="./media/Image49.png" style="width:8in">
+
+1. The volumes will be listed in the table view as shown below.
+
+    <img src="./media/Image50.png">
+
+    For better visibility, the data can be coppied to cliboard and pasted in a spreadsheet application.
 
 END.
+
+
+

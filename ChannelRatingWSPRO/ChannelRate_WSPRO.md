@@ -2,10 +2,7 @@
 
 [Back to Home](..\index#online-documentation)
 
-Rating of natural streams can be developed using the product module
-***ChannelRate_WSPRO***. The module is built on WSPRO98 algorithm from
-USGS, providing a convenient solution environment for interactive input
-and output of solutions. 
+Rating of natural streams can be developed using the product module ***ChannelRate_WSPRO***. The module is built on WSPRO98 algorithm from USGS, providing a convenient solution environment for interactive input and output of solutions.  It also solves rating curves using simple application of manning's equation.
 
 <img src="./media/image18.png" style="width:4in">
 
@@ -16,9 +13,12 @@ and output of solutions.
   - [Conventions:](#conventions)
   - [Typical Workflow](#typical-workflow)
   - [Preparing Objects](#preparing-objects)
-  - [Define the session and Start](#define-the-session-and-start)
-  - [Define Segments](#define-segments)
-  - [Solve and explore solutions](#solve-and-explore-solutions)
+  - [Define the Session](#define-the-session)
+  - [Solve for Rating Curve](#solve-for-rating-curve)
+    - [Define Segments](#define-segments)
+    - [Edit Setting Variables](#edit-setting-variables)
+    - [Set More Calculation Parameters](#set-more-calculation-parameters)
+    - [Solve and Explore Solutions:](#solve-and-explore-solutions)
   - [Save Solution](#save-solution)
   - [Presentation of Results](#presentation-of-results)
   - [Rating curve for multiple cross-sectoins](#rating-curve-for-multiple-cross-sectoins)
@@ -38,8 +38,9 @@ rating curve from:
 
 1.  A surveyors profile
 
-2.  Extracted profile from cross-section axes or layout.
+2.  Extracted profile from cross-section axes or alignment.
 
+> Note: Solutions using this module use WSPRO for upstream direction flow calculation, assuming subcritical flow conditions. Conditions resulting in superciritical flow conditions are therefore not amicable to the current release of the module. Refer the WSPRO manual for further details. 
 
 ## Typical Workflow
 [Back to ToC](#table-of-contents)
@@ -63,6 +64,8 @@ This can be created in one of many ways. For instance:
 - A surveyor's profile data plotted on AutoCAD (preferably using iCAD modules)
 - A drawn cross-section (e.g. digitized from a scanned image.)
 
+The maximum allowable number of vertices for the cross-section is 100 points. Any cross-section in excess of this will not be processed.
+
 <img src="./media/Image20.png" style="width:7in">
 
 *A cross-section drawing in AutoCAD ready for use by the module.*
@@ -72,10 +75,13 @@ In all cases, the object must be refernced to a pair of axis created by iCAD sof
 
 > :bulb: **Tip**: If scaling information is not available, the module will not proceed. Use the axis creation and editing tools with in iCAD to reference an existing plot of a cross-section,
 
+> Note: Different approaches are used to solve rating curves when either or both banks are lower than that which can accomodate desired discharges. Read [Set More Calculation Parameters]() below for details.
+
+
 Once the object is ready, continue to defining the session for the module.
 
 
-## Define the session and Start
+## Define the Session
 [Back to ToC](#table-of-contents)
 
 If not already, start iCAD application. This will link it to the existing AutoCAD drawing which contains the cross-section plot object. If you are on an open instance, then clear the iCAD Explorer workspace. Before you continue, make sure to import the cross-section object in to the iCAD workspace, else next steps may not complete succesfully.
@@ -103,7 +109,12 @@ If not already, start iCAD application. This will link it to the existing AutoCA
 The module is now rinning in the main interface, with all the required prerequisite data. The next step is to define the geometric and hydraulic parameters for the stream cross-section profile.
 
 
-## Define Segments
+## Solve for Rating Curve
+[Back to ToC](#table-of-contents)
+
+The sections below demonstrate how the above defined session can be used to determine rating curves usine different methods and approaches. The user can control considerations for determining the final result, as it may suite the particular condition of the channel and its properties.
+
+### Define Segments
 [Back to ToC](#table-of-contents)
 
 Segments are parts of the cross-section profile having different hydraulic parameters, namely roughness coeficients. By default, one segment - represneting the entire width of the profile - is assigned at start up.
@@ -114,26 +125,28 @@ Segments are parts of the cross-section profile having different hydraulic param
 
    You can edit the locaiton of the vertical bar. Right-click on the bar, and choose `Move...` to interactively drag to a location. Or choose `Move to Station...` to input a specific station to move to.
 
-   > Note: Each vertical bar represents the segment from the left end up to itself. Notive also the default hydraulic paramereters displayed at the top center for each segment.
+   > Note: Each vertical bar represents the segment of channel section to the left of its location. Notice also the default hydraulic paramereters displayed at the top center for each segment.
 
 
 2. To edit the roughness coeficient for a segment, right-Click on a it and `Edit Segment` menu option.  In the *Edit Segment* dialog, change the label and roughness values as needed. The changes will be reflected in the main interface.
 
    <img src="./media/Image 18.png" style="width:7in">
-    
-    
 
-3. Edit solution Variables as the last step. This involves editing key calculation parameters. To set or edit these, go to `Workflow > Edit Variables...` or `Ctrl`+`E` key combination. This will display the *Variable Editor* dialog. The most common ones are:
+   > Note: A maximum of 5 segments are allowed on a given cross-section.
+    
+### Edit Setting Variables
+Before solving for the rating curve, it is recommended to review the calculation parameters which control the solution methods, approach and assumptions. This can be done from the *Variable Editor* dialog as follows.
+
+1. To set or edit these, go to `Workflow > Edit Variables...` or `Ctrl`+`E` key combination. This will display the *Variable Editor* dialog. The most common ones are:
     - Discharge range of values for calculation, in m^3^ per second.
     - Stream bed slope (m/m).
 
    The calculated range of discharges is dictated by the minimum height of the canal bank on either end, or the maximum of discharge ranges input, which ever is minimum.
 
 
-   > :bulb: **Tip**: See below for setting and using the other variables for advanced analysis and results.
-
-
-   <img src="./media/Image 22.png."  style="width:3.5in"> {br}
+     The figure below shows the variable editor dialog, listing all the settings available.
+ 
+   <img src="./media/Image25.png."  style="width:4in"> {br}
 
     The table below summarizes input description for the common variables.{br}
 
@@ -141,8 +154,8 @@ Segments are parts of the cross-section profile having different hydraulic param
 
     <table>
     <colgroup>
-    <col style="width: 13%" />
-    <col style="width: 27%" />
+    <col style="width: 10%" />
+    <col style="width: 20%" />
     <col style="width: 58%" />
     </colgroup>
     <thead>
@@ -154,43 +167,87 @@ Segments are parts of the cross-section profile having different hydraulic param
     </thead>
     <tbody>
     <tr class="odd">
-    <td rowspan="2"><blockquote>
-    <p><strong>Calculation</strong> <strong>Parameters</strong></p>
-    </blockquote></td>
+    <td rowspan="4">
+    <p>Calculation Parameters</p>
+    </td>
     <td>Discharge Range</td>
     <td><p>An array of discharge values for which a flow stages are to be
     computed.</p>
     <p>e.g., [0:25:250] from 0 to 250m^3/sec at 25m^3/sec interval</p></td>
     </tr>
     <tr class="even">
+    <td>Flood Discharge: Qf(m3/sec)</td>
+    <td><p>Flood magnitudes to show on the rating curve and flow cross section in m3/sec.</p>
+    <p>e.g., 50, 100 draws flood marks for 50 and 100 m3/sec respectively.</p>
+    <p> A maximum of two valuse can be input.</p></td>
+    </tr>
+    <tr class="even">
     <td>Stream Bed Slope(So)</td>
     <td><p>The average stream bed slope in m/m.</p>
     <p>e.g., 0.001 is 1m drop every 1000 meters</p></td>
     </tr>
+    <tr class="even">
+    <td>Boundary Condition (FSo)</td>
+    <td><p> Dictates how water surface elevation is determined at downstream end. </p>
+    <p> Fso >=1.0, used slope-conveyance computation to determine initial water surface level at downstream end.</p>
+    <p> Fso<1, assumes critical flow at downstream end, and determines initial water surface level from the same.</p></td>
+    </tr>
     </tbody>
     </table>
 
-## Solve and explore solutions
+See just below, for *Analysis Method* and *Distance B/n Templates* settings.
+
+### Set More Calculation Parameters
 [Back to ToC](#table-of-contents)
 
 There are three differnet options available to solve for the rating curve, and this can be selected from the `Workflow > Edit Variables` by clicking on the *Analysis Method* variable.
 
-<img src="./media/Image21.png" style="width:7in">
+<img src="./media/Image24.png" style="width:6in">
 
 1. **Mannings Equation**: This method applies the mannings equation to the defined cross-section, and uses the slope value from the *Stream Bed Slope* variable. 
-    > **Note** This method uses the arithmatic average of Roughness values assigned for the segments in the cross-section.
-1. **Use Tempate x5**: This methos uses the built in WSPRO engine to compute water surface profiles. It replicates the cross-section 5 times in the downstream direction. It solves the rating curve for the downstream most section, and progresses upstream, refining the solution each time.
+    > **Note** If segments are created, this method uses the arithmatic average of N (manning's roughness) values assigned for the segments in the cross-section for all discharge amounts.
+
+1. **Use Template x1**: This method uses the built in WSPRO engine to compute water surface elevations for different discharge rates. It uses the single cross-section data provided. For this option the variable *Distance b/n Templates* is not used.
+
+
+1. **Use Tempate x5**: This method, similar to the above, uses the built in WSPRO engine. This time, the cross-section is duplicated 5 times, and positioned downstream maintaining a distance specified by the value of *Distance b/n templates* variable. For a default value of 50, each of the four cross-sections will be positioned at 50, 100, 150 and 200 meters downstream. The WSPRO engine then generates a water surface profile for the desired discharge range, starting at the downstream most cross-section, and progressing upwards. The stage determined at the original cross-section is expected to give a more accurate estimates considering friction losses.
+
+    > **Note**: An important assumption in this method of solution is that the channel is prismatic, and hence the cross-sections at various stations are similar.
 
 
 
-1. **Use Multiple Sections**: This method can take input for multiple cross-sections of the river down stream of the desired location. The for each cross-section must be plotted and referenced in AutoCAD.
-
-> **Note** The last two methods properly accounts for the variation of roughness values for differnet segments along the defined cross-section.
+1. **Use Multiple Sections**: This method can take input for multiple cross-sections of the river down stream of the desired location. To use this method, each cross-section must be plotted in AutoCAD using iCAD tools, or referenced to requirement per iCAD conventions.
 
 
-After setting the solution method, solve the session from `Workflow > Solve`.
+> **Note** The last two methods are known to properly account for the variation of roughness values for differnet segments along the defined cross-section.
 
-View and explore results as follows:
+> Note: For uniform N values, solutions using Slope-conveyance boundary conditions (with FSo=1.0) are similar to mannings solution.
+
+> The method of **Multiple Sections** is an advanced method of analysis. It is presented in detail towards the end of this section.
+
+> Note: When using manning solution, the rating curve is calculated up to a discharge level that can be accomodated below by the lowest bank height.
+
+> Note: When implementing methods that employ the WSPRO model, assumptions in the model hold. That means, water surface elevation for discharges higher than that can be acoomodated by the bank data are calculated by assuming a vertical section at either end of the bank.
+
+Once all parameters are set to desired values, hit on `Apply` button to save them.
+
+
+### Solve and Explore Solutions:
+[Back to ToC](#table-of-contents)
+
+To solve for rating curve, go to `Workflow > Solve` or use `Ctrl`+`S` keyboard short cut. The results are presented on the main iCAD interface, along with a tabular data in the *Data Table* interface.
+
+<img src="./media/Image26.png" style="width:5in">
+
+Fig: iCAD main interface showing calculated rating curve, and flood marks.
+
+> Note: Notice the updates on the status bar, showing method of analysis employed in solving the rating curve.
+
+<img src="./media/Image27.png" style="width:7in">
+
+Fig: Data Table view interface presenting detailed calculation results.
+
+To explore graphical presentation of other solutions follow below steps,
 
 - Toggle `Workflow > View Depth Plots` to view stage or depth plots {br}
     
@@ -198,13 +255,14 @@ View and explore results as follows:
 
 - Toggle the table view from the toolbar, to view or copy tabular results.
 
-Edit any aspect of the problem definition so far, and solve again to see updated results.
+
+Users can edit any aspect of the problem definition or calcualtion paraneters described so far, and solve again to see updated results.
 
 
 ##  Save Solution
 [Back to ToC](#table-of-contents)
 
-Save the work so it is avilable on subsequent runs of iCAD. To save Go to `Session > Save` or use the toolbar button.
+Save the work so it is avilable on subsequent iCAD sessions. To save Go to `Session > Save` or use the toolbar button.
 
 The data for the session are saved on the cross-section object in AutoCAD. This meanse, on subsquent runs of iCAD, importing this object the iCAD workspace, will also bring the session along with the saved data for quick access.
 
@@ -212,11 +270,13 @@ The data for the session are saved on the cross-section object in AutoCAD. This 
 
   > Note: If save could not complete, make sure the base cross-section object is in the iCAD workspace. 
 
+  > Note: The tabular data of the solution is saved on to the cross-section object in AutoCAD. It can therefore be viewed at any time from **Tools > View CSV Data on Object**.
+
 ## Presentation of Results
 [Back to ToC](#table-of-contents)
 
-Use iCAD presentation solutions to use the results of the analysis for
-documentation and presentation.
+Use iCAD presentation solutions introduced in earlier in [Data Processing, Analysis and Presentaiton]() chapeters for different ways to view, present and store results in iCAD main interface.
+
 - Use data cursor tips to annotate the graph. Hold shift to add more data tips.\
 
     <img src="./media/Image 23.png">

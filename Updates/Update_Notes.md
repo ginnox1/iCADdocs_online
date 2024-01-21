@@ -1,14 +1,14 @@
-# iCAD Update Notes (Nov 2023)
+# iCAD Update Notes (Jan2024)
 
 [Back to Home](..\index#updates-for-this-release)
 
-**Hello There,** 
+**Hello, and welcome again,** 
 
-Well come to this update. We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
+We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
 
-The current release is **Version 2.8.3.9040**.
+The current release is **Version 2.8.3.9067**.
 
-:bulb: **Note:** The release is currently released for validation purposed. It will be available on 06Dec2023.
+<img src="./media/Image51.png">
 
 
 
@@ -17,12 +17,14 @@ The current release is **Version 2.8.3.9040**.
 Key in this release include new modules for diversion weir design and embankment works analysis.
 <!--TOC-->
   - [Data Table View](#data-table-view)
+    - [CloudContour Module](#cloudcontour-module)
   - [Retwall Module](#retwall-module)
   - [ChannelRating_WSPRO](#channelrating_wspro)
   - [Diversion Weir Design](#diversion-weir-design)
     - [Increased Weir Heights](#increased-weir-heights)
     - [More Energy Dessipator types](#more-energy-dessipator-types)
     - [Relaxed locking with min RBL](#relaxed-locking-with-min-rbl)
+    - [Resolved issues for report generation](#resolved-issues-for-report-generation)
   - [TerraForm module for embankment works analysis](#terraform-module-for-embankment-works-analysis)
   - [Advanced Stream rating curve development using WSPRO](#advanced-stream-rating-curve-development-using-wspro)
   - [Enhanced ChartView](#enhanced-chartview)
@@ -37,6 +39,16 @@ iCAD's Data viewer table interface is frequently used to explore data contents o
 * Choose **Tools > Show Csv Data** menu command or the toolbar item to start the command. Go to AutoCAD, and pick the object whose data you want to explore.
 
 	<img src= "./media/Image 004.png" style="width:5in">
+
+### CloudContour Module
+The module is enhanced to address the requested issue of contour smooting. A new variable is introducted to this effect, and great results obtained in our test cases.
+
+<img src="./media/Image36.png" style="width:6in">
+
+Below figure shows raw contours (generated with out smoothing points) and smoothed contour with 4 points per grid specified.
+
+<img src="./media/Image37.png" style="width:6in">
+
 
 ## Retwall Module
 [Back to ToC](#table-of-contents)
@@ -58,10 +70,6 @@ Retaining wall module is enhanced to indlude the following features, particularl
 * A new safety criteria included on the Design Scene selector showing trends on eccentriciy and aiding in desin width selection.
 
 	<img src="./media/Image 003.png" style= "width:5in">
-
-
-
-
 
 
 ## ChannelRating_WSPRO
@@ -87,11 +95,13 @@ The following are key features:
 
     <img src="./media/Image33.png" style="width:6in">
 
+- New settings for Boundary conditions, allowing simulation of critical flow condition at cross-sections in Water Surface Elevation computation
+
+- **Renamed** So Factor to Boundary conditions, and adjusted input values to 0 <= Fso <=1.25.
+
+- Bug fixes on for advanced analysis (multi sections with variable N)
 
 - Improved error handling for discharge ranges. An bug in calculation of rated levels. that gave exagerated elevations, is also corrected.
-
-
-	
 
 
 ## Diversion Weir Design
@@ -127,7 +137,10 @@ Users can now lock the upstream appron level of the weir with in 1.0 meters of t
 
 <img src="./media/Image30.png" style="width:7in">
 
+### Resolved issues for report generation
 
+The reported tool has been updated for error issues, and now succesfully reports results.
+<img src="./media/Image35.png" Style="width:7in">
 
 ## TerraForm module for embankment works analysis
 [Back to ToC](#table-of-contents)
@@ -139,24 +152,33 @@ We have designed and implemented an ambitious workflow in formation analysis and
 This version includes the follwing features:
 - Easy definition of complex shape assemblies
 - Parameteric assemblies for even more complex assemblies
-- Ability to reduce surfaces (to emulate excavation works), before computing fill works
+- capability to create general foundation levels to reduce surfaces (to emulate excavation works), before computing fill works
 - Interactive cross-sections
 - Full drawing generation capability
 - and more.
 
-<img src="./media/image19.png">
+	<img src="./media/image19.png">
 
 In this release, many features are enhanced to allow quicked modelling of fill zones (materials) focusing on embankement dams.
 
-A major one is the ability to model offset assemblies, whose centerline is different than the embankement centerline.
+- Enhanced validation for field names prohibiting using invalid characters (e.g., spaces or hyphens)
+- Visuall presentation of the zone materials showing which subareas are captured before drawing or report generation.
 
-<img src="./media/Image31.png" style="width:7in">
+    <img src="./media/Image34.png">
 
-In addition, zone areas are now visible in the assmebly editor, as shown above.
+- ability to model offset assemblies, whose centerline is different than the embankement centerline. This can be used to effectively model toe drains and similar provissions.
 
-The plan view generator is enhanced to handle a bit more complexity, as shown below.
+	<img src="./media/Image31.png" style="width:7in">
 
-<img src="./media/Image32.png" style="width:7in">
+- Enhanced plan view generator to handle a multiple fill reaches, as shown below.
+
+
+	<img src="./media/Image32.png" style="width:7in">
+
+- Consolidated volume reporting for all fill and cut works, with ability to compute between given stations.
+
+    <img src="./media/Image50.png" style="width:7in">
+
 
 
 

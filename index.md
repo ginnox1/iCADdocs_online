@@ -72,7 +72,11 @@ iCAD softwware is continuously updated with more features and functionanlites. T
 
  Learn about the [updates in this release here](Updates/Update_Notes.md)
 
-:bulb: The latest release is **Version 2.8.3.9061** (Dec 2023)
+> :bulb: The latest release is **Version 2.8.3.9067** (Jan 2024)
+
+> Accompanying iCAD bridge application is updated to **Version V4.8.12**.
+
+
 
 You can find installation guidelines for iCAD product by following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
@@ -84,7 +88,6 @@ You can find installation guidelines for iCAD product by following the steps in 
 * Documentation is available to learn about the [updates in this release here](Updates/Update_Notes.md)
 
 
-> :bulb: **Important Notice**: Please note that a valid license is required to run the program, including for trials. Contact your provider or visit our website to get your copy of the license for trial or evaluation, or subscription.
 
 
 
