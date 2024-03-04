@@ -1,4 +1,4 @@
-# iCAD Update Notes (Jan2024)
+# iCAD Update Notes (Feb2024)
 
 [Back to Home](..\index#updates-for-this-release)
 
