@@ -1,4 +1,4 @@
-# iCAD Update Notes (Feb2024)
+# iCAD Update Notes (Jan-Feb2024)
 
 [Back to Home](..\index#updates-for-this-release)
 
@@ -16,10 +16,13 @@ The current release is **Version 2.8.3.9137**.
 
 Key in this release include new modules for diversion weir design and embankment works analysis.
 <!--TOC-->
-  - [ects to see if CsvData](#ects-to-see-if-csvdata)
-  - [showing trends on eccentr](#showing-trends-on-eccentr)
-  - [- Enhancement to handle compl](#-enhancement-to-handle-compl)
-  - [A flexible](#a-flexible)
+  - [ts. In this update, it](#ts.-in-this-update-it)
+  - [:5in">
+
+
+* New variabl](#5in-new-variabl)
+  - [t updates to ChannelRate_WSPRO ar](#t-updates-to-channelrate_wspro-ar)
+  - [Bug fixes](#bug-fixes)
 <!--/TOC-->
 
 
@@ -31,7 +34,12 @@ iCAD's Data viewer table interface is frequently used to explore data contents o
 
 	<img src= "./media/Image 004.png" style="width:5in">
 
-### CloudContour Module
+## Large Data handling
+Data handling workflow and tools are built in to the current release allowing the use of LiDAR and simialr data in design. Progress interfaces are also included.
+
+<img src= "./media/Image52.png">
+
+### Contour Smoothing
 The module is enhanced to address the requested issue of contour smooting. A new variable is introducted to this effect, and great results obtained in our test cases.
 
 <img src="./media/Image36.png" style="width:6in">
