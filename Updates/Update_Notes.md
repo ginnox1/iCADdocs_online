@@ -6,7 +6,7 @@
 
 We are excited to bring more functions and features to our users. This release marks a milestone, where we have included new modules for the design of diversion weirs and embankement analysis modules. We have also refined previously existing modules to meet the work needs of practitioners.
 
-The current release is **Version 2.8.3.9067**.
+The current release is **Version 2.8.3.9137**.
 
 <img src="./media/Image51.png">
 
@@ -16,19 +16,10 @@ The current release is **Version 2.8.3.9067**.
 
 Key in this release include new modules for diversion weir design and embankment works analysis.
 <!--TOC-->
-  - [Data Table View](#data-table-view)
-    - [CloudContour Module](#cloudcontour-module)
-  - [Retwall Module](#retwall-module)
-  - [ChannelRating_WSPRO](#channelrating_wspro)
-  - [Diversion Weir Design](#diversion-weir-design)
-    - [Increased Weir Heights](#increased-weir-heights)
-    - [More Energy Dessipator types](#more-energy-dessipator-types)
-    - [Relaxed locking with min RBL](#relaxed-locking-with-min-rbl)
-    - [Resolved issues for report generation](#resolved-issues-for-report-generation)
-  - [TerraForm module for embankment works analysis](#terraform-module-for-embankment-works-analysis)
-  - [Advanced Stream rating curve development using WSPRO](#advanced-stream-rating-curve-development-using-wspro)
-  - [Enhanced ChartView](#enhanced-chartview)
-  - [Support for Latest AutoCAD Releases](#support-for-latest-autocad-releases)
+  - [ects to see if CsvData](#ects-to-see-if-csvdata)
+  - [showing trends on eccentr](#showing-trends-on-eccentr)
+  - [- Enhancement to handle compl](#-enhancement-to-handle-compl)
+  - [A flexible](#a-flexible)
 <!--/TOC-->
 
 
