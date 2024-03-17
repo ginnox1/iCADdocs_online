@@ -16,15 +16,21 @@ The current release is **Version 2.8.3.9137**.
 
 Key in this release include new modules for diversion weir design and embankment works analysis.
 <!--TOC-->
-  - [ts. In this update, it](#ts.-in-this-update-it)
-  - [:5in">
-
-
-* New variabl](#5in-new-variabl)
-  - [t updates to ChannelRate_WSPRO ar](#t-updates-to-channelrate_wspro-ar)
-  - [Bug fixes](#bug-fixes)
+  - [Data Table View](#data-table-view)
+  - [Large Data handling](#large-data-handling)
+    - [Contour Smoothing](#contour-smoothing)
+  - [Retwall Module](#retwall-module)
+  - [ChannelRating_WSPRO](#channelrating_wspro)
+  - [Diversion Weir Design](#diversion-weir-design)
+    - [Increased Weir Heights](#increased-weir-heights)
+    - [More Energy Dessipator types](#more-energy-dessipator-types)
+    - [Relaxed locking with min RBL](#relaxed-locking-with-min-rbl)
+    - [Resolved issues for report generation](#resolved-issues-for-report-generation)
+  - [TerraForm module for embankment works analysis](#terraform-module-for-embankment-works-analysis)
+  - [Advanced Stream rating curve development using WSPRO](#advanced-stream-rating-curve-development-using-wspro)
+  - [Enhanced ChartView](#enhanced-chartview)
+  - [Support for Latest AutoCAD Releases](#support-for-latest-autocad-releases)
 <!--/TOC-->
-
 
 ## Data Table View
 [Back to ToC](#table-of-contents)
