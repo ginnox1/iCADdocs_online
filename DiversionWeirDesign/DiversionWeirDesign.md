@@ -42,13 +42,16 @@ abutment structures which is solved using a different module.
     - [Surface hydraulics:](#surface-hydraulics)
       - [Pre-Jump flow profile](#pre-jump-flow-profile)
       - [Hydraulic Jump profile](#hydraulic-jump-profile)
+    - [Energy Dessipators Provission](#energy-dessipators-provission)
     - [Scour Depth](#scour-depth)
     - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
+      - [Basic relationships](#basic-relationships)
+      - [Correction Factors](#correction-factors)
+      - [Exit gradient](#exit-gradient)
     - [Stability analysis:](#stability-analysis)
     - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
     - [References:](#references)
 <!--/TOC-->
-
 
 ## Conventions
 
@@ -1231,10 +1234,13 @@ Scour depth calculation method used is based on mean grain size of river bed mat
 ### Sub-Surface hydraulics:
  [Back to Toc](#table-of-contents)
 
-Khosla’s theory is applied to estimate subsurface flow head loss and
-residual pressure at different points along the bottom of the impervious
-floor (Asawa 2002), (Garg 2009). Thus, for the poles at eiher the
-upsream end or the downstream end,
+#### Basic relationships
+
+Khosla’s theory is applied to estimate subsurface flow head loss and residual pressure at different points along the bottom of the impervious floor (Asawa 2002), (Garg 2009). 
+<img src="./media/image7_1.png">
+
+
+Thus, for the cutoff walls at eiher the upsream end or the downstream end,
 
 <img src="./media/image4.png">
 
@@ -1242,11 +1248,20 @@ For the piles at the intermediate point,
 
 <img src="./media/image7.png">
 
+> :bulb: **Note**: When intermediate piles are not provided, i.e., di<=0.10, the module calculates pressure variation at the middle by interpolating nearest control points at upstream and downstream end. This is used to generate the sub-surface flow gradeline.
+
+
+#### Correction Factors
 Correction for mutual interference for key points is applied as:
 
 <img src="./media/image40.png">
 
-The exit gradient is estimated from:
+Note, here that, the above equation is not applicable for deetermining the eddect of an outer pile on an intermediate pile when the latter is equal to or less than the fomrer.
+
+
+#### Exit gradient
+
+The exit gradient is determined from the below relation ship:
 
 <img src="./media/image21.png">
 
@@ -1261,7 +1276,7 @@ implemented in the module.
 The stability of the weir body and its component provisions are
 evaluated against the following (Asawa 2002):
 
-<img src="./media/Image 006.png">
+<img src="./media/Image 006.png" style="width:3in">
 
 
 Where **FS<sub>OT</sub>** is factor of safety against overturning, e=

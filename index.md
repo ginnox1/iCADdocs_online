@@ -12,13 +12,32 @@ You are at the official online resource documentation for iCAD software and its 
 
 This online resource provides guidance on all the key aspects about installaiton, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
 
+## Table of Contents
+
 <!--TOC-->
-  - [Online Documentation](#online-documentation)
-  - [Licensing iCAD product](#licensing-icad-product)
   - [Updates for the Latest Release](#updates-for-the-latest-release)
+  - [Online Documentation](#online-documentation)
   - [Contacts](#contacts)
 <!--/TOC-->
 
+## Updates for the Latest Release
+[Back to ToC](#table-of-contents)
+
+iCAD softwware is continuously updated with more features and functionanlites. The release for the most recently version is shown below. Make sure to stay up to date.
+
+ Learn about the [updates in this release here](Updates/Update_Mar24/Update_Mar24.md)
+
+> :bulb: The latest release is **Version 2.8.9.9158** (Mar 2024)
+
+> Accompanying iCAD bridge application is updated to **Version V4.8.12**.
+
+
+* **Download** the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
+
+
+* Follow the update instructions [Installing Update Resources here](SetupAndLicensingGuide/setupguide.md#installing-update-resources) to update your application. 
+
+**NB:** If you encounter issues on licensing and installation, You can find guidelines following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
 ## Online Documentation
 [Back to ToC](#table-of-contents)
@@ -56,42 +75,12 @@ The guide is organized as follows. Navigate to your desired topic to learn more.
 More sections and content will be available, as we continue to work on new tools and enhancement of existing features. Stay tuned!
 
 
-## Licensing iCAD product
-[Back to ToC](#table-of-contents)
-
-iCAD and related products are copyright protected and licensed applications. You will need to install and license the products appropriately, in order for them to funciton properly.
-
-Read and follow [Installing and Licensing iCAD Product](/SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide) for commplete guidance. Below presents features available corresponding to each license level.
-
-
-## Updates for the Latest Release
-[Back to ToC](#table-of-contents)
-{br}
-
-iCAD softwware is continuously updated with more features and functionanlites. The release for the most recently version is shown below. Make sure to stay up to date.
-
- Learn about the [updates in this release here](Updates/Update_Notes.md)
-
-> :bulb: The latest release is **Version 2.8.9.9137** (Feb 2024)
-
-> Accompanying iCAD bridge application is updated to **Version V4.8.12**.
-
-
-
-You can find installation guidelines for iCAD product by following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
-
-* **Download** the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
-
-
-* Follow the update instructions [Installing Update Resources here](SetupAndLicensingGuide/setupguide.md#installing-update-resources) to update your application. 
-
-* Documentation is available to learn about the [updates in this release here](Updates/Update_Notes.md)
-
 
 
 
 
 ## Contacts
+[Back to ToC](#table-of-contents)
 
 Follow us on [**LinkedIn**]() and stay upto date with what we do. Follow us, and help spread the word.
 
