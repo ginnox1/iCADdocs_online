@@ -36,16 +36,17 @@ The module can be used as described below.
   - [Assemblies with Tracer (Bees):](#assemblies-with-tracer-bees)
   - [Modified Ground Levels Processing](#modified-ground-levels-processing)
   - [Listing Volumes](#listing-volumes)
+  - [Known Limitations](#known-limitations)
 <!--/TOC-->
-
 
 ## Conventions:
 
 [Back to toc](#table-of-contents)
 
 The following conventions apply for using the module.
-- The axis for representing the center of the formation is drawn from left to right facing upstream
-- Section views are, therefore, drawn from upstream (left) to downstream (right)
+- The axis for representing the center of the formation is drawn from right to left facing upstream. In other words, for a person standing with face towards the begining of the axis alignment, Left must be on upstream side, and right on downstream side. (This arrangement can be particlualrly importants for use with emabkmenet works.)
+
+- Section views on iCAD interface and on Assembly Editor are drawn with upstream side on the left, and downstream side on the right.
 
 
 <img src="./media/image22.png">
@@ -481,7 +482,26 @@ Volumes can be listed for all fill and cut related works in one step.
 
     <img src="./media/Image50.png">
 
-    For better visibility, the data can be coppied to cliboard and pasted in a spreadsheet application.
+Descriptive Notes:
+
+- The Fill Works represent fill volumes involved for each assembly above the last modified gorund level (MGL). 
+- Volumes for combined assemblies are shown on the first of the two assemblies (in order of appearance). The second assembly reports zero volumes. (See Zone_2B+DS_Filter, and DS_Filter columns above.)
+- Cut Works involved are reported with respect to the Original Ground Level (OGL).
+- Two sections
+
+    For better visibility, the data can be coppied to cliboard and pasted in a spreadsheet application such as MS Excel, or Open Office.
+
+    Note: 
+
+## Known Limitations
+[Back to toc](#table-of-contents)
+
+- There are not limits to the number of assemblies that can be defined. However, only two assemblies in cut formation can be used to process Modified ground levels, and get volume reports.
+- Rarely, cross-sections generated at intermediate stations - i.e., at stations other than those in profile extraction - may show double lines for assemblies. This is caused by anavoidable differences encountered during interpolation for the different formations.
+
+    <img src="./media/Image52.png" style="width:7in">
+
+[Back to toc](#table-of-contents)
 
 END.
 
