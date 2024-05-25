@@ -8,9 +8,16 @@ You are at the official online resource documentation for iCAD software and its 
 - Design of Different hydraulic structures (Diversion Weirs, Retaining Walls, Emabkments, and Major Canal Structures)
 - Production solutions allowing automatic and accurate generation of reports, detailed AutoCAD drawings, and quantity estimates.
 
-
-
 This online resource provides guidance on all the key aspects about installaiton, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
+
+---
+**What's New in the latest Release?**
+
+iCAD is continously updated to make it more useful for practical design applicaitons.
+
+Learn about what's new in the [**Latest Update here.**](#updates-for-the-latest-release)
+
+---
 
 ## Table of Contents
 
@@ -46,7 +53,7 @@ This online documentation provides guidance and resources for efficient use of i
 
 
 
-The guide is organized as follows. Navigate to your desired topic to learn more. You can click the links to navigate to each section. At the begining of each section, click on the [Back to Home]() link to navigate back to this page.
+The guide is organized as follows. Navigate to your desired topic to learn more. You can click the links to navigate to each section. At the begining of each section, click on the [Back to Home] link to navigate back to this page.
 
 > :bulb: **Tip**: To return to this home page from any other page, click on the page heading **iCADdocs_online**.
 
@@ -82,8 +89,8 @@ More sections and content will be available, as we continue to work on new tools
 ## Contacts
 [Back to ToC](#table-of-contents)
 
-Follow us on [**LinkedIn**]() and stay upto date with what we do. Follow us, and help spread the word.
+Follow us on [**LinkedIn**](https://www.linkedin.com/company/quanomic-ites/) and stay upto date with what we do. Follow us, and help spread the word.
 
-Contact us with inquiries at ***www.info@quamomic.co***.
+Contact us with inquiries at ***www.info@quamomic.et***.
 
 Copyright &copy; 2020-23, Quanomic Engineering.

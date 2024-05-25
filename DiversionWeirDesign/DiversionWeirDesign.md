@@ -17,40 +17,12 @@ abutment structures which is solved using a different module.
 
 ## Table of Contents
 <!--TOC-->
-  - [Conventions](#conventions)
-  - [Known Issues](#known-issues)
-  - [Features under development](#features-under-development)
-  - [Workflow](#workflow)
-  - [Prepare Object types](#prepare-object-types)
-  - [Defining the session](#defining-the-session)
-  - [Transverse design](#transverse-design)
-  - [Hydraulic Parameters](#hydraulic-parameters)
-  - [Transverse Dimensions](#transverse-dimensions)
-  - [Abutment Provisssions](#abutment-provisssions)
-  - [Longitudinal Design](#longitudinal-design)
-    - [Longitudinal Dimensions](#longitudinal-dimensions)
-    - [Overflow Section](#overflow-section)
-    - [Surface flow analysis:](#surface-flow-analysis)
-    - [Sub-surface flow analysis:](#sub-surface-flow-analysis)
-    - [Cutoff-Dimensions](#cutoff-dimensions)
-  - [Downstream Apron design and Dimensions](#downstream-apron-design-and-dimensions)
-  - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
-  - [The Sluice Bay section Design](#the-sluice-bay-section-design)
-  - [Outlet Designs and Settings](#outlet-designs-and-settings)
-  - [Technical Notes:](#technical-notes)
-    - [Overflow rating:](#overflow-rating)
-    - [Surface hydraulics:](#surface-hydraulics)
-      - [Pre-Jump flow profile](#pre-jump-flow-profile)
-      - [Hydraulic Jump profile](#hydraulic-jump-profile)
-    - [Energy Dessipators Provission](#energy-dessipators-provission)
-    - [Scour Depth](#scour-depth)
-    - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
-      - [Basic relationships](#basic-relationships)
-      - [Correction Factors](#correction-factors)
-      - [Exit gradient](#exit-gradient)
-    - [Stability analysis:](#stability-analysis)
-    - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
-    - [References:](#references)
+  - [## Conventions
+
+- Dra](#-conventions-dra)
+    - [ir Axis, from](#ir-axis-from)
+    - [Bridge Deck addti](#bridge-deck-addti)
+  - [e creates a tentative design using def](#e-creates-a-tentative-design-using-def)
 <!--/TOC-->
 
 ## Conventions
@@ -1059,6 +1031,33 @@ style="width:8.06875in;height:4.19028in" />
 
 *Figure showing key longitudinal dimensions.*
 
+## Creating Reports
+One can create reports for selected design tasks at any time. Follow below steps to generate reports.
+
+1. To start, go to `Workflow > Create Report...` menu command. The following dialog is displayed:
+
+    <img src="./media/Image62.png">
+
+    Notice there are a number of reports that can be generated. Choose any one or more of reports desired and click `Ok` utton.
+
+2. The process will auto complete prescribed tasks to create text and image contents for your report. Once complete the following dialog appears.
+
+     <img src="./media/Image63.png">{br}
+
+    > Note: Report Generator by default creates contents in .docx format (MS word). Choosing to view the report will automatically an MS Word application in the system.
+
+    We recommend using the `Open Folder` option, anc clicking on the file, This will give a descent preview of the output, while allowing subsequent report generations conveniently. (See below.)
+     <img src="./media/Image64.png" style="Width:7in">{br}
+
+It is impotant to note the following when working with report generator tool.
+
+- If you encounter an error message such as below, make sure to close an open MS word (or other) application currently open with the the file *DiversionWeir_Report.docx* file.
+
+     <img src="./media/Image65.png">{br}
+
+- When generating Stilling Pool report, make sure to generate a plan view first. This will ensure dimensions of all energy desipating provisions - i.e., blocks - are uptodate.
+
+    <img src="./media/Image66.png" style="Width:5in">{br}
 
 
 ## Technical Notes:
@@ -1214,12 +1213,16 @@ The appurtenant structures for each type of stilling basin are then applied per 
 
 <img src="./media/Image 009.png" style="width:6.5in">
 
+<img src="./media/Image61.png" style="width:6.5in">
+
+> Note: For USBR Type jumps, Weir Baffle Blocks are provided for the clear overflow span section. End (or dentated) sill and Baffle Piers if any are provided for the width of the stilling pool. 
+
 > Note: The jump profile calculation is carried out and updated for the current discharge amount, while the apron level and appurtenant provisions (baffle blocks and legnth of pool) are fixed based on the Design Discharge.
 
 
 > **IMPORTANT NOTE:** We underline the design approach followed in developing this module again. The appron length is determined by the Froude number. The Froude Number depends on the energy difference, which is determined based on the appron length. It is therefore impertive to **Refresh** until pool level values stop changing, before accepting design values.
 
-The Froude number determinesThe Module respects an iterative approach for sizing the weir and its appurtenant structures. AWhen solving the weir appron for a particular jump type,
+
 
 
 
@@ -1358,4 +1361,6 @@ Stream Hydraulics, Part 654 Stream Restoration Design National
 Engineering Handbook, United States Department of Agricutlure, 2007
 
 Federal High Way Administration, Users Manual for WSPRO - A computer
-model for Surface Profile COmputations, Washington (1998)
+model for Surface Profile Computations, Washington (1998)
+
+A. J. Paterka, Hydraulic Design of Stilling Basins and Energy Dessipators, USBR, Denver, Colorado (1984)

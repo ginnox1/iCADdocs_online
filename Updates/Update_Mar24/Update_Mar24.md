@@ -39,10 +39,22 @@ The above fiilter layer is created using an assembly shape in AutoCAD shown belo
 ### Diversion Weir
 [Back to ToC](#table-of-contents)
 
-The sub-surface pressure variation algorithm is enhanced to account for intereference due to intermediate cutoff walls. Results now show values that are modified accordingly.
+- The sub-surface pressure variation algorithm is enhanced to account for intereference due to intermediate cutoff walls. Results now show values that are modified accordingly.
 <img src="./media/Image 003.png" style="width:6in">
 
+- A new report is included for stilling pools, now generating complete design information for selected energy desiaptor mechanism.
 
+    <img src="./media/Image 5.png" style="width:6in">
+
+- Plan views now indlude detailed energy desipator block dimension and placement dimension for all jump mechanisms.
+  
+  <img src="./media/Image66.png">
+
+Bug fixes:
+- Subsirface hydraulic calculation, and exit gradient values corrected.
+- Report for ogee type weir corrected and displayed
+- Hydraulic grade lines for USBR type basins corrected.
+- Rare NaN values displayed for prejump depth corrected.
 
 
 
