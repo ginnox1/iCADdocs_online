@@ -17,13 +17,43 @@ abutment structures which is solved using a different module.
 
 ## Table of Contents
 <!--TOC-->
-  - [## Conventions
-
-- Dra](#-conventions-dra)
-    - [ir Axis, from](#ir-axis-from)
-    - [Bridge Deck addti](#bridge-deck-addti)
-  - [e creates a tentative design using def](#e-creates-a-tentative-design-using-def)
-<!--/TOC-->
+<!--TOC-->
+  - [Conventions](#conventions)
+  - [Known Issues](#known-issues)
+  - [Features under development](#features-under-development)
+  - [Workflow](#workflow)
+  - [Prepare Object types](#prepare-object-types)
+  - [Defining the session](#defining-the-session)
+  - [Transverse design](#transverse-design)
+  - [Hydraulic Parameters](#hydraulic-parameters)
+  - [Transverse Dimensions](#transverse-dimensions)
+  - [Abutment Provisssions](#abutment-provisssions)
+  - [Longitudinal Design](#longitudinal-design)
+    - [Longitudinal Dimensions](#longitudinal-dimensions)
+    - [Overflow Section](#overflow-section)
+    - [Surface flow analysis:](#surface-flow-analysis)
+    - [Sub-surface flow analysis:](#sub-surface-flow-analysis)
+    - [Cutoff-Dimensions](#cutoff-dimensions)
+  - [Downstream Apron design and Dimensions](#downstream-apron-design-and-dimensions)
+  - [Overall stability analysis, and safety paramters](#overall-stability-analysis-and-safety-paramters)
+  - [The Sluice Bay section Design](#the-sluice-bay-section-design)
+  - [Outlet Designs and Settings](#outlet-designs-and-settings)
+  - [Creating Reports](#creating-reports)
+  - [Technical Notes:](#technical-notes)
+    - [Overflow rating:](#overflow-rating)
+    - [Surface hydraulics:](#surface-hydraulics)
+      - [Pre-Jump flow profile](#pre-jump-flow-profile)
+      - [Hydraulic Jump profile](#hydraulic-jump-profile)
+    - [Energy Dessipators Provission](#energy-dessipators-provission)
+    - [Scour Depth](#scour-depth)
+    - [Sub-Surface hydraulics:](#sub-surface-hydraulics)
+      - [Basic relationships](#basic-relationships)
+      - [Correction Factors](#correction-factors)
+      - [Exit gradient](#exit-gradient)
+    - [Stability analysis:](#stability-analysis)
+    - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
+    - [References:](#references)
+<!--/TOC--><!--/TOC-->
 
 ## Conventions
 
