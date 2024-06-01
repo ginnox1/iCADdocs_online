@@ -17,9 +17,7 @@ abutment structures which is solved using a different module.
 
 ## Table of Contents
 <!--TOC-->
-<!--TOC-->
   - [Conventions](#conventions)
-  - [Known Issues](#known-issues)
   - [Features under development](#features-under-development)
   - [Workflow](#workflow)
   - [Prepare Object types](#prepare-object-types)
@@ -39,6 +37,7 @@ abutment structures which is solved using a different module.
   - [The Sluice Bay section Design](#the-sluice-bay-section-design)
   - [Outlet Designs and Settings](#outlet-designs-and-settings)
   - [Creating Reports](#creating-reports)
+  - [Known Issues](#known-issues)
   - [Technical Notes:](#technical-notes)
     - [Overflow rating:](#overflow-rating)
     - [Surface hydraulics:](#surface-hydraulics)
@@ -53,7 +52,7 @@ abutment structures which is solved using a different module.
     - [Stability analysis:](#stability-analysis)
     - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
     - [References:](#references)
-<!--/TOC--><!--/TOC-->
+<!--/TOC-->
 
 ## Conventions
 
@@ -63,8 +62,7 @@ abutment structures which is solved using a different module.
 
 - Longitudinal view drawn facing the right-bank (facing upstream).
 
-## Known Issues
-- When creating an ogee overflow shape, maintaining the actual flare width specified by the user varies slightly from the generated profile.
+
 
 ## Features under development
 The following features are under development, and will be available as soon as they are completed.
@@ -1089,6 +1087,11 @@ It is impotant to note the following when working with report generator tool.
 
     <img src="./media/Image66.png" style="Width:5in">{br}
 
+## Known Issues
+- When creating an ogee overflow shape, maintaining the actual flare width specified by the user varies slightly from the generated profile.
+- When refreshing views for discharges less than the design value, values from previous iteration cause mismatch in dimensions. Refresh again to resolve.
+
+    <img src="./media/Image67.png">
 
 ## Technical Notes:
 [Back to Toc](#table-of-contents)
@@ -1157,7 +1160,9 @@ For ogee type overflow sections, the surface flow profile is computed from the f
 
 Hydraulic jump is calculated using the relationship:
 
-<img src="./media/Image 002.png">
+
+
+<img src="./media/Image 002.svg">
 
 and
 
@@ -1181,13 +1186,17 @@ The above method of jump classification is best understood in context as shown b
 
 <img src= "./media/Image56.png" style="Width:5in">
 
-Jump profile is estimated from the design chart shown below, where x is
-distance from jump beginning, and y2 and y1 are sequent depths of the
+Jump profile is estimated from the design chart shown below - except where USBR types II,II,IV are applied - where x is distance from jump beginning, and y2 and y1 are sequent depths of the
 jump.
 
 <img src="./media/image13.png">
 
-Location and profile of the resulting hydraulic jump is calculated using
+The length of the the hydraulic jump is estimated from:
+
+<img src="./media/Image 004_1.png">
+
+
+For design of weirs, the glacis is inclined. In this case, hydraulic jump conditions change, and te following relations are In the case of jump on sloping glacis, location and profile of the resulting hydraulic jump is calculated using
 the following relation ships. For jumps on sloping
 canals,
 

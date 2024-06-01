@@ -5,17 +5,17 @@ Hello, and well come!
 
 You are at the official online resource documentation for iCAD software and its products. We are excited to continue to bring to use new products and features to iCAD software. The software comes with modules that can work:
 - Data handling and processing
-- Design of Different hydraulic structures (Diversion Weirs, Retaining Walls, Emabkments, and Major Canal Structures)
+- Design of Different hydraulic structures (Diversion Weirs, Retaining Walls, Embankments, and Major Canal Structures)
 - Production solutions allowing automatic and accurate generation of reports, detailed AutoCAD drawings, and quantity estimates.
 
-This online resource provides guidance on all the key aspects about installaiton, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
+This online resource provides guidance on all the key aspects about installation, use and application of the software product.This resource is maintained and kept upto date by us. (See [contact](#contacts)  info below)
 
 ---
 **What's New in the latest Release?**
 
-iCAD is continously updated to make it more useful for practical design applicaitons.
+iCAD is continuously updated to make it more useful for practical design applications.
 
-Learn about what's new in the [**Latest Update here.**](#updates-for-the-latest-release)
+Learn about what's new in the [**Jun 24 updates - latest**](Updates/Update_Jun24/Update_Jun24.md)
 
 ---
 
@@ -30,11 +30,11 @@ Learn about what's new in the [**Latest Update here.**](#updates-for-the-latest-
 ## Updates for the Latest Release
 [Back to ToC](#table-of-contents)
 
-iCAD softwware is continuously updated with more features and functionanlites. The release for the most recently version is shown below. Make sure to stay up to date.
+iCAD software is continuously updated with more features and functionalities. The release for the most recently version is shown below. Make sure to stay up to date.
 
- Learn about the [updates in this release here](Updates/Update_Mar24/Update_Mar24.md)
+ [Jun 24 updates - latest](Updates/Update_Jun24/Update_Jun24.md)
 
-> :bulb: The latest release is **Version 2.8.9.9158** (Mar 2024)
+> :bulb: The latest release is **Version 2.8.9.9270** (Mar 2024)
 
 > Accompanying iCAD bridge application is updated to **Version V4.8.12**.
 
