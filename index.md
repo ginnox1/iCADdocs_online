@@ -15,7 +15,7 @@ This online resource provides guidance on all the key aspects about installation
 
 iCAD is continuously updated to make it more useful for practical design applications.
 
-Learn about what's new in the [**Jun 24 updates - latest**](Updates/Update_Jun24/Update_Jun24.md)
+Learn about what's new in the [**Jul 24 updates - latest**](Updates/Update_Jul24/Update_Jul24.md)
 
 ---
 
@@ -30,13 +30,14 @@ Learn about what's new in the [**Jun 24 updates - latest**](Updates/Update_Jun24
 ## Updates for the Latest Release
 [Back to ToC](#table-of-contents)
 
-iCAD software is continuously updated with more features and functionalities. The release for the most recently version is shown below. Make sure to stay up to date.
+iCAD software is continuously updated with more features and functionalities. The release for the most recently version is shown bel
+ow. Make sure to stay up to date.
 
- [Jun 24 updates - latest](Updates/Update_Jun24/Update_Jun24.md)
+ [July 24 updates - latest](Updates/Update_Jul24/Update_Jul24.md)
 
 > :bulb: The latest release is **Version 2.9.0.10407** (Jul 2024)
 
-> Accompanying iCAD bridge application is updated to **Version V4.8.12**.
+> Accompanying iCAD bridge application is updated to **Version V4.9.12**.
 
 
 * **Download** the [Latest update Resource for iCAD Software](https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6)
