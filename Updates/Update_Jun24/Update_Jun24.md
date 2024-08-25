@@ -58,7 +58,7 @@ Bug fixes:
 - Report for ogee type weir corrected and displayed
 - Hydraulic grade lines for USBR type basins corrected.
 - Rare NaN values displayed for prejump depth corrected.
-
+- Reported numbers with arithmetic error
 
 
 ## Support for Latest AutoCAD Releases

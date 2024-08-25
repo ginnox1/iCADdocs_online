@@ -1048,16 +1048,7 @@ The outlet canal way is designed using standard flow section design steps. Thus,
 *Recommended Freeboard as a funciton of Discharge capacity (from USBR)*
 
 
-Below figures show the symbols used to represent the key dimensions of the diverison weir structure, as found in the variable editor.
 
-<img src="./media/image29.png" style="width:4.36111in;height:4.32778in" />
-
-*Figure showing key transverse dimensions.*
-
-<img src="./media/image36.png"
-style="width:8.06875in;height:4.19028in" />
-
-*Figure showing key longitudinal dimensions.*
 
 ## Creating Reports
 One can create reports for selected design tasks at any time. Follow below steps to generate reports.

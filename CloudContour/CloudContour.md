@@ -168,11 +168,25 @@ Contours can be generated using different specifications. These are found in the
 <img src="./media/Image 033.png" style="Width:4in">{br}
 
 - Grid Intervals: Higher and lower ordeer grid intervals for calculating a regularly spaced mesh data for input to contour generation. The most important parameter is the lower value. For most uses, 20 is a good value.
-- Contour Intervals: The values of contour levels to generate, specifing the starting level, the incremental level, and the final level. In the snap shot above 1090, 2000, 2010, ..., 1500 will be created.
+- Method: Specifies the method for grid data creation method. The options available are
+    - GridContour (default)
+    - gridFit (usually faster and robust - under development)
+    
+- Contour Intervals: The values of contour levels to generate, specifying the contolr elements desired. There are two common methods:
+  - [zi, zint, zend]: This format specifies starting level, the incremental level, and the final level. In the snap shot above 1090, 2000, 2010, ..., 1500 will be created.
+  - [zi, zint, zint_major, zend]: This format specifies the desired contour lines for major levels.{br}
+
+
+    <img src="./media/Image 036.png" style="width:4in">
+
 - Smoothing Points per Grid: This value is by default 0, indicating no smoothing applied. Input an integer value between 1 and 4 to smoothen the contours. Each grid cell is subdivided in to smaller regions based on this setting, and cubic interpolation is applied on the grid data, resulting in a more smoother contour.
 - Text Label: Show sparse or dense contour labels along the generated contours.
 
-Contours are generated using `Workflow > Create Contours` menu command. 
+    > **Important Note:** If a surface data is loaded in to the iCAD workspace (see image below), this overrides the use of the specified methods and implements the interpolant generated from the surface data. 
+
+   <img src="./media/Image 035.png" >
+
+Once the settings for the session are all assigned, contours are generated using `Workflow > Create Contours` menu command. 
 
 <img src="./media/Image 018.png" style="width:7in">
 
@@ -230,6 +244,8 @@ For more information on generating drawings to AutoCAD see the [Data Processing 
 
 ###  Working with large data sets
 [Back to ToC](#table-of-contents)
+
+> Note: Below tips apply to older versions (before Jul 2024), and may not be needed in recent versions. Algorithms and workflows have been optimized.
 
 When working with larger data sets, contour generation to AutoCAD can take some time. The following workaround may help save some time, in such cases. Assuming the user needs a contour plot of 1.0 unit interval:
 

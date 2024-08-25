@@ -59,7 +59,7 @@ iCAD and related software products have the following system requirements. These
 - Architecture: X64
 - Processor: Coire i7 or equivalent, or latter
 - RAM: 4GB or more
-- Screen: FHD (1020x1080), two screens strongly recommended for using AutoCAD side by side.
+- Screen: FHD (1920x1080), two screens strongly recommended for using AutoCAD side by side.
 - AutoCAD: 2018 or latter
 
 > Notes: Using on i5 machines is possible, but performance is not guaranteed. 

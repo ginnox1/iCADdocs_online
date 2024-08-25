@@ -4,9 +4,9 @@
 
 Rating of natural streams can be developed using the product module ***ChannelRate_WSPRO***. The module is built on WSPRO98 algorithm from USGS, providing a convenient solution environment for interactive input and output of solutions.  It also solves rating curves using simple application of manning's equation.
 
-<img src="./media/image18.png" style="width:4in">
+<img src="./media/image28.png" style="width:5in">
 
-*A solved rating curve for a cross-section*.
+*A cross-section view for a solved rating curve at two flood levels.*.
 
 ## Table of Contents
 <!--TOC-->

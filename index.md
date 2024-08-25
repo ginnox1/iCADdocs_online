@@ -34,7 +34,7 @@ iCAD software is continuously updated with more features and functionalities. Th
 
  [Jun 24 updates - latest](Updates/Update_Jun24/Update_Jun24.md)
 
-> :bulb: The latest release is **Version 2.8.9.9270** (Mar 2024)
+> :bulb: The latest release is **Version 2.9.0.10407** (Jul 2024)
 
 > Accompanying iCAD bridge application is updated to **Version V4.8.12**.
 
