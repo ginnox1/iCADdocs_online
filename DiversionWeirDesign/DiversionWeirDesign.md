@@ -54,23 +54,41 @@ abutment structures which is solved using a different module.
     - [References:](#references)
 <!--/TOC-->
 
+## Capabilities and Operating Limits
+The Diversion weir module is developed to entertain the design of water diversion structures that are typically used for irrigation projects. the module has the following capabilities
+
+- Trapezoidal and Ogee shaped weirs
+- Multi-opening Sluice bays on left, right or both directions
+- Outlet sizing based on Outflow discharge capacity
+
+
+The operating limits of the module include the following.
+
+- Maximum weir height 5.0meters
+- Integrated sluice bay and overflow energy dissipaters
+- Minimum apron thickness of 0.3m, and pile thickness of 0.05m
+
 ## Conventions
 
-- Draw Weir Axis, from Left to Right, Face-upstream view
+The following conventions are used when defining views in design, analysis and presentation of diversion weir structures. The figure below represents these conventions.
 
-- Transverse design is drawn in Face-upstream view
+- Draw Weir Axis, from Left to Right, Face-Downstream view
 
-- Longitudinal view drawn facing the right-bank (facing upstream).
+- Transverse design is drawn in Face-Downstream view
 
+- Longitudinal view drawn facing the left-bank (facing downstream).
+
+    <img src="./media/Image01.png">
 
 
 ## Features under development
 The following features are under development, and will be available as soon as they are completed.
-- BoQ extraction
-- Bridge Deck addtion to weir top
-- Energy desipators (Type II, Type IV), currently simple pool is available for energy dessipation.
-- Report generation (for Sluice bays, Outlets), currently available reports include upstream flow hydraulics, pre and post jump flow hydraulics, Stability analysis, appron design, 
-- Auto Design feature to guide the engineer safe weir dimensions form iterative solutions as a funciton of some (or all ) varying parameters, such as Top width, flare width, downstream slope and bottom key dimensions
+
+- Outlet detail view
+- Bridge Deck addition to weir top
+- Auto Design feature to guide the engineer safe weir dimensions form iterative solutions as a function of some (or all ) varying parameters, such as Top width, flare width, downstream slope and bottom key dimensions
+- Reinforced concrete capping
+- 
 
 ## Workflow
 
