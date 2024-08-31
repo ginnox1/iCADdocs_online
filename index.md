@@ -75,7 +75,7 @@ The guide is organized as follows. Navigate to your desired topic to learn more.
 
 1. [TerraForm Module](TerraForm/TerraForm.md)
 
-1. [SCSModel for Peak Hydrograph](SCSModel/SCSModel.md)
+1. [SCSModel for Peak Hydrograph](SCSModel/scsmodel.md)
 
 1. [Chart Reading Module](ChartRead/ChartRead.md)
 
