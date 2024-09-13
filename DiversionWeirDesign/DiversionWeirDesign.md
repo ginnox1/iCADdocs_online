@@ -59,14 +59,15 @@ The Diversion weir module is developed to entertain the design of water diversio
 
 - Trapezoidal and Ogee shaped weirs
 - Multi-opening Sluice bays on left, right or both directions
-- Outlet sizing based on Outflow discharge capacity
-
+- Outlet sizing based on Outflow discharge capacity on the left, right or both directions
+- Integrated sluice bay and overflow energy dissipaters
 
 The operating limits of the module include the following.
 
 - Maximum weir height 5.0meters
-- Integrated sluice bay and overflow energy dissipaters
 - Minimum apron thickness of 0.3m, and pile thickness of 0.05m
+- Correction factors for apron slope is not considered. Floor thickness and interference effects are considered and applied based on prevailing theory and practice (See technical notes below.)
+
 
 ## Conventions
 
@@ -81,14 +82,14 @@ The following conventions are used when defining views in design, analysis and p
     <img src="./media/Image01.png">
 
 
-## Features under development
+## Features Under Development
 The following features are under development, and will be available as soon as they are completed.
 
 - Outlet detail view
 - Bridge Deck addition to weir top
 - Auto Design feature to guide the engineer safe weir dimensions form iterative solutions as a function of some (or all ) varying parameters, such as Top width, flare width, downstream slope and bottom key dimensions
-- Reinforced concrete capping
-- 
+- Concrete capping with nominal reinformcement provission
+
 
 ## Workflow
 
@@ -939,9 +940,21 @@ and the upstream apron level. The following are key assumptions used.
 
 - The gate height is determined from the resulting opening width set equal to the bottom width of the off-taking canal, and height set to the bottom of the top slab + 10cms.
 
+The design process follows below steps:
+1. Design the outlet canal based on provided hydraulic paramters, and establish normal flow depth and freeboard requirements.
+1. Establish the critical depth of flow at entry to the outlet chamber, and
+1. determine the raised sill height at entry based on NPL, critical depth of flow at entry, normal depth of flow at exit, and provided minimum driving head.
+
+The resulting flow condition is also shown in the diagram.
+
+<img src="./media/Image71.png">
+
+> **Important Note:** Notice, the text to check if conditions for free flow are fulfilled, before accepting the design. This is true for z>0.5H, i.e., the headloss is at least half the flow depth above sill level.
+
+
+
 The settings responsible for the hydraulic design and sizing of the outlet structure are presented below.
 
-The settings used for designing and positioning outlet provission are summarized in below table.
 
 <table>
 <colgroup>
@@ -1303,12 +1316,32 @@ For the piles at the intermediate point,
 
 
 #### Correction Factors
-Correction for mutual interference for key points is applied as:
+Two types of correction factors are considered. Note, all correction factors are computed in %age values.
 
-<img src="./media/image40.png">
+1. Thickness correction factor
 
-Note, here that, the above equation is not applicable for deetermining the eddect of an outer pile on an intermediate pile when the latter is equal to or less than the fomrer.
+    The above relation ships apply for pile locations at the top of the floor. See below figure.
 
+    <img src="./media/Image69.png" style="width:4in">
+
+    The pressure variations at the bottom of the floor - corresponding to E' and C' (in the figre above) are determined by assuming linear variation using the following relation ships.
+
+    <img src="./media/Image68.png" style="width:4in">
+
+
+2. Correction for mutual interference
+
+    The module considers ONLY the effects of interference from an intermediate on an outer pile. In below figure, the effects of interference of sheet pile B for key point C<sub>1a</sub> of pile A is estimated from:
+
+    <img src="./media/image40.png">
+
+    The additive or substractive nature of the correction factor value is considered depending on the relative location of the impacted key point with respect to the interfering pile (i.e., additive for upstream, and negative for downstream.)
+
+    
+    <img src="./media/Image70.png">
+
+    Following prevailing theory and practice, interference corrections of outer piles on intermediate piles is not considered, when the latter is equal to or smaller than the former, and is at a distance less than or equal to two times the length of the outer pile considered.
+    
 
 #### Exit gradient
 

@@ -23,8 +23,10 @@ Rating of natural streams can be developed using the product module ***ChannelRa
   - [Presentation of Results](#presentation-of-results)
   - [Rating curve for multiple cross-sectoins](#rating-curve-for-multiple-cross-sectoins)
   - [Technical Notes](#technical-notes)
+    - [Source and Reference](#source-and-reference)
+    - [Recommended Usage](#recommended-usage)
+    - [Avoiding Pitfalls](#avoiding-pitfalls)
 <!--/TOC-->
-
 
 ## Conventions: 
 [Back to ToC](#table-of-contents)
@@ -337,6 +339,8 @@ The set up is completed. Now the problem can be solved. Use `Ctrl+s` or `Workdlo
 ## Technical Notes
 [Back to ToC](#table-of-contents)
 
+### Source and Reference
+
 This Module can be thought of as an enhanced input/output interface to
 the popular WSPRO program from USGS. The WSPRO program (short for Water
 Surface PROfile) and/or its algorithm is widely used in many other
@@ -347,7 +351,15 @@ USGS website is also applicable here.
 <img src="./media/image16.png"
 style="width:3.57986in;height:2.87431in" />
 
+*Fig: Sketch of multiple cross-sections considered along a reach, ,shown in plan and cross-section.*
+
+### Recommended Usage
+
 The method of computation used for water surface level computation, as is widely established in practice, uses a number of cross-sections to establish a good estimate of flow level. Usually up to seven cross-section data are used. Using more cross-section data may not improve the accuracy of the results any further. Using less cross-section data however is known to limit the accuracy of the result. This is an important factor to note, as currently only one cross-section can be used in the module.
+
+> <u>**Note on Elevation Limits for Profile Computation:**</u> When preparing cross-seciton data (for use with Multiple Sections method), the user should attempt to code any open-channel cross-section to <u>**include at least one ground point higher than**</u> any computed water-surface elevation that can reasonably be expected.
+
+
 
 Flow surface is estimated by starting at a cross-section, and estimating
 the normal flow depth there. This is achieved by using the equation:
@@ -360,9 +372,9 @@ Then the water surface profile at the next cross-section is estimated by
 using equations of the direct-step method developed to account for
 friction slope and flow-energy gradients.
 
-As the solution progresses to the farthest cross-section, the accuracy
+As the solution progresses to the farthest upstream cross-section, the accuracy
 of calculated water surface level to represent actual flow levels
-increases. In the sketch shown, the computation the beginning
+increases. In the sketch shown above, the computation the beginning
 cross-section would be XS1 and the ending cross-section would be XS7.
 
 <img src="./media/image17.png"
@@ -388,6 +400,16 @@ critical flow surface and the normal flow surface are the same.
 
 This happens because, critical flow computation is carried out
 downstream assuming critical flow at the starting cross-section.
+
+### Avoiding Pitfalls
+The following screenshot shows a water surface profile (WSP) plot created using multiple sections method. The WSP for Q=400 is odd, and obviously not a good solution.
+
+<img src="./media/Image29.png">
+
+Such pitfalls can happen, if cross-section data provided are not sufficiently higher than the maximum antiticpated WSP level. As can be seen on the right, for the given discharge, the water level is almost equal to the provided cross-section data. In such cases, the computation results are not reliable (as noted early in this Technical Note section.)
+
+To avoid such pitfalls, we recommend setting boundary conditions to Critical flow conditions. With this setting, the profiles are computed with out errors as shown below.
+<img src="./media/Image30.png">
 
 [Back to ToC](#table-of-contents)
 
