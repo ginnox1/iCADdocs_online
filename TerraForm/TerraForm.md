@@ -44,12 +44,15 @@ The module can be used as described below.
 [Back to toc](#table-of-contents)
 
 The following conventions apply for using the module.
-- The axis for representing the center of the formation is drawn from right to left facing upstream. In other words, for a person standing with face towards the begining of the axis alignment, Left must be on upstream side, and right on downstream side. (This arrangement can be particlualrly importants for use with emabkmenet works.)
+- The axis for representing the center of the formation is drawn from right to left FDS (Facing Downstream). In other words, for a person standing with face towards the begining station of the axis alignment, Left must be on upstream side, and right on downstream side.
+
+   <img src="./media/image53.png">
 
 - Section views on iCAD interface and on Assembly Editor are drawn with upstream side on the left, and downstream side on the right.
 
+   <img src="./media/image54.png">
 
-<img src="./media/image22.png">
+ 
 
 
 ## Preparing Objects
@@ -466,6 +469,27 @@ In reality however, the fill works are desired above the excavated ground level 
 
 Modified levels created in this manner are available for use and/or further modification after saving.
 
+## Resolving modelling Issues
+
+When working with alignments and their assemblies, it is often needed to update data to suit the desired layout. The following options are available.
+
+1. Reload Alignment
+    The alignment object may not have the right coordinates or the correct resolution of profile data. This can be adjusted at any time as follows:
+    - Close the Terrafrorm module (if open).
+    - Make the necessary adjustment to the alignment object (reverse, move...)
+    - Re-extract the profile data with the desired resolution, and save the data.
+    - Reopen the Terraform session, then go to `Workflow > Reload Alignment` menu command. 
+    The new profile data is brought, and updated.
+
+    <img src="./media/Image55.png" style="width:5in">
+
+1. Assembly Overlap
+    Each assembly is understood to envelop the others below them. Order of appearance therefore matters. Some times, the lower assemblies may extend beyong the boundary shape of the topmost envelop. In such cases, the algorithm attempts to trim those vertices extending beyond.
+    
+    Sometima This process may not be succesful, and result in the same boundary as the top most assembly, causing display and processing issues. This is typically highlighted by a BLINKING zone (when clicked). 
+
+    Resolve the issue by adjusting the coordinates of the assembly with issue, and refresh view.
+ 
 
 ## Listing Volumes
 [Back to toc](#table-of-contents)

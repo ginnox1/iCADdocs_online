@@ -17,8 +17,9 @@ abutment structures which is solved using a different module.
 
 ## Table of Contents
 <!--TOC-->
+  - [Capabilities and Operating Limits](#capabilities-and-operating-limits)
   - [Conventions](#conventions)
-  - [Features under development](#features-under-development)
+  - [Features Under Development](#features-under-development)
   - [Workflow](#workflow)
   - [Prepare Object types](#prepare-object-types)
   - [Defining the session](#defining-the-session)
@@ -361,7 +362,6 @@ abutment wall extension as shown below. {br}
 
 Table of Abutoment Provission Variables.
 
-
 <table>
 <colgroup>
 <col style="width: 8%" />
@@ -376,6 +376,7 @@ Table of Abutoment Provission Variables.
 <th>Default Values</th>
 <th>Notes</th>
 </tr>
+
 <tr class="odd">
 <th>1</th>
 <th>Angle &amp; Length of Abutment Extension, US Left (Deg, m)</th>
@@ -403,6 +404,12 @@ Table of Abutoment Provission Variables.
 <tbody>
 </tbody>
 </table>
+
+**Extension Length(m)** is a new variable included to allow variable abutment wall lengths in the left and right direction.
+
+<img src="./media/Image75.png">
+
+
 
 This completes definition of the weir structure in the transverse view. As these are defined, the overflow hydraulics is computed and displayed, ready fo the next step of longitudinal design.
 
@@ -453,6 +460,16 @@ level.</p>
 <p>Acceptable Range of Values: 1.0&lt;=hu&lt;=2.5m</p></th>
 </tr>
 <tr class="header">
+
+<th>2</th>
+<th>US Appron Level(m)</th>
+<th>Calculated</th>
+<th><p>User supplied value representing the level for the upstream appron level.silt deposit level to be considered for design.</p>
+<p>Allowable Range of Values: minRBL-1&lt;=  Level &lt;=minRBL+1</p>
+
+</tr>
+<tr class="odd">
+
 <th>2</th>
 <th>Height of Silt Deposit(m)</th>
 <th>0.000</th>
@@ -527,9 +544,17 @@ aprons.</p>
 Note the following key positions set automatically:
 
 - The weir is positioned so that the end of its top width (the beginning of the downstream glacis) aligns with the weir Axis.
+- For ogee shaped weirs, this would be the top of the location of the axis would match the top of the nappe.
 
-- The upstream apron level is situated equal to the minimum river bed level. Other positions on the weir structure and its components are based on this key parameter.
+- The upstream apron level is situated equal to the minimum river bed level. However, the user can **raise or lower this posision** slightly. Other positions on the weir structure and its components are based on this key parameter. 
 
+- Bottom Key provissions can be made using 5 entries as sfollows.
+
+    [kv, kh, m, L1, L2].
+
+    Figure below shows their definition.
+
+    <img src="./media/Image73.png">
 - The downstream sill level (exit level) of the structure is also fixed equal to the river bed level at the exact location downstream of the axis. This ensures proper automatic positioning of key components.
 
 <img src="./media/image41.png" style="width:6.5in;height:3.41667in" />
@@ -759,6 +784,18 @@ of he apron thickness measured as a ration of the apron length.</p>
 <p>0 means apply thickness as calculated (curved bottom results)</p>
 <p>a maximum of two values can be specified.</p></th>
 </tr>
+
+<tr class="header">
+<th></th>
+<th>Thickness Type</th>
+<th>Sloped</th>
+<th><p>Type of apron thickness to apply.</p>
+<p>Allowable values:</p>
+<p>Sloped: Use key points as slope inflextion points</p>
+<p>Staged: Apply calculated thickness in section of uniform segments</p>
+</th>
+</tr>
+
 <tr class="header">
 <th></th>
 <th>Unbalanced Pressure use</th>
@@ -798,6 +835,9 @@ Here h’ represent the magnitude of the unbalanced head above the bottom of the
 
 *Figures demonstrate the results of apron thickness design with and with out thickness points specified, respectively.*
 
+Staged profile can be applied to bottom of approns, with the following result.
+
+<img src="./media/Image74.png">
 
 ## Overall stability analysis, and safety paramters
  [Back to Toc](#table-of-contents)
@@ -1261,9 +1301,16 @@ When the user chooses any of these types, two things are handled automatically:
 - The downstream apron floor level is set to a fixed value, that is obtained by considering the minimum river bed level at the end-of-apron location (determined from figure chart for expected length of hydraulic jump at the design discharge, Q<sub>DES</sub>).
 - The sequent depth of flow is set to a value corresponding to the tail water level for the given discharge (Q<sub>i</sub>)
 
-    <img src="./media/Image 010.png" style="width:6.5in">
+In subsequent design of block sizes and location, the following definition of symbols is used.
 
-Length of jump for Type IV is applied equal to the length of the jump in a horizontal stilling basin with out appurtenances, and determined from the this same chart for Type I. (Chow)
+<img src="./media/Image72.png" style="width:5in">
+
+    
+    
+ The length of jumps for each type of jump is determined using the below chart. Length of jump for Type IV is applied equal to the length of the jump in a horizontal stilling basin with out appurtenances, and determined from the this same chart for Type I. (Chow)
+
+<img src="./media/Image 010.png" style="width:6.5in">
+
 
 The appurtenant structures for each type of stilling basin are then applied per recommended values in USBR, as shown below.
 
