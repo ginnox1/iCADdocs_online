@@ -417,10 +417,7 @@ This completes definition of the weir structure in the transverse view. As these
 ## Longitudinal Design
 [Back to Toc](#table-of-contents)
 
-Longitudinal design handles the sizing and detailing of the weir
-elements in the longitudinal direction. This involves working on a
-number of components mainly the main overflow section and the sluice bay
-section.
+Longitudinal design handles the sizing and detailing of the weir elements in the longitudinal direction. This involves working on a number of components mainly the main overflow section and the sluice bay section.
 
 
 The user can change between these different views from the workflow menu. Depending on whether sluice bays are provided, and on which side, the available number of longitudinal section views vary. of sluice bays, the available views also vary.
@@ -534,10 +531,10 @@ aprons.</p>
 <th>Length of Approach Section(m)</th>
 <th>1.500</th>
 <th><p>Length of upstream apron from the weir</p>
-<p>ALlowable values: 0&lt;=Lu&lt;=5.0’</p></th>
+<p>Allowable values: 0&lt;=Lu&lt;=5.0’</p></th>
 </tr>
 </thead>
-<tbody>
+</tbody>
 </tbody>
 </table>
 
