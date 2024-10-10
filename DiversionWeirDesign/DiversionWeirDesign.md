@@ -1235,27 +1235,28 @@ Froude numbers in pre-jump and post jump conditions.
 
 
 Jumps are classified comparing with tail water depth (h<sub>t</sub>) conditions as follows.
-1. Compute Sequent depth, h<sub>2</sub> for a horizontal channel condition. If h<sub>2</sub><sup>*</sup> > h<sub>t</sub>, then Type A Jump occurs
+1. Compute Sequent depth, h<sub>2</sub> <sup>* </sup> for a horizontal channel condition. If h<sub>2</sub><sup>*</sup> > h<sub>t</sub>, then Type A Jump occurs
 1. If not, Use Kindsvater's equation to determine h<sub>2</sub>= f(y<sub>1</sub>, G) where y<sub>1</sub> is the pre-jump depth of flow.
 1. If h<sub>2</sub>=h<sub>t</sub>, Type C jump occurs
 1. If h<sub>2</sub>>h<sub>t</sub>, Type B jump occurs, or
 1. If h<sub>2</sub><h<sub>t</sub>, Type D jump occcurs.
 
 
-<img src="./media/image5.png">
+<img src="./media/image5.png">{br}
+
 
 The above method of jump classification is best understood in context as shown below in shcematic diagram.
 
-<img src= "./media/Image56.png" style="Width:5in">
+<img src= "./media/Image56.png" style="Width:5in">{br}
 
 Jump profile is estimated from the design chart shown below - except where USBR types II,II,IV are applied - where x is distance from jump beginning, and y2 and y1 are sequent depths of the
 jump.
 
-<img src="./media/image13.png">
+<img src="./media/image13.png">{br}
 
 The length of the the hydraulic jump is estimated from:
 
-<img src="./media/Image 004_1.png">
+<img src="./media/Image 004_1.png">{br}
 
 
 For design of weirs, the glacis is inclined. In this case, hydraulic jump conditions change, and te following relations are In the case of jump on sloping glacis, location and profile of the resulting hydraulic jump is calculated using
@@ -1267,26 +1268,26 @@ canals,
 
 <img src="./media/image24.png">{br}
 
-<img src="./media/Image 005.png" style="width:2.5in">
+<img src="./media/Image 005.png" style="width:2.5in">{br}
 
 
 
 For type B, C and D jumps, the location of the jump on the glacis is
 determined from the following chart.
 
-<img src="./media/Image57.png" style="width:6in">
+<img src="./media/Image57.png" style="width:6in">{br}
 
 The length of the jump is determined from the below chart relating the
 Froud number **F<sub>r</sub>** calculated above to the ratio of total jump length
 to the sequent depth.
 
-<img src="./media/image1.png" style="width:6.33333in;height:3.0584in" />
+<img src="./media/image1.png" style="width:6.33333in;height:3.0584in" />{br}
 
 The chart relating flow depth and jump profile is used to approximate
 the length and shape of the rapidly varied flow after the jump starting
 point.
 
-<img src="./media/image27.png" style="width:6.5in;height:3.31944in" />
+<img src="./media/image27.png" style="width:6.5in;height:3.31944in" />{br}
 
 The value of **L<sub>j</sub>** is futher checked against the common practice of **L<sub>j, Final</sub> = max(L<sub>j</sub>, 5.5(EGL<sub>us</sub> - EGL<sub>ds</sub>))**
 
@@ -1295,7 +1296,7 @@ Type I energy dessipators are simple provissions that are (assumed to) occur on 
 
 A user can select the type of Jump desired from the variable editor dialog as shown below. The options are as recommended by USBR, and classfied basedn on Fr values.
 
- <img src="./media/Image 011.png" style="width:6.5in">
+ <img src="./media/Image 011.png" style="width:6.5in">{br}
 
 When the user chooses any of these types, two things are handled automatically:
 - The downstream apron floor level is set to a fixed value, that is obtained by considering the minimum river bed level at the end-of-apron location (determined from figure chart for expected length of hydraulic jump at the design discharge, Q<sub>DES</sub>).
@@ -1303,25 +1304,25 @@ When the user chooses any of these types, two things are handled automatically:
 
 In subsequent design of block sizes and location, the following definition of symbols is used.
 
-<img src="./media/Image72.png" style="width:5in">
+<img src="./media/Image72.png" style="width:5in">{br}
 
     
     
  The length of jumps for each type of jump is determined using the below chart. Length of jump for Type IV is applied equal to the length of the jump in a horizontal stilling basin with out appurtenances, and determined from the this same chart for Type I. (Chow)
 
-<img src="./media/Image 010.png" style="width:6.5in">
+<img src="./media/Image 010.png" style="width:6.5in">{br}
 
 
 The appurtenant structures for each type of stilling basin are then applied per recommended values in USBR, as shown below.
 
- <img src="./media/Image 008.png" style="width:6.5in">
+ <img src="./media/Image 008.png" style="width:6.5in">{br}
 
 
-<img src="./media/Image 007.png" style="width:6.5in">
+<img src="./media/Image 007.png" style="width:6.5in">{br}
 
-<img src="./media/Image 009.png" style="width:6.5in">
+<img src="./media/Image 009.png" style="width:6.5in">{br}
 
-<img src="./media/Image61.png" style="width:6.5in">
+<img src="./media/Image61.png" style="width:6.5in">{br}
 
 > Note: For USBR Type jumps, Weir Baffle Blocks are provided for the clear overflow span section. End (or dentated) sill and Baffle Piers if any are provided for the width of the stilling pool. 
 
