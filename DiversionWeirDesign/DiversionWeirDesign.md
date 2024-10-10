@@ -275,12 +275,6 @@ curve determination.
 
 These group of variables determine the key deisgn level and span parametrs for the structure, that determine the its hydraulic performance.
 
-: Table caption
-
-| HEader 1| Value|
-|--|--|
-| what | is here|
-|then | what|
 
 
 
@@ -437,110 +431,139 @@ style="width:5.10502in;height:4.78768in" />
 
 ### Longitudinal Dimensions
  [Back to Toc](#table-of-contents)
+Here's the extracted table data from your image:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weir Data Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, tr, td, th {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ddd;
+                margin-bottom: 1em;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-th) ": ";
+            }
+        }
+    </style>
+</head>
+<body>
 
 <table>
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 28%" />
-<col style="width: 17%" />
-<col style="width: 43%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>NO</th>
-<th>Variable Names</th>
-<th>Default Value</th>
-<th>Notes</th>
-</tr
-</thead>
-<tr class="odd">
-<th>1</th>
-<th>Height of Weir(m)</th>
-<th>1.500</th>
-<th><p>The height of the weir body, measured from the upstream apron
-level.</p>
-<p>Acceptable Range of Values: 1.0&lt;=hu&lt;=2.5m</p></th>
-</tr>
-<tr class="header">
-
-<th>2</th>
-<th>US Appron Level(m)</th>
-<th>Calculated</th>
-<th><p>User supplied value representing the level for the upstream appron level.silt deposit level to be considered for design.</p>
-<p>Allowable Range of Values: minRBL-1&lt;=  Level &lt;=minRBL+1</p>
-
-</tr>
-<tr class="odd">
-
-<th>2</th>
-<th>Height of Silt Deposit(m)</th>
-<th>0.000</th>
-<th><p>The silt deposit level to be considered for design.</p>
-<p>Allowable Range of Values: 0&lt;= hs&lt;=1000</p>
-<p>1000 denotes maximum height up to the height of the weir.</p></th>
-</tr>
-<tr class="odd">
-<th>3</th>
-<th>Top Width of Weir(m)</th>
-<th>0.500</th>
-<th><p>The length of the crest of the weir, measured in the direction of
-flow.</p>
-<p>Allowable Range of Values= 0.5&lt;=Tw&lt;=5.0</p></th>
-</tr>
-<tr class="header">
-<th>4</th>
-<th>U/S Flare width(m)</th>
-<th>0.500</th>
-<th><p>The length of the upstream inclined face measured horizontally
-from the tip of the weir crest.</p>
-<p>Allowable Range of Values: 0&lt;=f&lt;=2.0</p></th>
-</tr>
-<tr class="odd">
-<th>5</th>
-<th>D/S Glacis slope(H:1V)</th>
-<th>1.000</th>
-<th><p>The slope of the downstream glacis of the weir body.</p>
-<p>Allowable Range of Values: 1&lt;=m&lt;=4</p></th>
-</tr>
-<tr class="header">
-<th>6</th>
-<th>Toe Depth(-)</th>
-<th>US</th>
-<th><p>The source of value for the depth of the downstream end of the
-weir.</p>
-<p>Allowable values:</p>
-<p>US= use the thickness of the upstream apron.</p>
-<p>DS= use the thickness of the downstream apron.</p></th>
-</tr>
-<tr class="odd">
-<th>7</th>
-<th>Bottom Key Dims(m)</th>
-<th>[0.500, 0.500]</th>
-<th><p>Dimensions of key provisions on upstream end of the weir,
-specifying vertical drop and horizontal offset from the upstream apron
-level at the toe of the weir.</p>
-<p>Allowable values: h, w &gt;0</p>
-<p>(Minimum apron thickness is maintained if lesser value of kv is
-used).</p></th>
-</tr>
-<tr class="header">
-<th>8</th>
-<th>Total Longitudinal Length (m)</th>
-<th>15.000</th>
-<th><p>Overall length of the weir structure from upstream to downstream
-aprons.</p>
-<p>Allowable values: 7.0&lt;Lt&lt;=50</p></th>
-</tr>
-<tr class="odd">
-<th>9</th>
-<th>Length of Approach Section(m)</th>
-<th>1.500</th>
-<th><p>Length of upstream apron from the weir</p>
-<p>Allowable values: 0&lt;=Lu&lt;=5.0’</p></th>
-</tr>
-</tbody>
-</tbody>
+    <thead>
+        <tr>
+            <th>NO</th>
+            <th>Variable Names</th>
+            <th>Default Value</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Height of Weir(m)</td>
+            <td>1.500</td>
+            <td>The height of the weir body, measured from the upstream apron level.<br>Acceptable Range of Values: 1.0<=hu<=2.5m</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>US Apron Level(m)</td>
+            <td>Calculated</td>
+            <td>User supplied value representing the level for the upstream apron level; silt deposit level to be considered for design.<br>Allowable Range of Values: minRBL-1<= Level <=minRBL+1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Height of Silt Deposit(m)</td>
+            <td>0.000</td>
+            <td>The silt deposit level to be considered for design.<br>Allowable Range of Values: 0<= hs<=1000<br>1000 denotes maximum height up to the height of the weir.</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Top Width of Weir(m)</td>
+            <td>0.500</td>
+            <td>The length of the crest of the weir, measured in the direction of flow.<br>Allowable Range of Values: 0.5<=Tw<=5.0</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>U/S Flare width(m)</td>
+            <td>0.500</td>
+            <td>The length of the upstream inclined face measured horizontally from the tip of the weir crest.<br>Allowable Range of Values: 0<=f<=2.0</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>D/S Glacis slope(H:1V)</td>
+            <td>1.000</td>
+            <td>The slope of the downstream glacis of the weir body.<br>Allowable Range of Values: 1<=m<=4</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Toe Depth(-)</td>
+            <td>US</td>
+            <td>The source of value for the depth of the downstream end of the weir.<br>Allowable values:<br>US= use the thickness of the upstream apron.<br>DS= use the thickness of the downstream apron.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Bottom Key Dims(m)</td>
+            <td>[0.500, 0.500]</td>
+            <td>Dimensions of key provisions on upstream end of the weir, specifying vertical drop and horizontal offset from the upstream apron level at the toe of the weir.<br>Allowable values: h, w >0<br>(Minimum apron thickness is maintained if lesser value of kv is used).</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Total Longitudinal Length (m)</td>
+            <td>15.000</td>
+            <td>Overall length of the weir structure from upstream to downstream aprons.<br>Allowable values: 7.0<Lt<=50</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Length of Approach Section(m)</td>
+            <td>1.500</td>
+            <td>Length of upstream apron from the weir<br>Allowable values: 0<=Lu<=5.0'</td>
+        </tr>
+    </tbody>
 </table>
+
+</body>
+</html>
+
 
 
 Note the following key positions set automatically:
@@ -636,76 +659,112 @@ subsurface hydraulic pressure variation.
 
 Table of variables for Curoff dimensions and values.
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutoff Data Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, tr, td, th {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ddd;
+                margin-bottom: 1em;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-th) ": ";
+            }
+        }
+    </style>
+</head>
+<body>
+
 <table>
-<colgroup>
-<col style="width: 9%" />
-<col style="width: 19%" />
-<col style="width: 15%" />
-<col style="width: 55%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No</th>
-<th>Variable Name</th>
-<th>Default Value</th>
-<th>Notes</th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>U/S Cutoff Thickness(m)</th>
-<th>0.500</th>
-<th><p>Thickness Of upstream cutoff wall:</p>
-<p>Allowable Range of Values:</p>
-<p>0.05&lt;tu&lt;0.5</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>U/S Cutoff Depth(m)</th>
-<th>0.800</th>
-<th><p>Depth of upstream cutoff wall measured below upstream apron level
-(after thickness ta).</p>
-<p>Allowable Range of Values:</p>
-<p>0.5&lt;=du&lt;=5.0</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Int Cutoff Thickness(m)</th>
-<th>0.500</th>
-<th><p>Thickness Of intermediate cutoff wall.</p>
-<p>Allowable Range of Values:</p>
-<p>0.05&lt;tu&lt;0.5</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Int Cutoff Depth(m)</th>
-<th>2.000</th>
-<th><p>Depth of intermediate cutoff wall measured from depressed invert
-level of the downstream end of the weir body.</p>
-<p>Allowable Range of Values:</p>
-<p>0.0&lt;=du&lt;=5.0</p>
-<p>ti=0.0 indicates no intermediate cutoff wall.</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>D/S Cutoff Thickness(m)</th>
-<th>0.500</th>
-<th><p>Thickness Of downstream cutoff wall.</p>
-<p>Allowable Range of Values:</p>
-<p>0.1&lt;tu&lt;0.5</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>D/S Cutoff Depth(m)</th>
-<th>0.800</th>
-<th><p>Depth of downstream cutoff wall measured after the minimum apron
-thickness provision (below pool depth).</p>
-<p>Allowable Range of Values:</p>
-<p>0.5&lt;=du&lt;=5.0</p></th>
-</tr>
-</thead>
-<tbody>
-</tbody>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Variable Name</th>
+            <th>Default Value</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="No">1</td>
+            <td data-th="Variable Name">U/S Cutoff Thickness(m)</td>
+            <td data-th="Default Value">0.500</td>
+            <td data-th="Notes">Thickness Of upstream cutoff wall.<br>Allowable Range of Values:<br>0.05<tu<0.5</td>
+        </tr>
+        <tr>
+            <td data-th="No">2</td>
+            <td data-th="Variable Name">U/S Cutoff Depth(m)</td>
+            <td data-th="Default Value">0.800</td>
+            <td data-th="Notes">Depth of upstream cutoff wall measured below upstream apron level (after thickness ta).<br>Allowable Range of Values:<br>0.5<=du<=5.0</td>
+        </tr>
+        <tr>
+            <td data-th="No">3</td>
+            <td data-th="Variable Name">Int Cutoff Thickness(m)</td>
+            <td data-th="Default Value">0.500</td>
+            <td data-th="Notes">Thickness Of intermediate cutoff wall.<br>Allowable Range of Values:<br>0.05<tu<0.5</td>
+        </tr>
+        <tr>
+            <td data-th="No">4</td>
+            <td data-th="Variable Name">Int Cutoff Depth(m)</td>
+            <td data-th="Default Value">2.000</td>
+            <td data-th="Notes">Depth of intermediate cutoff wall measured from depressed invert level of the downstream end of the weir body.<br>Allowable Range of Values:<br>0.0<=du<=5.0<br>ti=0.0 indicates no intermediate cutoff wall.</td>
+        </tr>
+        <tr>
+            <td data-th="No">5</td>
+            <td data-th="Variable Name">D/S Cutoff Thickness(m)</td>
+            <td data-th="Default Value">0.500</td>
+            <td data-th="Notes">Thickness Of downstream cutoff wall.<br>Allowable Range of Values:<br>0.1<tu<0.5</td>
+        </tr>
+        <tr>
+            <td data-th="No">6</td>
+            <td data-th="Variable Name">D/S Cutoff Depth(m)</td>
+            <td data-th="Default Value">0.800</td>
+            <td data-th="Notes">Depth of downstream cutoff wall measured after the minimum apron thickness provision (below pool depth).<br>Allowable Range of Values:<br>0.5<=du<=5.0</td>
+        </tr>
+    </tbody>
 </table>
+
+</body>
+</html>
 
 
 It is common practice to use estimated scour depths to fix the cutoff depth of the upstream cutoff. The module provides guidance of these locations below the upstream cutoff wall as shown below (marked inside elipse).
