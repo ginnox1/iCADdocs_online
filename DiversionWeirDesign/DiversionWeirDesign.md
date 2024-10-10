@@ -263,8 +263,6 @@ desired.</p>
 <p>1.0&lt;Q&lt;=1000</p></th>
 </tr>
 </thead>
-<tbody>
-</tbody>
 </table>
 
 See technical notes at the end of this page for details on each method of rating
@@ -335,8 +333,6 @@ center line.</p>
 well, based on values set for other variables.</p></th>
 </tr>
 </thead>
-<tbody>
-</tbody>
 </table>
 
 
@@ -447,7 +443,8 @@ style="width:5.10502in;height:4.78768in" />
 <th>Variable Names</th>
 <th>Default Value</th>
 <th>Notes</th>
-</tr>
+</tr
+</thead>
 <tr class="odd">
 <th>1</th>
 <th>Height of Weir(m)</th>
@@ -533,10 +530,10 @@ aprons.</p>
 <th><p>Length of upstream apron from the weir</p>
 <p>Allowable values: 0&lt;=Lu&lt;=5.0’</p></th>
 </tr>
-</thead>
 </tbody>
 </tbody>
 </table>
+
 
 Note the following key positions set automatically:
 
