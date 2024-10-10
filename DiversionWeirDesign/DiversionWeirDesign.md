@@ -431,9 +431,10 @@ style="width:5.10502in;height:4.78768in" />
 
 ### Longitudinal Dimensions
  [Back to Toc](#table-of-contents)
+
 Here's the extracted table data from your image:
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -659,7 +660,7 @@ subsurface hydraulic pressure variation.
 
 Table of variables for Curoff dimensions and values.
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -790,88 +791,118 @@ The depth guidelines generated are therefore located at depths of 1.25R, 1.5R, a
 
 The design of downstream appron or the stilling basin of the weir structure is based on the key dimensions provided as input. These are found in the Appron Dimensions variable group, and are set according to the descriptions in below table.
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weir Design Parameters</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, tr, td, th {
+                display: block;
+            }
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            tr {
+                border: 1px solid #ddd;
+                margin-bottom: 1em;
+            }
+            td {
+                border: none;
+                border-bottom: 1px solid #ddd;
+                position: relative;
+                padding-left: 50%;
+            }
+            td:before {
+                position: absolute;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-th) ": ";
+            }
+        }
+    </style>
+</head>
+<body>
+
 <table>
-<colgroup>
-<col style="width: 8%" />
-<col style="width: 22%" />
-<col style="width: 14%" />
-<col style="width: 54%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No</th>
-<th>Variable Name</th>
-<th>Default Value</th>
-<th>Notes</th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Minimum Apron Thickness(m)</th>
-<th>0.450</th>
-<th><p>Minimum apron thickness to maintain across the length of the
-structure.</p>
-<p>Allowable Range of Values: 0.30&lt;ta&lt;=1.0</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Jump Mechanism (-)</th>
-<th>TypeI</th>
-<th><p>The choice of USBR Type energy dissipation mechanism in the downstream
-pool.</p>
-<p>Allowable values: Type I, TypeII, TypeIII, TypeIV.</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Pool Depth(m)</th>
-<th>0.400</th>
-<th><p>Depth of the downstream pool, below the end sill level of the
-weir.</p>
-<p>Allowable Range of Values; 0&lt;=dp&lt;=2.0</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Pool End Chamfer(-)</th>
-<th>1.000</th>
-<th><p>Slope of end chamfer for pool exit.</p>
-<p>Allowable Range of Values: 0.00&lt;dc&lt;2.0</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Thickness Point(m)</th>
-<th>0.000</th>
-<th><p>Points along the downstream apron to simplify the bottom geometry
-of he apron thickness measured as a ration of the apron length.</p>
-<p>ALlowable range of values; 0&lt;= la &lt;= 0.70</p>
-<p>0 means apply thickness as calculated (curved bottom results)</p>
-<p>a maximum of two values can be specified.</p></th>
-</tr>
-
-<tr class="header">
-<th></th>
-<th>Thickness Type</th>
-<th>Sloped</th>
-<th><p>Type of apron thickness to apply.</p>
-<p>Allowable values:</p>
-<p>Sloped: Use key points as slope inflextion points</p>
-<p>Staged: Apply calculated thickness in section of uniform segments</p>
-</th>
-</tr>
-
-<tr class="header">
-<th></th>
-<th>Unbalanced Pressure use</th>
-<th>MFL</th>
-<th><p>Source of unbalanced pressure head to use in sizing the apron
-thickness.</p>
-<p>Allowable values:</p>
-<p>MFL: use subsurface HGL for maximum flood level</p>
-<p>NPL: use subsurface HGL for normal pool level condition</p>
-<p>MAX: Calculate for both conditions, and take the maximum.</p></th>
-</tr>
-</thead>
-<tbody>
-</tbody>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Variable Name</th>
+            <th>Default Value</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="No">1</td>
+            <td data-th="Variable Name">Minimum Apron Thickness(m)</td>
+            <td data-th="Default Value">0.450</td>
+            <td data-th="Notes">Minimum apron thickness to maintain across the length of the structure.<br>Allowable Range of Values: 0.30&lt;ta&lt;=1.0</td>
+        </tr>
+        <tr>
+            <td data-th="No">2</td>
+            <td data-th="Variable Name">Jump Mechanism (-)</td>
+            <td data-th="Default Value">TypeI</td>
+            <td data-th="Notes">The choice of USBR Type energy dissipation mechanism in the downstream pool.<br>Allowable values: Type I, TypeII, TypeIII, TypeIV.</td>
+        </tr>
+        <tr>
+            <td data-th="No">3</td>
+            <td data-th="Variable Name">Pool Depth(m)</td>
+            <td data-th="Default Value">0.400</td>
+            <td data-th="Notes">Depth of the downstream pool, below the end sill level of the weir.<br>Allowable Range of Values: 0&lt;=dp&lt;=2.0</td>
+        </tr>
+        <tr>
+            <td data-th="No">4</td>
+            <td data-th="Variable Name">Pool End Chamfer(-)</td>
+            <td data-th="Default Value">1.000</td>
+            <td data-th="Notes">Slope of end chamfer for pool exit.<br>Allowable Range of Values: 0.00&lt;dc&lt;=2.0</td>
+        </tr>
+        <tr>
+            <td data-th="No">5</td>
+            <td data-th="Variable Name">Thickness Point(m)</td>
+            <td data-th="Default Value">0.000</td>
+            <td data-th="Notes">Points along the downstream apron to simplify the bottom geometry of the apron thickness measured as a ratio of the apron length.<br>Allowable range of values: 0&lt;= la &lt;= 0.70<br>0 means apply thickness as calculated (curved bottom results)<br>a maximum of two values can be specified.</td>
+        </tr>
+        <tr>
+            <td data-th="No">6</td>
+            <td data-th="Variable Name">Thickness Type</td>
+            <td data-th="Default Value">Sloped</td>
+            <td data-th="Notes">Type of apron thickness to apply.<br>Allowable values:<br>Sloped: Use key points as slope inflexion points<br>Staged: Apply calculated thickness in section of uniform segments</td>
+        </tr>
+        <tr>
+            <td data-th="No">7</td>
+            <td data-th="Variable Name">Unbalanced Pressure use</td>
+            <td data-th="Default Value">MFL</td>
+            <td data-th="Notes">Source of unbalanced pressure head to use in sizing the apron thickness.<br>Allowable values:<br>MFL: use subsurface HGL for maximum flood level<br>NPL: use subsurface HGL for normal pool level condition<br>MAX: Calculate for both conditions, and take the maximum.</td>
+        </tr>
+    </tbody>
 </table>
+
+</body>
+</html>
 
 Refer to [Technical Notes](#technical-notes) below for details on the provission for different types of energy dessipators.
 
