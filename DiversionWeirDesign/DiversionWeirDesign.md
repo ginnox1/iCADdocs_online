@@ -1077,6 +1077,8 @@ The design process follows below steps:
 1. Establish the critical depth of flow at entry to the outlet chamber, and
 1. determine the raised sill height at entry based on NPL, critical depth of flow at entry, normal depth of flow at exit, and provided minimum driving head.
 
+> **Important Tip** The CBL invert (and the corresponding FSL) can be adjusted by varying the available driving head.
+
 The resulting flow condition is also shown in the diagram.
 
 <img src="./media/Image71.png">
@@ -1085,135 +1087,267 @@ The resulting flow condition is also shown in the diagram.
 
 
 
-The settings responsible for the hydraulic design and sizing of the outlet structure are presented below.
+The settings responsible for the hydraulic design and sizing of the outlet structure are located in two views:
+
+1. Outlet Capcity in the Transverse [Back to Toc](#table-of-contents)
 
 
-<table>
-<colgroup>
-<col style="width: 9%" />
-<col style="width: 22%" />
-<col style="width: 17%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>No</th>
-<th>Variable Name</th>
-<th>Default Values</th>
-<th>Notes</th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Outlet Capacity (m3/sec):</th>
-<th>[1.000, 0.500]</th>
-<th><p>The desired capacity of the outlets in the left and right side of
-the diversion weir (Face up stream).</p>
-<p>Allowable Range of Values: 0&lt;= Qdes &lt;=10m3/sec</p>
-<p>Note: 0 means there is no outlet on that side of the weir.</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Outlet Canal Distance (Left, Right]:(m)</th>
-<th>5.000</th>
-<th><p>The (display) distance of the outlet canal from the Abutment wall
-face.</p>
-<p>Allowable Range of Values: 4&lt;D&lt;15</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Driving Head (m)</th>
-<th>0.200</th>
-<th><p>Driving head to consider between the crest level (i.e., Normal
-pool level flow condition) and the offtaking canal FSL flowing at design
-capacity,</p>
-<p>Allowable Range of Values: 0.05&lt;Hd&lt;0.50</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Manning's Roughness, N(-)</th>
-<th>0.014</th>
-<th><p>Roughness value of the outlet canal, used in determining the
-normal flow depth for the canal geometry specified.</p>
-<p>Allowable Range of Values: 0.001&lt;N&lt;=0.10’</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Canal Side Slope (-)</th>
-<th>1.000</th>
-<th><p>Side slope of the offtaking canal</p>
-<p>Allowable Range of Values: 0&lt;m&lt;3.0</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Design B to D ratio(-)</th>
-<th>-1.000</th>
-<th><p>B?D ratio to be used in sizing the canal for the specified design
-capacity.</p>
-<p>Allowable Values: -1&lt;B/D&lt;10</p>
-<p>Note: -1 indicates to use the build in equation</p>
-<p>If Q&lt;0.20, B/D= 1.0</p>
-<p>If Q&gt;0.20 B/D= 1.76*Q^0.35</p>
-<p>If B2D=0.0, indicate to use the USBR recommended ratio shown
-below.</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Bed Slope, So(m/m)</th>
-<th>1000.000</th>
-<th><p>Bed slope of the offtaking canal</p>
-<p>Allowable Range of Values: 1/50&gt;So&gt;1/1000</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Freeboard, FB(m)</th>
-<th>-1.000</th>
-<th><p>Freeboard for offtaking canal.</p>
-<p>Allowable Range of Values: -1&lt;Fb&lt;2.0</p>
-<p>If FB==-1 the USBR recommendation shown below is used to determine
-the required freeboard corresponding to the canal capacity.</p>
-<p>Else the user supplied value is taken.</p></th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Canal Lining type, Ltyp(-)</th>
-<th>0.000</th>
-<th><p>The lining type desired for the offtaking canal.</p>
-<p>Allowable Range of Values: -1&lt;Ltyp&lt;1 (integer)</p>
-<p>-1: Unlined canal</p>
-<p>0: Thin LIned canal</p>
-<p>1: thick lined canal</p></th>
-</tr>
-<tr class="header">
-<th></th>
-<th>Lining Thickness, Thk(m)</th>
-<th>0.300</th>
-<th>Lining thickness</th>
-</tr>
-<tr class="odd">
-<th></th>
-<th>Foundation Thickness, THK(m)</th>
-<th>0.600</th>
-<th>Foundation thickness.</th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
+    The capacity of each outlet for diverting discharge amounts is set while in **Transverse View** as shown below.
+   
+   <img src="./media/Image76.png">
 
-The outlet canal way is designed using standard flow section design steps. Thus, B/D and FB are determined from the following charts, depending on the settings above.
+   The values prescribe the amount of water expected at the left and right side outlets, respectively.
+
+   > Note: If scour bay's are not provided, there will be no outlet provission.
+
+2. Outlet Canal Settings in Section View  [Back to Toc](#table-of-contents)
+
+
+    The following settings are available in section view to adopt the outlet canal dimensions and orientation.
+
+    <img src="./media/Image77.png" style="width:7.5in">
+    
+    The variables and their settings are explained in below table.
+    
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Variable Name</th>
+                <th>Default Values</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Outlet Canal Distance (Left, Right):(m)</td>
+                <td>5.000</td>
+                <td>The (display) distance of the outlet canal from the Abutment wall face.
+                <li>Allowable Range of Values: 4<D<15</li></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Driving Head (m)</td>
+                <td>0.200</td>
+                <td>Driving head to consider between the crest level (i.e., Normal pool level flow condition) and the offtaking canal FSL flowing at design capacity.<li> Allowable Range of Values: 0.05<Hd<0.50</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Manning's Roughness, N(-)</td>
+                <td>0.014</td>
+                <td>Roughness value of the outlet canal, used in determining the normal flow depth for the canal geometry specified. <li>Allowable Range of Values: 0.001<N<=0.10</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Canal Side Slope (-)</td>
+                <td>1.000</td>
+                <td>Side slope of the offtaking canal <li>Allowable Range of Values: 0<m<3.0</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Design B to D ratio(-)</td>
+                <td>-1.000</td>
+                <td>B?D ratio to be used in sizing the canal for the specified design capacity. <li>Allowable Values: -1 < B/D < 10 </li>
+               Note: -1 indicates to use the build in equation If Q<0.20, B/D= 1.0 If Q>0.20 B/D= 1.76*Q^0.35 If B2D=0.0, indicate to use the USBR recommended ratio shown below.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Bed Slope, So(m/m)</td>
+                <td>1000.000</td>
+                <td>Bed slope of the offtaking canal 
+                <li>Allowable Range of Values: 1/50>So>1/1000</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Freeboard, FB(m)</td>
+                <td>-1.000</td>
+                <td>Freeboard for offtaking canal.
+                <li> Allowable Range of Values: -1 < Fb < 2.0 </li>
+                Note: If FB==-1 the USBR recommendation shown below is used to determine the required freeboard corresponding to the canal capacity. Else the user supplied value is taken.</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Canal Lining type, Ltyp(-)</td>
+                <td>0.000</td>
+                <td>The lining type desired for the offtaking canal. 
+                <li>Allowable Range of Values: -1 < Ltyp < 1 (integer) 
+                <li>-1: Unlined canal 
+                <li> 0: Thin Lined canal 
+                <li>1: thick lined canal</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Lining Thickness, Thk(m)</td>
+                <td>0.300</td>
+                <td>Lining thickness</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Foundation Thickness, THK(m)</td>
+                <td>0.600</td>
+                <td>Foundation thickness.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+ 
+ The outlet canal is designed using algorithms developed for CanalNET software and follow a similar definition of symbols shown below.
+
+<img src="./media/Image78.png" style="width:4.5in">
+
+<img src="./media/Image79.png" style="width:4in">
+
+If B/D ratio is set to 0, it indicates to use the USBR charts for sizing the canal geometry. In this case, the following chart is used to determine B/D.
+
 
 <img src="./media/image38.png" style="width:6.5in;height:3.27778in" />
 
 *B/D ration as a funciton of Discharge capacity of canals (from USBR)*.
 
+Similarly, if Freeboard value is set to -1, it alsi indicates to use the USBR Chart for estimating Freeboard as a fucntion of dicharge.
+
 <img src="./media/image30.png" style="width:6.5in;height:3.38889in" />
 
 *Recommended Freeboard as a funciton of Discharge capacity (from USBR)*
 
+3. Outlet Position settings  [Back to Toc](#table-of-contents)
 
+
+    Elevation view show an other level of detail for outle design. The variables available for refining design to requirement are shown in below figure.
+
+    <img src="./media/Image80.png" style="Width:7in">
+
+    The variables and their uses are defined defined in the following table.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Variable</th>
+                <th>Default Value</th>
+                <th>Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Distance to Weir Axis (m)</td>
+                <td>2.0</td>
+                <td>Distance of the outlet edge from the weir axis.<br><br>Allowable Values:<br>• 1.0 <= L <= 5.0<br><br>Note: The outlet edge can not be positioned closer than the heel of the weir, and this value may not always hold</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Driving Head (m)</td>
+                <td>0.20</td>
+                <td>Hydraulic head to maintain from NPL level on the weir side.<br><br>Allowable Values:<br>• 0.05 <=hd <= 0.50</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Clear Height @NPL (m)</td>
+                <td>0.10</td>
+                <td>Clear height to the top slab above the outlet box.<br><br>Allowable Values:<br>• 0.10 <= h <= 0.30</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Top Slab Thickness (m)</td>
+                <td>0.20</td>
+                <td>Thickness of the slab provision for the outlet box.<br><br>Allowable Values:<br>• 0.15 <= Thk <= 0.40</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Top Slab Overhang (m)</td>
+                <td>0.20</td>
+                <td>Length of slab extending beyond the edge of the outlet box.<br><br>Allowable Values:<br>• 0.15 <= Thk <= 0.40<br><br>Note: Value is applied in both the left and right directions.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>No of Gates [Left, Right]</td>
+                <td>[1, 1]</td>
+                <td>The desired number of gates for each side of the outlet.<br><br>Allowable Values:<br>• 1 <= nGates <= 3</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>No of Reserve Gates [Left, Right]</td>
+                <td>[0, 0]</td>
+                <td>Number of desired reserve gates for each side of the outlet.<br><br>Allowable Values:<br>• 0 <= nGates <= 3</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Gate Proud Height (m)</td>
+                <td>0.15</td>
+                <td>The height of the gate leaf (in closed position) extending above the bottom of the top slab.<br><br>Allowable Values:<br>• 0.1 <= h <= 0.3</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Width of Divide Piers (m)</td>
+                <td>0.30</td>
+                <td>The thickness of the divide wall or piers to maintain between adjacent gate boxes.<br><br>Allowable Values:<br>• 0.20 <= w<= 0.50<br><br>Note: This value is applicable if more than one gate is detected (including reserve gates)</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Rebar Grating Provision (mm)</td>
+                <td>12, 100</td>
+                <td>Dia and Spacing of rebar work for grating protection on the face of the outlet boxes.<br><br>Allowable Values:<br>• 0 < val <= 300<br><br>Note: input of 0 for either the dia or spacing or both, will leave out the grating provision.</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
 
 
 ## Creating Reports
+ [Back to Toc](#table-of-contents)
+
 One can create reports for selected design tasks at any time. Follow below steps to generate reports.
 
 1. To start, go to `Workflow > Create Report...` menu command. The following dialog is displayed:
@@ -1242,6 +1376,8 @@ It is impotant to note the following when working with report generator tool.
     <img src="./media/Image66.png" style="Width:5in">{br}
 
 ## Known Issues
+ [Back to Toc](#table-of-contents)
+
 - When creating an ogee overflow shape, maintaining the actual flare width specified by the user varies slightly from the generated profile.
 - When refreshing views for discharges less than the design value, values from previous iteration cause mismatch in dimensions. Refresh again to resolve.
 
