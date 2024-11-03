@@ -23,12 +23,16 @@ Key in this release include new modules for diversion weir design and embankment
 ## What's New
 
 ### General
+[Back to ToC](#table-of-contents)
+
 - Data tip in iCAD interface is enhanced to reduce repetition, and show data tips in context.
 - Status bar timer is reduced to avoid unwanted interuption to the user when performing different tasks. It can also be set permanently on if needed.
 - Removed plot sheet generator funciton (previously designed for CanalNET products).
 
 
 ### Surface Modelling
+[Back to ToC](#table-of-contents)
+
 - Major and minor contours can now be generated in one go, reducing the number of steps needed to achieve a complete presentation drawing.
 
     <img src="./media/Image 011.png" style="width:6in">
@@ -49,6 +53,7 @@ Reference: John D'Errico (2024). Surface Fitting using gridfit (https://www.math
 
 
 ### TeraForm 
+[Back to ToC](#table-of-contents)
 
 TeraForm module is enhanced as follows:
 
@@ -68,6 +73,7 @@ TeraForm module is enhanced as follows:
 
 
 ### Diversion weir
+[Back to ToC](#table-of-contents)
 
 1. Added flexibility of design with `Workflow > Relaease pool length` menu command. This command allows interactive positoning for the downstream appron end (applicable for TypeI jumps only).
 
