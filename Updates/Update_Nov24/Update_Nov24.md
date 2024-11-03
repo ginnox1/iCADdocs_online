@@ -15,11 +15,11 @@ Learn about the update features and functions included in this release below.
 Key in this release include new modules for diversion weir design and embankment works analysis.
 
 <!--TOC-->
+  - [What's New](#whats-new)
     - [Data Processing](#data-processing)
     - [Diversion Weir Design](#diversion-weir-design)
     - [TeraForm](#teraform)
 <!--/TOC-->
-
 
 ## What's New
 
