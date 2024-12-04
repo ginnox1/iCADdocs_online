@@ -26,6 +26,13 @@ Key in this release include new modules for diversion weir design and embankment
 
 ## Update to Current Release
 
+The current release of iCAD Software is **Version 2.9.0.10464**. 
+
+The acompanying iCAD Bridge application version is **Version 4.9.5**
+
+
+> IMPORTANT: Make sure AutoCAD is closed when updating. If not, the update process will fail to install the latest resources. We encourage you to review below links for guidance on how to install updates.
+
 Follow below steps to update your installation to the latest release:
 
 
@@ -50,9 +57,6 @@ For this update the following major functionalities and capabilities are include
 - Additional options to plot to AutoCAD, allowing more flexibility in drawing generation from iCAD environment.
 
     <img src="./media/Image 1.png">
-
-
-
 
 
 ## Terraform
