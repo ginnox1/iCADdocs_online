@@ -1663,25 +1663,54 @@ One can see the magnitude of the resultant acting force, overall-factor of safet
 ### Sluice Bay Hydraulics
  [Back to Toc](#table-of-contents)
 
-The basic relation ship for flow under sluice bay is given by:
+Two types of flow are anticipated through the sluice bay, depending on the opening height of the sluide gate from the bay crest level.
+
+#### Normal flow condition
+
+This flow condition is possible when the critical depth of flow on the bay crest is less than the opened gate height. In this condition, normal flow over a raised crest is possible with out the gate affecting the flow.
+
+q = yc*vc
+
+Using 
+
+FR= Vc/sqrt(g*yc)=1
+
+q= 3.132yc^(1.5);
+
+
+#### Orifice flow condition
+
+As soon as the critical depth of flow exceeds the available overflow space provided by the gate, orifice flow condition is forced in to play. The basic relation ship for flow under sluice bay is given by:
 
 <img src="./media/image26.png">
 
-where $C_{d}$ is the coefficient of discharge, Ho and hz are as shown in
-below figure.
+where:
+- Cd is the coefficient of discharge, 
+- a is the opening height (m)
+- b is openning width (m)
+- g is acceleration due to gravity (9.81m/s2), and 
+- H is the available hydraulic head upstream of the gate (m).
+
+There are two possible flow conditions here - namely submerged and free orifice flow conditions, as presented in the figure below.
+
 
 <img src="./media/image32.png" >
 
 The sluice gate is considered to be submerged if the following condition
 is fulfilled
 
-<img src="./media/image37.png">{br}
 
 <img src="./media/image19.png">
 
-The coefficient of discharge in both cases, for a given set of upstream
-and downstream hydraulic grade levels, are determined from the below
-chart.
+The coefficient of discharge for both scenarios is determined from the below chart. In the chart, the dotted line represents Cd for free flow conditions, and the  solid lines represent Cd for submereged flow conditions. The latter show parameteric values for varying h/a values.
+
+
+<img src="./media/image37.png">{br}
+
+#### Rating curve for Fully Opened Gate position
+From the above known flow conditions, a flow rating curve is developed for the sluice bay for a fuly opened gate position.
+
+The downstream (behind gate) flow condition is ultiately affected by the resulting tail water conditions. All flow conditions are ultimately goverend by the downstream 
 
 [Back to Toc](#table-of-contents)
 
