@@ -1,6 +1,12 @@
-# iCAD Update Notes (January-2025)
+﻿# iCAD Update Notes (January-2025)
 
-Wis
+
+<div style="text-align: center;">
+    <h1 style="font-size: 3em; color: black; text-shadow: 0 0 5px gold;">🎉 Happy New Year 2025! 🎉</h1>
+    <div style="font-size: 1.5em; color: gold; text-shadow: 0 0 5px gold;">Wishing you joy, health, and prosperity!</div>
+</div>
+
+
 **Hello, and welcome again,** 
 
 We are excited to bring more functions and features to our users. This release includes major and minor enhancements to the iCAD product suite - mainly Data Processing tools, Diversion Weir Design and TeraForm modules.
