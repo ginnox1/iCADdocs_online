@@ -2,6 +2,26 @@
 
 [Back to Home](..\index#online-documentation)
 
+<!--- Work on these as you get time.
+[  ] Teraform/Diversion Weir - create contours on plan view based on loaded surface data if available (instead of the profile data)
+[  ] Material definition using mlab app, and import to assembly editor, export from terraform.
+[   ] Combine assembly releases on its own
+
+[  ] ! ! Diversion Weir - indRBL= ... +1 (drawLongitudinalSection)
+[  ] Diversion weir - opening height not correct (Trans view) 
+[  ] Diversion weir - scour rating curve (operating curve)
+[  ] Diversion Weir - Inlet Height above sill level
+[  ] Diversion weir - Scour Energy dessipator and length
+[  ] Diversion weir - outlet energy dessipator and length
+[  ] Diversion weir - BoQ with offset
+
+[  ] Doc: Design level/source object editor in asdembly editor (Edit button)
+[  ] Document - saved cross-sections for processing profiles
+[  ] Prep ogee design guide
+[  ] start working paper on WSP method for afflux computation
+
+--->
+
 iCAD offers the **Diversion Weir Design** product to handle the design
 of weirs and regulating structures in an interactive environment,
 allowing engineers to solve design and analysis tasks for diversion

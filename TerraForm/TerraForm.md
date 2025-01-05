@@ -88,6 +88,9 @@ For successful execution of an session instance of TerraForm, two objects are re
 
     <img src="./media/image17.png" style="width:7.23443in;height:3.54439in" />
 
+> **Important Note**: The module works best on a single embankment reach. Avoid modelling embankement works that extend to multiple reaches, as shown below. Presentation of results may not be accurate.
+
+   <img src= "./media/Image56.png">
 
 ## Defining the session
 [Back to toc](#table-of-contents)
