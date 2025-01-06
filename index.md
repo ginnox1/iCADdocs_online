@@ -15,17 +15,18 @@ This online resource provides guidance on all the key aspects about installation
 
 iCAD is continuously updated to make it more useful for practical design applications. Ever increasing features and functions are added regularly.
 
-Checkout this link to see what's new and update your installaion. [**Dec 24 updates - latest**](Updates/Update_Dec24/Update_Dec24.md)
+Checkout this link to see what's new and update your installaion. [**Update Logs**](#update-logs)
 
 ---
 
 ## Table of Contents
 
 <!--TOC-->
-  - [Updates](#updates)
+  - [Update Logs](#update-logs)
   - [Online Documentation](#online-documentation)
   - [Contacts](#contacts)
 <!--/TOC-->
+
 
 ## Update Logs
 [Back to ToC](#table-of-contents)
