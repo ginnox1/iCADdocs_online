@@ -32,7 +32,7 @@ Checkout this link to see what's new and update your installaion. [**Dec 24 upda
 
 iCAD software is continuously updated with more features and functionalities. The updates included in each release is found listed below.
 
-[**Dec 24 updates - latest**](Updates/Update_Dec24/Update_Dec24.md)
+[**Jan 25 updates - latest**](Updates/Update_Jan25/Update_Jan25.md)
 
 > :bulb: The latest release is **Version 2.9.0.****** (Dec 2024)
 
@@ -40,6 +40,9 @@ iCAD software is continuously updated with more features and functionalities. Th
 
 
 Previous updates are available here:
+
+- [Dec 24 updates](Updates/Update_Dec24/Update_Dec24.md)
+
 
 - [Nov 24 updates](Updates/Update_Nov24/Update_Nov24.md)
 
