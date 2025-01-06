@@ -52,6 +52,16 @@ For this update the following major functionalities and capabilities are include
 ## Terraform
 [Back to ToC](#table-of-contents)
 
+1. Heavily enhanced and reach visualization for cross-section view including design levels visuals for geotechnical investigation results for subsurface information.
+
+    <img src="./media/Image 9.png" style="width:6in">
+
+
+1. Overhaul station x-section view to include elevaiton information, better presentation, and below OGL ground modification assemblies.
+
+    <img src="./media/Image 10.png" style="width:6in">
+
+
 1. Station display differences on the main interface and the assembly editor interface are resolved.
 
     <img src="./media/Image 2.png" style="width:5in">
