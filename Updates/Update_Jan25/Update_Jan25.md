@@ -28,7 +28,7 @@ Learn about the update features and functions included in this release below.
 
 ## Update to Current Release
 
-The current release of iCAD Software is **Version 2.9.0.10620**. 
+The current release of iCAD Software is **Version 2.9.0.10659**. 
 
 The acompanying iCAD Bridge application version is **Version 4.9.5**
 
