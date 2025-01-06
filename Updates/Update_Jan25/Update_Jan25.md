@@ -3,7 +3,7 @@
 
 <div style="text-align: center;">
     <h1 style="font-size: 3em; color: black; text-shadow: 0 0 5px gold;">🎉 Happy New Year 2025! 🎉</h1>
-    <div style="font-size: 1.5em; color: gold; text-shadow: 0 0 5px gold;">Wishing you joy, health, and prosperity!</div>
+    <div style="font-size: 1.5em; color: gold; text-shadow: 0 0 5px gold;">Wishing you joy, health, and growth!</div>
 </div>
 
 
