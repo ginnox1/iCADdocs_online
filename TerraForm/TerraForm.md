@@ -378,7 +378,19 @@ style="width:3.77083in;height:4.51042in" />
 
 The last row of the table shows cumulative volumes based on the area and
 stations for each calculation. Note: Each volume is worked out as the
-net amount corresponding to each assembly (single or combined),
+net amount corresponding to each assembly (single or combined).
+
+> **Notes on Volume Calculation:** The volumes at each paritial station, and the entire range of stations desired, is computes using the trapezoidal method of integration.
+
+   <img src="./media/Image 043.png" style="width:3.5in" />
+
+
+The method of calcualtion generalizes to:
+
+<img src="./media/image 044.png" style="width:6.5in" />
+
+
+where x1, x2, ..., xn represent the station locations for the corresponding stations of calcualitons in the range of interest.
 
 The table data can be copied for further documentation, or processing
 using the Copy Table button.
