@@ -57,7 +57,7 @@ Learn about the update features and functions included in this release below.
   </a>
 
   <p style="margin-top: 1.5rem; color: #636e72; font-size: 0.9em;">
-    🔖 Version 2.9.10354 | 📦 ~20Mb | ✅ Verified Build
+    🔖 Version 2.9.0.10683 | 📦 ~20Mb | ✅ Verified Build
   </p>
 </div>
 
