@@ -23,9 +23,6 @@ Learn about the update features and functions included in this release below.
 > IMPORTANT: Make sure AutoCAD and iCAD is closed when updating. If not, the update process may fail to install the latest resources. We encourage you to review below links for guidance on how to install updates.
 
 
-
-
-
 <div style="max-width: 600px; margin: 2rem auto; padding: 2rem; background: #f8f9fa; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;">
   <h2 style="color: #2d3436; margin-bottom: 1rem; font-family: 'Arial', sans-serif;">
     📅 Latest Monthly Package
@@ -38,7 +35,7 @@ Learn about the update features and functions included in this release below.
 
   </p>
 
-  <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID" 
+  <a href="https://drive.google.com/uc?export=download&id=1mSZVIIXOgk0yGErVAzAHIH8eWm1x0gZ6" 
      style="display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -68,7 +65,7 @@ Learn about the update features and functions included in this release below.
 
 * **NB:** This update requires, reinstalling iCAD application. Download from the link below.For guidance on installation, You can find guidelines following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
-    [![Download](https://img.shields.io/badge/Download-iCAD%20Installer-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_HERE)
+    [![Download](https://img.shields.io/badge/Download-iCAD%20Installer-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/uc?export=download&id=1GpF1l7ovDPOa6QWdov8uqKWfcsfjy8M4)
 
 
 
