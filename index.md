@@ -33,14 +33,13 @@ Checkout this link to see what's new and update your installaion. [**Update Logs
 
 iCAD software is continuously updated with more features and functionalities. The updates included in each release is found listed below.
 
-[**Feb 25 updates - latest**](Updates/Update_Feb25/Update_Feb25.md)
+[**Go to Mar 25 updates page- latest**](Updates/Update_Mar25/Update_Mar25.md)
 
-> :bulb: The latest release is **Version 2.9.0.****** (Dec 2024)
 
-> Accompanying iCAD bridge application is updated to **Version V4.9.3**.
 
 
 Previous updates are available here:
+- [Feb 25 updates](Updates/Update_Feb25/Update_Feb25.md)
 
 - [Jan 25 updates](Updates/Update_Jan25/Update_Jan25.md)
 
