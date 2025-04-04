@@ -65,9 +65,9 @@ Learn about the update features and functions included in this release below.
 
 * **NB:** This update requires, reinstalling iCAD application. Download from the link below.For guidance on installation, You can find guidelines following the steps in the **Introduction to iCAD Software** document, chapter on [Setup And Licensing Guide](SetupAndLicensingGuide/setupguide.md#installation-and-setup-guide)
 
- <!---
+ <!--- --->
  [![Download](https://img.shields.io/badge/Download-iCAD%20Installer-blue?style=for-the-badge&logo=google-drive)](https://drive.google.com/uc?export=download&id=1GpF1l7ovDPOa6QWdov8uqKWfcsfjy8M4)
- --->
+ 
 
 
 ## What's New

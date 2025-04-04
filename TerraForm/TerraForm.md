@@ -262,7 +262,7 @@ Once a desired assembly is fully defined, clicking on the assembly shows which a
 > Note: The order of appearance of the assemblies affects how zones are calculated. Use the buttons on the right of the assembly list to change the priorities of assemblies as needed.
 
 
-## Defining Shapes from Valid AutoCAD Objects
+### Defining shapes from Valid AutoCAD Objects
 [Back to toc](#table-of-contents)
 
 As stated above, assembly shapes can be defined by listing geometry of the desired shape using the bmh triplet specification. An alternative method is to draw the desired shape in AutoCAD and use it as a source. The source AutoCAD object must fulfil the following requirements:
@@ -498,10 +498,28 @@ When working with alignments and their assemblies, it is often needed to update 
 
     <img src="./media/Image55.png" style="width:5in">
 
+    
+
+
+1. Modify MGL levels with previosuly calculated MGL enabled (toggled on). Otherwise, the newly calcualted MGL for modified surface will not be accurate.
+
+1. If assemblies are broken, resulting quantities may not be accurate (even when using refine assembly option). The main cause is often horizontal segments of the assembly extending far beyond the limits of the top most assembly, and potentially crossing the exitsing ground level (OGL). This results in sometimes bad trimming process. 
+
+    <img src="./media/Image61.png" style="width:5in">
+
+    This also causes area estimation error that can not be corrected using *Refine Assembly* settings.
+
+      <img src="./media/Image62.png" style="width:5in">
+
+     To resolve this, it is advises to use tracer data to limit the extents of the horizontal segements for the assembly in question.
+
+      <img src="./media/Image63.png" style="width:5in">
+
+
 1. Assembly Overlap
     Each assembly is understood to envelop the others below them. Order of appearance therefore matters. Some times, the lower assemblies may extend beyong the boundary shape of the topmost envelop. In such cases, the algorithm attempts to trim those vertices extending beyond.
     
-    Sometima This process may not be succesful, and result in the same boundary as the top most assembly, causing display and processing issues. This is typically highlighted by a BLINKING zone (when clicked). 
+    Sometims This process may not be succesful, and result in the same boundary as the top most assembly, causing display and processing issues. This is typically highlighted by a BLINKING zone (when clicked). 
 
     Resolve the issue by adjusting the coordinates of the assembly with issue, and refresh view.
  
@@ -535,10 +553,16 @@ Descriptive Notes:
 ## Known Limitations
 [Back to toc](#table-of-contents)
 
-- There are not limits to the number of assemblies that can be defined. However, only two assemblies in cut formation can be used to process Modified ground levels, and get volume reports.
-- Rarely, cross-sections generated at intermediate stations - i.e., at stations other than those in profile extraction - may show double lines for assemblies. This is caused by anavoidable differences encountered during interpolation for the different formations.
+1. There are not limits to the number of assemblies that can be defined. However, the following processing limits apply:
+    -  Only two assemblies can be combined together.
+    - Modified ground levels can be calculated for a maximum of two assemblies. The assemblies used for each modificatio run can be either simple or combined.
+    - Cross-sections can only be generated at station locations captured during profile extraction.
 
-    <img src="./media/Image52.png" style="width:7in">
+2. Rarely, wrong presentations may appear on cross-section drawings from modified ground levels (as shown below). These have no impact on quantity estimation, and the overall accuracy of the other elements of the drawing.
+
+    <img src="./media/Image60.png" style="width:7in">
+
+
 
 [Back to toc](#table-of-contents)
 
