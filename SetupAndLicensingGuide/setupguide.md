@@ -10,15 +10,13 @@ will assist you to get your software up and running.
   - [Introduction](#introduction)
   - [System Requirements](#system-requirements)
   - [Installation and setup guide](#installation-and-setup-guide)
-  - [Setup Installation](#setup-installation)
+  - [Updating Your Product](#updating-your-product)
+  - [Regular License Check](#regular-license-check)
   - [Setup AutoCAD for use with iCAD and related products](#setup-autocad-for-use-with-icad-and-related-products)
   - [Installing Update resources](#installing-update-resources)
-  - [Software Updates](#software-updates)
 - [Licensing Guide](#licensing-guide)
   - [Enabling VBA for AutoCAD](#enabling-vba-for-autocad)
 <!--/TOC-->
-
-
 ## Introduction
 [Back to ToC](#table-of-contents)
 
@@ -105,10 +103,10 @@ This will complete the installation. A short cut should be available on the desk
 
 iCAD software is newly released as version 2.8 (Aug 2023) This version must be installed in a users machine. Any and previous versions and components of the software are not supported, and can be uninstalled.
 
-## Licensing Your Product
+## Updating Your Product
 [Back to ToC](#table-of-contents)
 
-Before launching, make sure to setup the application as follows:
+Before launching, make sure to setup the application as follows. This will ensure the latest updates are incorporated in your application system:
 
 1. After installation, right-click on the desktop icon, and choose `Properties`. 
 
