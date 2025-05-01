@@ -1146,7 +1146,8 @@ The settings responsible for the hydraulic design and sizing of the outlet struc
 
     {br}
     
- <html>
+ <!DOCTYPE html>
+ <html lang="en">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1381,6 +1382,8 @@ Similarly, if Freeboard value is set to -1, it alsi indicates to use the USBR Ch
     </table>
 </body>
 </html>
+
+{br}
 
 
 ## Creating Reports
