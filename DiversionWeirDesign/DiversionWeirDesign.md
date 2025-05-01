@@ -1167,8 +1167,8 @@ The settings responsible for the hydraulic design and sizing of the outlet struc
             background-color: #f2f2f2;
         }
     </style>
-</head>
-<body>
+ </head>
+ <body>
     <table>
         <thead>
             <tr>
@@ -1250,16 +1250,16 @@ The settings responsible for the hydraulic design and sizing of the outlet struc
             </tr>
         </tbody>
     </table>
-</body>
-</html>
+ </body>
+ </html>
 
  {br}
 
  The outlet canal is designed using algorithms developed for CanalNET software and follow a similar definition of symbols shown below.
 
-<img src="./media/Image78.png" style="width:4.5in">
+ <img src="./media/Image78.png" style="width:4.5in"> {br}
 
-<img src="./media/Image79.png" style="width:4in">
+ <img src="./media/Image79.png" style="width:4in"> {br}
 
 If B/D ratio is set to 0, it indicates to use the USBR charts for sizing the canal geometry. In this case, the following chart is used to determine B/D.
 
