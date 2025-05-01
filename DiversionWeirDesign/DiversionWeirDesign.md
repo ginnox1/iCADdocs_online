@@ -72,6 +72,9 @@ abutment structures which is solved using a different module.
       - [Exit gradient](#exit-gradient)
     - [Stability analysis:](#stability-analysis)
     - [Sluice Bay Hydraulics](#sluice-bay-hydraulics)
+      - [Normal flow condition](#normal-flow-condition)
+      - [Orifice flow condition](#orifice-flow-condition)
+      - [Rating curve for Fully Opened Gate position](#rating-curve-for-fully-opened-gate-position)
     - [References:](#references)
 <!--/TOC-->
 
@@ -1015,10 +1018,28 @@ The safety parameters variable group values are set according to the following t
 ## The Sluice Bay section Design
 [Back to Toc](#table-of-contents)
 
-Sluice bays, if provided, are taken in to consideration in the
-positioning and sizing of the diversion structure. A cross-section view
-can be generated and viewed for each of the left and right sluice bays,
-as provided. These views can be accessed from the `Workflow` menu as shown below.
+<!---
+Q_total is calcualted based on Qdes overflow, and that undergoing under sluice for the same head. Tail water depth for overflow is not affected, leading to a conservative design,
+
+Release length available for TypeI only
+
+Bottom profile (for resitsing uplift), provision for the overflow section is assumed applicable.
+
+Silt level not shown
+
+sluice bay divide wall can not be shorter than main weir glacis. Hence q is based on nbay*wbay, not total length
+
+Gate sizing, Flow through Rating curves, and post jump hydraulics analysis for sluice bays in reports
+
+Plan view with different pool lengths determined.
+
+Future work: Uplift pressure analysis on provided thickness
+
+section view looks to the tight (from left) when for instanct taking sections in sluice bays (determines visbility of divide wall, sluice bay)
+
+--->
+
+Sluice bays, if provided, are taken in to consideration in the positioning and sizing of the diversion structure. A cross-section view can be generated and viewed for each of the left and right sluice bays, as provided. These views can be accessed from the `Workflow` menu as shown below.
 
 <img src="./media/image14.png"
 style="width:3.38021in;height:1.6901in" />
@@ -1026,15 +1047,11 @@ style="width:3.38021in;height:1.6901in" />
 <img src="./media/image2.png"
 style="width:5.88021in;height:3.24165in" />
 
-The sluice bay parameters discussed earlier on the Transverse Design
-section, are at play in this view, and can also be edited from this
-view.
+The sluice bay parameters discussed earlier on the Transverse Design section, are at play in this view, and can also be edited from this view.
 
 <img src="./media/image34.png" style="width:6.5in;height:3.88889in" />
 
-The view provides adequate information on results of hydraulic analysis
-for both HFL and NPL conditions. The presented discharge capacities of
-the bays are calculated as follows:
+The view provides adequate information on results of hydraulic analysis for both HFL and NPL conditions. The presented discharge capacities of the bays are calculated as follows:
 
 - The maximum opening size for sluice gates are calculated based on sill crest height, gate proud height, the weir height and abutment height.
 
@@ -1126,8 +1143,10 @@ The settings responsible for the hydraulic design and sizing of the outlet struc
     <img src="./media/Image77.png" style="width:7.5in">
     
     The variables and their settings are explained in below table.
-    
 
+    {br}
+    
+<html>
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1234,7 +1253,8 @@ The settings responsible for the hydraulic design and sizing of the outlet struc
 </body>
 </html>
 
- 
+ {br}
+
  The outlet canal is designed using algorithms developed for CanalNET software and follow a similar definition of symbols shown below.
 
 <img src="./media/Image78.png" style="width:4.5in">
@@ -1677,7 +1697,7 @@ The result of a stabilty analysis is also presented graphically, proving highlig
 
 <img src="./media/Image54.png" style="width:4in">
 
-One can see the magnitude of the resultant acting force, overall-factor of safety, as well as conditions for stress at bottom floor. If one of these is not satisfied, the text will beshown in red.
+One can see the magnitude of the resultant acting force, overall-factor of safety, as well as conditions for stress at bottom floor. If one of these is not satisfied, the text will be shown in red.
 
 
 ### Sluice Bay Hydraulics
@@ -1749,7 +1769,7 @@ International Publishers, New Delhi, 2008
 
 S.K. Garg, Irrigation and Hydro Power Engineering,
 
-R. Baban, Design of Diversion Weirs, Small Scale Irrigation In Hot
+R Baban, Design of Diversion Weirs, Small Scale Irrigation In Hot
 Climates. Joh Willey and Sons, New York
 
 R.W.P. May et al, Hydraulic Design of Side weirs, Thomas Telford
@@ -1767,4 +1787,4 @@ Engineering Handbook, United States Department of Agricutlure, 2007
 Federal High Way Administration, Users Manual for WSPRO - A computer
 model for Surface Profile Computations, Washington (1998)
 
-A. J. Paterka, Hydraulic Design of Stilling Basins and Energy Dessipators, USBR, Denver, Colorado (1984)
+ A J Paterka, Hydraulic Design of Stilling Basins and Energy Dessipators, USBR,  Denver, Colorado (1984)
