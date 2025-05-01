@@ -1146,7 +1146,7 @@ The settings responsible for the hydraulic design and sizing of the outlet struc
 
     {br}
     
- <!DOCTYPE html>
+
  <html lang="en">
  <head>
     <meta charset="UTF-8">
@@ -1284,7 +1284,7 @@ Similarly, if Freeboard value is set to -1, it alsi indicates to use the USBR Ch
 
     The variables and their uses are defined defined in the following table.
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
