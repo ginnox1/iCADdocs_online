@@ -1019,7 +1019,7 @@ The safety parameters variable group values are set according to the following t
 [Back to Toc](#table-of-contents)
 
 <!---
-Q_total is calcualted based on Qdes overflow, and that undergoing under sluice for the same head. Tail water depth for overflow is not affected, leading to a conservative design,
+Q _total is calcualted based on Qdes overflow, and that undergoing under sluice for the same head. Tail water depth for overflow is not affected, leading to a conservative design,
 
 Release length available for TypeI only
 
