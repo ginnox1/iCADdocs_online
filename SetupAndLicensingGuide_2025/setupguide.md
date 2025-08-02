@@ -86,7 +86,7 @@ You can purchase, access and service your license for your prefered product usin
 ## Installation and setup guide
 [Back to ToC](#table-of-contents)
 
-Start by download your desired product. Make sure to obtain the correct and recent release by downloading only from our media resources (shown below).
+Start by downloading both your installer and the update patch from the links below. Please, DO NOT UNZIP any of the files.
 
 
 
@@ -140,7 +140,7 @@ Start by download your desired product. Make sure to obtain the correct and rece
 </div>
 
 
-> :bulb: **Note**: The download file size can be large (~2GB). If this is an issue, we recommend to install from a copy, and update as described [further below](#updating-the-new-release). A colleague in your organization may already have it.
+> :bulb: **Note**: The download file size can be large ( > 1GB). If this is an issue, we recommend to install from a copy, and update as described [further below](#updating-the-new-release). A colleague in your organization may already have downloaded it.
 
 Once you have the copies, follow below steps to install the applicaiton.
 
@@ -183,7 +183,8 @@ Launch your product, if not already. On first start, you may get *Update Require
 
    <img src="./media/pic 11.png" style="width:4in" >
 
-1. Choose, ***Update Manually***, and point to the download folder where you have the update patch you got above.
+1. Choose, ***Update Manually***, and point to the download folder where you have the update patch you downloaded above
+    > :warning: The update patch must be provided as downloaded. DO NOT UNZIP.
 
    <img src="./media/pic 12.png" style="width:5in" >
 
@@ -199,7 +200,7 @@ The next step is licensing your product. Upon launch you will find the following
 
 >**Note:** You will need active internet connection to complete this action.
 
-1. If you have recieved a license from us [available at your customer portal](https://secure.softwarekey.com/solo/customers/Default.aspx?AuthorID=5025369), choose Activate CanalNET online.
+1. Choose Activate CanalNET online.
 
    <img src="./media/pic 15.png" style="width:5in" >
 
@@ -209,9 +210,24 @@ The next step is licensing your product. Upon launch you will find the following
 
    <img src="./media/pic 16.png" style="width:5in" >
 
-3. Provide the license details, and hit `Continue`.
 
-      <img src="./media/pic 17.png" style="width:5in" >
+2. Collect your license information.
+
+   You can find this information [available at your customer portal](https://secure.softwarekey.com/solo/customers/Default.aspx?AuthorID=5025369). Once on the site, select `Licenses and Renwales`.
+
+   <img src="./media/pic 25.png" style="width:5in" >
+
+   This will open the following page. Click on your license ID, to view more details.
+
+   <img src="./media/pic 21.png" style="width:5in" >
+
+   Copy and paste the *License ID* and *Activation Password* in below step.
+   
+   <img src="./media/pic 22.png" style="width:5in" >
+
+3. Provide the license details, and hit `Continue`.
+   
+     <img src="./media/pic 17.png" style="width:5in" >
 
  4. The activation process will complete, and allow you to proceed.
 
@@ -223,7 +239,9 @@ The products interface is now available.
 
 ## Setup AutoCAD for use with iCAD and related products
 
- This is the final step, that allows you to seamlessly work with your AutoCAD application.If you don't complete this step, it is common to get the *Failed to Link* warning dialog whenever you attempt to do tasks that involve AutoCAD. 
+ This is the final step, that allows you to seamlessly work with your AutoCAD application.If you don't complete this step, it is common to get the *Failed to Link* warning dialog whenever you attempt to do tasks that involve AutoCAD.
+
+ For example, on your CanalNET application, go to `Workspace > Load Network` menu command. You will see one of the following messages.
  
  Scenario 1: If a running AutoCAD application is not detected while launching iCAD. That is normal, and continue by hitting `Ok` button. The application will start.
 
@@ -255,7 +273,10 @@ This happens because AutoCAD is not setup yet. Follow below steps to resolve thi
 1. In the *startup suite* dialog, hot `Add` button.
 
      <img src="./media/Image 006.png" style="width:3in">
-1. Navigate to the installation folder. Start by right clicking on the desktop shortcut and click on `Copy as Path`. Then under *Add file to startup suite* dialog, right click on the path information and paste. Then choose **iCAD Bridge.dvb**.
+
+1. Navigate to the installation folder. 
+
+    Start by right clicking on the desktop shortcut and click `Open File Location`. Click on the address bar, and copy the entire path to clipboard. Then under *Add file to startup suite* dialog of AutoCAD, right click on the path information and paste. Then choose **iCAD Bridge.dvb**.
 
    <img src="./media/Image 007.png" style="width:4in">
 
