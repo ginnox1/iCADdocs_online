@@ -121,21 +121,21 @@ Once you have the copies, follow below steps to install the applicaiton.
 
 1. To begin installation, run the downloaded installer file *CanalNetwork_mcrInstaller.exe*
 
-     <img src="./media/pic 04.png" style="width:4in"> 
+     <img src="./media/pic 04.png" style="width:6in"> 
 
 2. Accept the default destination folder, and check the *Add Shortcut to Desktop* option. 
 
-    <img src="./media/pic 01.png" style="width:4in"> {br}
+    <img src="./media/pic 01.png" style="width:6in"> {br}
 
     > :exclamation:**Note** If you choose a differnt location for installation, make sure your windoes user account have full control access previllages to the folder, or the application will not work properly.
 
 3. Required Software: Matlab runtime is a required software, and comes bundled with your installer. Accept to install, and hit `Begin Install` button.
 
-    <img src="./media/pic 02.png" style="width:4in">  {br}
+    <img src="./media/pic 02.png" style="width:6in">  {br}
 
 3. Confirmation: Upon completion, the installed exits with the following dialog. Click `Close` and exit.
 
-    <img src="./media/pic 03.png" style="width:4in"> {br}
+    <img src="./media/pic 03.png" style="width:6in"> {br}
 
 
     This will complete the installation. Before you move on, do one final edit as follows.
@@ -176,24 +176,25 @@ The next step is licensing your product. Upon launch you will find the following
 
 1. If you have recieved a license from us [available at your customer portal](https://secure.softwarekey.com/solo/customers/Default.aspx?AuthorID=5025369), choose Activate CanalNET online.
 
-   <img src="./media/pic 15.png" style="width:4in" >
+   <img src="./media/pic 15.png" style="width:5in" >
 
     :bulb: More direction will be added soon, for customers who want to purchase directly.
 
 2. Then choose ***Activate Online*** option. 
 
-   <img src="./media/pic 16.png" style="width:4in" >
+   <img src="./media/pic 16.png" style="width:5in" >
 
 3. Provide the license details, and hit `Continue`.
 
-      <img src="./media/pic 17.png" style="width:4in" >
+      <img src="./media/pic 17.png" style="width:5in" >
 
  4. The activation process will complete, and allow you to proceed.
 
-      <img src="./media/pic 18.png" style="width:4in" >
+      <img src="./media/pic 18.png" style="width:5in" >
 
 The products interface is now available. 
-      <img src="./media/pic 19.png" style="width:6in" >
+
+   <img src="./media/pic 19.png" style="width:6in" >
 
 ## Setup AutoCAD for use with iCAD and related products
 
