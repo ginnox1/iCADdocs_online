@@ -25,18 +25,13 @@ ICT Park, Addis Ababa, ETH.
 
 ## Table of Contents
 <!--TOC-->
-  - [Introduction](#introduction)
   - [System Requirements](#system-requirements)
+  - [Register for License](#register-for-license)
   - [Installation and setup guide](#installation-and-setup-guide)
   - [Updating Your Product](#updating-your-product)
-  - [Regular License Check](#regular-license-check)
+  - [Licesning Your product](#licesning-your-product)
   - [Setup AutoCAD for use with iCAD and related products](#setup-autocad-for-use-with-icad-and-related-products)
-  - [Installing Update resources](#installing-update-resources)
-- [Licensing Guide](#licensing-guide)
-  - [Enabling VBA for AutoCAD](#enabling-vba-for-autocad)
 <!--/TOC-->
-
-
 
 ## System Requirements
 [Back to ToC](#table-of-contents)
@@ -81,7 +76,7 @@ Start by download your desired product. Make sure to obtain the correct and rece
   max-width: 100%;
 ">
 
-  <a href="https://drive.google.com/uc?export=download&id=1Yib3NRYJ3ZFj5oZ0R6uBYxSeRqcWVgdg"
+  <a href="https://u.pcloud.link/publink/show?code=XZQtXW5Z7QALEOtXvLXTvJKAF4M517a481Ey"
      style="
        flex: 1 1 250px;
        min-width: 220px;
@@ -99,7 +94,7 @@ Start by download your desired product. Make sure to obtain the correct and rece
     Download<br>CanalNET Installer
   </a>
 
-  <a href="https://drive.google.com/uc?export=download&id=1ItEy1rv9UjyeRrXugJz7Iuzq2NURWnq5"
+  <a href="https://u.pcloud.link/publink/show?code=XZOtXW5ZuD020pk2MwkCqsunSb0D6zvf9T1V"
      style="
        flex: 1 1 250px;
        min-width: 220px;
@@ -172,7 +167,7 @@ Launch your product, if not already. On first start, you may get *Update Require
    <img src="./media/pic 13.png" style="width:3in" >
 
 
-## Licesning Your product.
+## Licesning Your product
 [Back to ToC](#table-of-contents)
 
 The next step is licensing your product. Upon launch you will find the following interface.
