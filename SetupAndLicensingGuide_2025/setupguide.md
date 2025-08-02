@@ -2,7 +2,6 @@
 
 [Back to Home](..\index#updates-for-this-release)
 
-![CanalNET Download Banner](./media/image4.png)
 
 Welcome, and Thank you for choosing to use our soluitions.
 
