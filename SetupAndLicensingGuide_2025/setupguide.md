@@ -52,9 +52,31 @@ iCAD and related software products have the following system requirements. These
 ## Register for License
 [Back to ToC](#table-of-contents)
 
-Registering on our platform is the first step. Go to [Customer Registration](https://secure.softwarekey.com/solo/customers/Default.aspx?AuthorID=5025369) and provide your details. 
+Registering on our platform is the first step. Go to [Customer Registration]() and provide your details. 
 
-You will recieve a confirmation email.
+You will recieve a an email.
+
+
+<div style="text-align: center; margin-top: 2rem;">
+  <a href="https://secure.softwarekey.com/solo/customers/Default.aspx?AuthorID=5025369" 
+     target="_blank"
+     style="
+       display: inline-block;
+       padding: 1.2rem 1.5rem;
+       background-color: #007BFF;
+       color: white;
+       text-decoration: none;
+       border-radius: 10px;
+       font-weight: 600;
+       font-size: 1rem;
+       line-height: 1.4;
+     ">
+    Register Here
+  </a>
+</div>
+
+<br>
+
 
 Confirm your email usig the link sent in the email. You will get access to all your license information using this account.
 
