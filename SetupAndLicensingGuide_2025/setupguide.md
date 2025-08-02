@@ -77,6 +77,7 @@ Start by download your desired product. Make sure to obtain the correct and rece
 ">
 
   <a href="https://u.pcloud.link/publink/show?code=XZQtXW5Z7QALEOtXvLXTvJKAF4M517a481Ey"
+     target="-blank"
      style="
        flex: 1 1 250px;
        min-width: 220px;
@@ -95,6 +96,7 @@ Start by download your desired product. Make sure to obtain the correct and rece
   </a>
 
   <a href="https://u.pcloud.link/publink/show?code=XZOtXW5ZuD020pk2MwkCqsunSb0D6zvf9T1V"
+     target="-blank"
      style="
        flex: 1 1 250px;
        min-width: 220px;
