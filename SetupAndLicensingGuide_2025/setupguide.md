@@ -2,6 +2,8 @@
 
 [Back to Home](..\index#updates-for-this-release)
 
+![CanalNET Download Banner](./media/image4.png)
+
 Welcome, and Thank you for choosing to use our soluitions.
 
 **iCAD software** offers a colleciton of modules for the design, analysis and documentation of spot structures in water resources development projects. These include dams, diversion weirs, water surface profile computations, surface modelling, and more.
